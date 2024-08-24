@@ -9,6 +9,8 @@ jobs:
   Build_Sloth:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        
       - name: Pandoc Document Converter
         uses: Ender-events/pandoc@v1
         with:
