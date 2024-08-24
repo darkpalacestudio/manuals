@@ -11,6 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install Dependencies
+        run: |
+          pip install pandoc-secnos --user
+
       - name: Pandoc Document Converter
         uses: Ender-events/pandoc@v1
         with:
