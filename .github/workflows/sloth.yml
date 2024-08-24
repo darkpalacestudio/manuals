@@ -6,7 +6,7 @@ on:
     branches: [ master ]
 
 jobs:
-  - Build Sloth Manual:
+  Build_Sloth:
     runs-on: ubuntu-latest
     steps:
       - name: Pandoc Document Converter
