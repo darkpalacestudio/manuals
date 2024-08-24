@@ -11,7 +11,6 @@ jobs:
     steps:
       - name: Pandoc Document Converter
         uses: Ender-events/pandoc@v1
-        working-directory: ${{github.workspace}}/sloth/manual
         with:
-          args: '*.md -s -o sloth_manual.pdf -V colorlinks=true -V linkcolor=blue -V urlcolor=blue --number-sections --filter pandoc-secnos'
+          args: '${{github.workspace}}/sloth/manual/*.md -s -o sloth_manual.pdf -V colorlinks=true -V linkcolor=blue -V urlcolor=blue --number-sections --filter pandoc-secnos'
 
