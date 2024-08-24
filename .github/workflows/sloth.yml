@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        
+
       - name: Pandoc Document Converter
         uses: Ender-events/pandoc@v1
         with:
-          args: '${{github.workspace}}/sloth/manual/*.md -s -o sloth_manual.pdf -V colorlinks=true -V linkcolor=blue -V urlcolor=blue --number-sections --filter pandoc-secnos'
+          args: 'sloth/manual/01_header.md -s -o sloth_manual.pdf -V colorlinks=true -V linkcolor=blue -V urlcolor=blue --number-sections --filter pandoc-secnos'
 
