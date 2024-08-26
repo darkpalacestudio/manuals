@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [ master ]
+    paths: [ 'chameleon/**', '.github/**' ]
 
 jobs:
   Build_Chameleon:
