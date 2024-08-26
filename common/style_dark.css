@@ -119,13 +119,26 @@ h2::before { position: absolute; left: -1.5cm; content: counter(h1section)"."cou
 h3 { counter-increment: h3section; }
 h3::before { position: absolute; left: -1.5cm; content: counter(h1section)"."counter(h2section)"."counter(h3section); }
 
-a { color: var(--clr-blue); }
+a { color: var(--clr-blue); text-decoration: none; }
 
 img { width: 100%; left: 0; }
 
 
 
 /* ------------------------ Util ------------------------ */
+.block::before {  
+  position: absolute;
+
+  left: -50%;
+  top: -7px;
+
+  width: 200%;
+  height: 100%;
+  padding-bottom: 16px;
+
+  content: '';
+}
+
 .txt-dark-1 { color: var(--dark-1); }
 .txt-dark-2 { color: var(--dark-2); }
 .txt-dark-3 { color: var(--dark-3); }
@@ -155,16 +168,51 @@ img { width: 100%; left: 0; }
 .block.bg-purple::before { background-color: var(--clr-purple); }
 
 
+/* ------------------------ Block quotes ------------------------ */
+.quote { width: 95%; }
 
-.block::before {  
+.quote::before, .quote::after {
   position: absolute;
 
-  left: -50%;
   top: -8px;
+  left: -8px;
 
-  width: 200%;
+  width: 100%;
   height: 100%;
-  padding-bottom: 16px;
+
+  padding: 8px;
 
   content: '';
 }
+
+.quote::before { opacity: .5; }
+
+.quote.bg-dark-1::after { border-left: 2px solid #17191D; }
+.quote.bg-dark-1::before { background-color: var(--dark-1); }
+
+.quote.bg-dark-2::after { border-left: 2px solid #22252A; }
+.quote.bg-dark-2::before { background-color: var(--dark-2); }
+
+.quote.bg-dark-3::after { border-left: 2px solid #2F3237; }
+.quote.bg-dark-3::before { background-color: var(--dark-3); }
+
+.quote.bg-light::after { border-left: 2px solid #D5D9DD; }
+.quote.bg-light::before { background-color: var(--light-1); }
+
+.quote.bg-red::after { border-left: 2px solid #FF0055; }
+.quote.bg-red::before { background-color: var(--clr-red); }
+
+.quote.bg-blue::after { border-left: 2px solid #00AAFF; }
+.quote.bg-blue::before { background-color: var(--clr-blue); }
+
+.quote.bg-orange::after { border-left: 2px solid #FF9500; }
+.quote.bg-orange::before { background-color: var(--clr-orange); }
+
+.quote.bg-green::after { border-left: 2px solid #53D147; }
+.quote.bg-green::before { background-color: var(--clr-green); }
+
+.quote.bg-yellow::after { border-left: 2px solid #EDED5E; }
+.quote.bg-yellow::before { background-color: var(--clr-yellow); }
+
+.quote.bg-purple::after { border-left: 2px solid #8D5AF1; }
+.quote.bg-purple::before { background-color: var(--clr-purple); }
