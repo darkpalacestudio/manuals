@@ -108,6 +108,8 @@ body {
 
 
 /* ------------------------ Global ------------------------ */
+h1, h2, h3, h4, h5, h6 { margin-bottom: 0px; padding-bottom: 0px; }
+
 h1 { counter-increment: h1section; counter-reset: h2section; }
 h1::before { position: absolute; left: -1.5cm; content: counter(h1section)".0"; }
 
