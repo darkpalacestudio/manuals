@@ -1,0 +1,28 @@
+name: sloth manual
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+
+jobs:
+  Build_Sloth:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get install pandoc texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra
+          sudo pip install pandoc-secnos
+
+      - name: Build
+        run: |
+          cd ${{github.workspace}}/chameleon/manual
+          pandoc *.md -o chameleon_manual.pdf -V colorlinks=true -V linkcolor=blue -V urlcolor=blue --number-sections --filter pandoc-secnos
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chameleon_manual
+          path: ${{github.workspace}}/chameleon/manual/chameleon_manual.pdf
+          overwrite: 'true'
