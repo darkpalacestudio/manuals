@@ -169,7 +169,7 @@ img { width: 100%; left: 0; }
 
 
 /* ------------------------ Block quotes ------------------------ */
-.quote { width: 95%; }
+.quote { width: 95%; margin-top: 16px; }
 
 .quote::before, .quote::after {
   position: absolute;
