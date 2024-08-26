@@ -41,4 +41,4 @@ Finally Chameleon X distributes multiple allpass filters around a central freque
 It allows to creatively apply allpass filters to cause frequency dependent delays, disperse sounds, cause pitch-shifting
 and do intricate sound design.
 
-\newpage
+<div class="pb"></div>

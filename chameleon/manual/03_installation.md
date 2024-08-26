@@ -34,4 +34,4 @@ in [this blogpost](https://www.osirisguitar.com/how-to-make-unsigned-vsts-work-i
 [this reddit thread](https://www.reddit.com/r/ableton/comments/g1dn3z/fixing_plugins_for_use_in_macos_catalina/)
 or [this website](https://syntheway.com/fix-au-vst-vst3-macos.htm).
 
-\newpage
+<div class="pb"></div>

@@ -40,7 +40,7 @@ Clicking this control also opens the preset browser.
 
 For stepping through presets in forward order, you can use the *next preset* button
 
-\newpage
+<div class="pb"></div>
 
 ## Footer Controls
 
@@ -103,7 +103,7 @@ There are three options:
 Allows listening to the difference between the input and output.
 Note that **DIFF** is applied before **MIX**.
 
-\newpage
+<div class="pb"></div>
 
 ## Common Controls
 
@@ -193,7 +193,7 @@ space rotation to a very small area or to spread it out over the full spectrum.
 As the absolute change of phase rotation is fixed, the q control effectively adjusts the steepness of the phase
 change.
 
-\newpage
+<div class="pb"></div>
 
 ## Specific Controls
 

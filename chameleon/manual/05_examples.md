@@ -80,4 +80,4 @@ Often the phase issues can be mitigated by flipping the phase via the **PHASE** 
 
 [//]: <> (TODO more usage examples)
 
-\newpage
+<div class="pb"></div>
