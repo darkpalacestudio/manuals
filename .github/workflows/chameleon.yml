@@ -14,13 +14,13 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          sudo apt-get install pandoc texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra
+          sudo apt-get install pandoc weasyprint texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra
           sudo pip install pandoc-secnos
 
       - name: Build
         run: |
           cd ${{github.workspace}}/chameleon/manual
-          pandoc *.md -o chameleon_manual.pdf -V colorlinks=true -V linkcolor=blue -V urlcolor=blue --number-sections --filter pandoc-secnos
+          pandoc *.md -o chameleon_manual.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css ${{github.workspace}}/common/style_dark.css
 
       - uses: actions/upload-artifact@v4
         with:
