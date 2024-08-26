@@ -1,9 +1,8 @@
----
-title: Chameleon Manual
-subtitle: Version v1.0.0
-geometry: "left=4.75cm,right=4.75cm,top=3cm,bottom=2.5cm"
----
 
-![Chameleon](assets/chameleon.png)
+<div class="cover">
+  <h1 class="title">Chameleon Manual</h1>
+  <div class="image">![](assets/chameleon.png)</div>
+  <span class="version">Version 1.0.0</span>
+</div>
 
-\newpage
+<div class="pb"></div>
