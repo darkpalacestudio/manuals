@@ -15,7 +15,7 @@ General interactions with the UI are:
 ![Header controls](assets/controls_header.png)
 
 All Darkpalace Studio plugins feature an integrated preset and theme manager.
-This manager can be launched from the Menu at the top left of the plugin.
+This manager can be launched from the menu at the top left of the plugin.
 
 The preset manager allows you to save and load and even share presets.
 The theme manager allows access to the available themes to customize the look and feel of the plugin.
