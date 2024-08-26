@@ -67,3 +67,21 @@ They are stored in the following folder:
 
 Another option is to click the **Save Preset** button in the menu.
 This will open the system dialog that will directly show you the folder where presets are stored.
+
+## Themes
+
+### How to switch themes
+
+In the plugin, click on the menu button (the three lines) in the top left corner.
+In the left half of the display, select **THEMES**. Then select the themes on the right side.
+
+If no themes are listed, make sure the theme files are installed in the correct folder.
+
+### Themes folder location
+
+Theme files can be found in the following folder:
+
+- **Win**: `C:\Users\Public\Documents\Darkpalace Studio\sloth\themes`
+- **Mac**: `/Users/Shared/Darkpalace Studio/sloth/themes`
+- **Linux**: `~/.config/Darkpalace Studio/sloth/themes`
+
