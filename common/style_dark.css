@@ -169,7 +169,7 @@ img { width: 100%; left: 0; }
 
 
 /* ------------------------ Block quotes ------------------------ */
-.quote { width: 95%; margin-top: 16px; }
+.quote { width: 95%; margin: 16px; }
 
 .quote::before, .quote::after {
   position: absolute;
@@ -185,7 +185,7 @@ img { width: 100%; left: 0; }
   content: '';
 }
 
-.quote::before { opacity: .5; }
+.quote::before { opacity: .2; }
 
 .quote.bg-dark-1::after { border-left: 2px solid #17191D; }
 .quote.bg-dark-1::before { background-color: var(--dark-1); }
