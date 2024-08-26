@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+:root {
+  --dark-1: #17191D;
+  --dark-2: #22252A;
+  --dark-3: #2F3237;
+
+  --light-1: #D5D9DD;
+
+  --clr-red: #FF0055;
+  --clr-blue: #00AAFF;
+  --clr-orange: #FF9500;
+  --clr-green: #53D147;
+  --clr-yellow: #EDED5E;
+  --clr-purple: #8D5AF1;
+}
+
+* { 
+  position:relative; 
+  box-sizing: border-box;
+}
+
+html {
+  color: #E4E5E7;
+  font-size: 12pt;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  counter-reset: h1section -1;
+}
+
+@page {
+  margin-left: 3cm;
+
+  size: letter;
+  background-color: var(--dark-2);
+}
+
+@page:left {
+  @bottom-left-corner {
+    background-color: var(--dark-3);
+    content: counter(page) "\00a0\00a0\00a0";
+
+    border-top-right-radius: .5cm;
+    border-bottom-right-radius: .5cm;
+
+    margin-right: 1cm;
+
+    width: 1.5cm;
+    height: .5cm;
+    margin-top: .5cm;
+    padding: .25cm;
+    font-size: 10pt;
+  }
+}
+
+@page:right {
+  @bottom-right-corner {
+    background-color: var(--dark-3);
+    content: "\00a0\00a0\00a0" counter(page);
+
+    border-top-left-radius: .5cm;
+    border-bottom-left-radius: .5cm;
+
+    width: 1.5cm;
+    height: .5cm;
+    margin-top: .5cm;
+    padding: .25cm;
+    font-size: 10pt;
+  }
+}
+
+.image img { border-radius: 5px; margin: 0; padding: 0; }
+.image::before {
+  position: absolute;
+
+  top: 0;
+  left: -50%;
+
+  width: 200%;
+  height: 99%;
+
+  /* padding-bottom: 1px; */
+
+  content: '';
+
+  background-color: var(--dark-1);
+}
+
+
+.pb { page-break-before: always; }
+
+
+/* ------------------------ Front Page ------------------------ */
+
+@page:first {
+  @bottom-left-corner { background-color: var(--dark-2); content: ''; }
+  @bottom-right-corner { background-color: var(--dark-2); content: ''; }
+}
+
+.cover { padding: 0; margin: 0; display: flex; flex-direction: column; justify-content: space-evenly; height: 920px; }
+.cover .title { display: block; text-align: center; font-size: 48px; }
+.cover .title::before { content: ''; }
+.cover .image::before { background: none; }
+.cover .version { display: block; text-align: center; font-size: 24px; }
+
+
+
+/* ------------------------ Global ------------------------ */
+h1 { counter-increment: h1section; counter-reset: h2section; }
+h1::before { position: absolute; left: -1.5cm; content: counter(h1section)".0"; }
+
+h2 { counter-increment: h2section; counter-reset: h3section; }
+h2::before { position: absolute; left: -1.5cm; content: counter(h1section)"."counter(h2section); }
+
+h3 { counter-increment: h3section; }
+h3::before { position: absolute; left: -1.5cm; content: counter(h1section)"."counter(h2section)"."counter(h3section); }
+
+a { color: var(--clr-blue); }
+
+img { width: 100%; left: 0; }
+
+
+
+/* ------------------------ Util ------------------------ */
+.txt-dark-1 { color: var(--dark-1); }
+.txt-dark-2 { color: var(--dark-2); }
+.txt-dark-3 { color: var(--dark-3); }
+
+.txt-light { color: var(--light-1); }
+
+.txt-red { color: var(--clr-red); }
+.txt-blue { color: var(--clr-blue); }
+.txt-orange { color: var(--clr-orange); }
+.txt-green { color: var(--clr-green); }
+.txt-yellow { color: var(--clr-yellow); }
+.txt-purple { color: var(--clr-purple); }
+
+
+
+.block.bg-dark-1::before { background-color: var(--dark-1); }
+.block.bg-dark-2::before { background-color: var(--dark-2); }
+.block.bg-dark-3::before { background-color: var(--dark-3); }
+
+.block.bg-light::before { background-color: var(--light-1); }
+
+.block.bg-red::before { background-color: var(--clr-red); }
+.block.bg-blue::before { background-color: var(--clr-blue); }
+.block.bg-orange::before { background-color: var(--clr-orange); }
+.block.bg-green::before { background-color: var(--clr-green); }
+.block.bg-yellow::before { background-color: var(--clr-yellow); }
+.block.bg-purple::before { background-color: var(--clr-purple); }
+
+
+
+.block::before {  
+  position: absolute;
+
+  left: -50%;
+  top: -8px;
+
+  width: 200%;
+  height: 100%;
+  padding-bottom: 16px;
+
+  content: '';
+}
