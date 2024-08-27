@@ -4,7 +4,7 @@
 <span class="spacer"/>
 
 ## Manual installation
-In order to install the <span class="txt-yellow">Chameleon Suite</span> a manual approach is required. After the downloading the ZIP archive for your operating from tentary, extract the desired plugin format into your respective plugin folder.
+In order to install the <span class="txt-green">Chameleon Suite</span> a manual approach is required. After the downloading the ZIP archive for your operating from tentary, extract the desired plugin format into your respective plugin folder.
 
 If you don't have a custom plugin folder set in your DAW, refer to the to the default locations:
 
