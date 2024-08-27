@@ -1,12 +1,12 @@
 
 # Controls {#sec:controls}
 
-## DarkPalace Studio Plugins Overview
+## Darkpalace Studio Plugins Overview
 <div class="image">
 ![](assets/Overview.png)
 </div>
 
-All DarkPalace Studio plugins share common UI elements as well as general interactions with the 
+All Darkpalace Studio plugins share common UI elements as well as general interactions with the 
 majority of widgets. Shared components include:
 
 <div class="block bg-dark-1">
@@ -38,7 +38,7 @@ Whereas shared interactions include:
 ![](assets/details_header.png)
 </div>
 
-Shared across all DarkPalace Studio plugins, the header is a central component for managing 
+Shared across all Darkpalace Studio plugins, the header is a central component for managing 
 various aspects including loading and saving presets as well as loading themes.
 
 ### Menu-Button
@@ -67,7 +67,7 @@ Click to cycle through presets in forward order.
 ![](assets/details_menu.png)
 </div>
 
-Shared across all DarkPalace Studio plugins, The display component contains the preset-manager
+Shared across all Darkpalace Studio plugins, The display component contains the preset-manager
 and theme-manager windows that allow you to browse the various presets and themes available.
 Feel free to explore the presets and themes to get a taste for creative opportunities!
 
@@ -101,8 +101,8 @@ to view more options.
 ![](assets/details_gain.png)
 </div>
 
-Shared across all DarkPalace Studio plugins, the Gain components allow for adjustment to the input
-and/or output signal of the plugin with some DarkPalace plugins offering a change in functionality.
+Shared across all Darkpalace Studio plugins, the Gain components allow for adjustment to the input
+and/or output signal of the plugin with some Darkpalace plugins offering a change in functionality.
 
 ### Identifier
 <span class="txt-yellow">*(Located top of the Meter)*</span>\
@@ -145,7 +145,7 @@ a singular line whereas a stereo signal will display separate left/right inter-m
 ![](assets/details_footer.png)
 </div>
 
-Shared across all DarkPalace Studio plugins, the footer component contains a set of controls that
+Shared across all Darkpalace Studio plugins, the footer component contains a set of controls that
 enhance the workflow such as flipping the phase/polarity, enabling delta/diff mode and even a 
 global dry/wet mix.
 

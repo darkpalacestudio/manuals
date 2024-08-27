@@ -5,7 +5,7 @@
 </div>
 
 ## Configuration files
-All DarkPalace Studio plugins are highly customizable by changing settings via the json 
+All Darkpalace Studio plugins are highly customizable by changing settings via the json 
 configuration files. This includes changing some additional settings as well as creating custom
 themes.
 
@@ -69,7 +69,7 @@ will use default settings.
 ![](assets/JsonConfigFile.png)
 </div>
 Windows is known to not always be consistent, this including letting applications know of the ui-scaling
-factor it uses. Because of this the GUI of DarkPalace Studio plugins can often look out of proportions.
+factor it uses. Because of this the GUI of Darkpalace Studio plugins can often look out of proportions.
 In order to address this you will have to change a value in the json file of the theme you are using.
 
 The themes folder should be located in the data:
