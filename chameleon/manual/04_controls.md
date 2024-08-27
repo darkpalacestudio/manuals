@@ -1,4 +1,5 @@
-<h1 class="txt-red">Controls</h1>
+
+# Controls {#sec:controls}
 
 ## DarkPalace Studio Plugins Overview
 <div class="image">

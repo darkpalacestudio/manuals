@@ -1,5 +1,5 @@
 ---
-xnos-number-offset: 3
+xnos-number-offset: 0
 ---
 <div class="cover">
   <h1 class="title">Chameleon Suite Manual</h1>

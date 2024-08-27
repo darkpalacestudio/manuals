@@ -1,4 +1,5 @@
-<h1 class="txt-yellow">Installation</h1>
+
+# Installation {#sec:installation}
 
 <div class="quote bg-yellow">For Windows an installer is also available</div>
 <span class="spacer"/>
