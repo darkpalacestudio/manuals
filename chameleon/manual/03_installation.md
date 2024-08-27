@@ -1,4 +1,4 @@
-# Installation
+<h1 class="txt-yellow">Installation</h1>
 
 <div class="quote bg-yellow">For Windows an installer is also available</div>
 <span class="spacer"/>

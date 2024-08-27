@@ -1,7 +1,17 @@
 <h1 class="txt-red">Controls</h1>
 
-All DarkPalace Studio plugins share common general interactions with the majority of UI elements, 
-these include:
+All DarkPalace Studio plugins share common UI elements as well as general interactions with the 
+majority of widgets. Shared components include:
+
+<div class="block bg-dark-1">
+- Header Component
+- Display Component
+- Footer Component
+- Gain Slider Component
+</div>
+<span class="spacer"/>
+
+Whereas shared interactions include:
 
 <div class="block bg-dark-1">
 - Double-Clicking on a widget to reset it to its default value.
@@ -12,113 +22,160 @@ these include:
 - Pressing the `?` button *(located bottom-left)* will turn on explanations.
 - The plugin can be scaled by dragging any of the sides or corners.
 </div>
-<span class="spacer"/>
+<div class="pb"></div>
 
-## Header Controls
 
+
+## Header Component
 <div class="image">
 ![](assets/details_header.png)
 </div>
 
-All DarkPalace Studio plugins feature a preset and theme manager which can be accessed by clicking 
-the menu-button *(represented by the three horizontal lines)* located at the top-left of the plugin window. 
+Shared across all DarkPalace Studio plugins, the header is a central component for managing 
+various aspects including loading and saving presets as well as loading themes.
 
-The preset manager window allows you to save and load presets whereas the theme manager window
-allows you to access the available themes to customize the look and feel of the plugin. Feel free
-to explore the presets and themes to get a taste for creative opportunities!
-<div class="pb"></div>
+### Menu-Button
+<span class="txt-yellow">*(Located top-left represented by the three horizontal lines)*</span>\
+In order to access the preset-manager or theme-manager window, click the Menu-button.
 
-### Menu
+### Previous-Preset-Button
+<span class="txt-yellow">*(Located top-right represented by the left facing arrow)*</span>\
+For cycling through presets in reverse order, click the previous-button.
+<span class="spacer"/>
 
+### Current-Preset-Button
+<span class="txt-yellow">*(Located top-right represented by the wide area with text)*</span>\
+The name of the currently selected preset. This widget can also be clicked in order to open the
+menu to access the preset-manager or theme-manager.
+<span class="spacer"/>
+
+### Next-Preset-Button
+<span class="txt-yellow">*(Located top-right represented by the right facing arrow)*</span>\
+For cycling through presets in forward order, click the previous-button.
+<span class="spacer"/>
+
+
+
+## Menu/Display Component
 <div class="image">
 ![](assets/details_menu.png)
 </div>
 
-The preset and theme manager can be accessed by clicking the menu-button *(represented by the three horizontal lines)*
-in the top left of the plugin. This will open up the manager window, where you can browse, 
-load and save presets as well as load themes.
+Shared across all DarkPalace Studio plugins, The display component contains the preset-manager
+and theme-manager windows that allow you to browse the various presets and themes available.
+Feel free to explore the presets and themes to get a taste for creative opportunities!
 
-### Previous-Preset-Button
-For cycling through presets in reverse order, you can click the previous-button 
-*(represented by the left-pointing arrow)*.
+### Preset-Manager-Button
+<span class="txt-yellow">*(Located top-left of the display represented by the PRESET text)*</span>\
+In order to access the preset-manager, click the PRESET-button which will list the available
+presets on the right side of the window.
+
+### Save-Preset-Button
+<span class="txt-yellow">*(Located top-left of the display represented by the Save Preset text)*</span>\
+In order to save a preset, make sure the preset-manager is active by clicking the PRESET-button
+which will then make the Save-Preset-button visible. Clicking this will open up File-Dialogue
+where you will be prompted for a name and location.
 <span class="spacer"/>
 
-### Current-Preset-Button
-The name of the currently selected preset. *(represented by big area with some text)*.
+### Theme-Manager-Button
+<span class="txt-yellow">*(Located bottom-left of the display represented by THEMES text)*</span>\
+The name of the currently selected preset. This widget can also be clicked in order to open the
+menu to access the preset-manager or theme-manager.
 <span class="spacer"/>
 
-### Next-Preset-Button
-For cycling through presets in forward order, you can click the previous-button 
-*(represented by the right-pointing arrow)*.
+### Menu Options
+<span class="txt-yellow">*(Located right side of the display)*</span>\
+When either the preset-manager or theme-manager is open, a list of options will be displayed on
+the right side of the display, clicking any of these options will load said option. When there 
+is a large amount of options, the scroll-bar can be used as well as the mouse-wheel to show more 
+options.
 <span class="spacer"/>
 
-<div class="pb"></div>
 
-## Footer Controls
 
-![Footer controls](assets/controls_footer.png)
+## Footer Component
+<div class="image">
+![](assets/details_footer.png)
+</div>
 
-### ?
+Shared across all DarkPalace Studio plugins, the footer component contains a set of controls that
+enhance the workflow such as flipping the phase/polarity, enabling delta/diff mode and even a 
+global dry/wet mix.
 
-Enables explanations directly in the UI. When enabled, You can hover over a control to get a longer
-explanation of the functionality.
+### ?-button
+<span class="txt-yellow">*(Located Left of the Footer)*</span>\
+By clicking the '?'-button, 'Help' mode can be activated which will display explanations directly
+within the plugin when hovering over a widget/control.
+<span class="spacer"/>
 
 ### Bypass
-
-Routes the input directly to the output, bypassing the plugin completely. Most of the UI will turn to greyscale,
-indicating that bypass is enabled.
+<span class="txt-yellow">*(Located Left of the Footer)*</span>\
+Enabling bypass will directly route the input signal to the output signal, bypassing the plugin
+entirely. Most of the UI will become grey-scale indicating its state.
+<span class="spacer"/>
 
 ### Version
-
-Displays the version of the plugin.
-If the explanation mode is enabled via the **?** button you can see the concrete commit hash of the plugin.
+<span class="txt-yellow">*(Located Left-ish of the Footer)*</span>\
+Displays the current version of the plugin. If 'Help' mode is enabled via the '?'-button, the
+window will display the commit-hash of the plugin.
+<span class="spacer"/>
 
 ### Mix
-
-Blends continuously between the processed and unprocessed signal.
-
-### Oversampling
-
-Selects oversampling. The options include x1 (no oversampling), x2 and up to x4.
-Increasing this option will help to optimize distortion characteristics.
-However, some beloved distortion plugins do not offer any oversampling and still sound great.
-
-The oversampling process includes filters aimed at removing upsampling artefacts as well as removing useless frequency
-content created by the oversampled process.
-Chameleon uses FIR filter for this purpose.
-
-Increasing oversampling will increase the overall plugin delay and increase processing requirements.
-This is reported to the host and automatically compensated for by most modern DAWs.
-
-While allpass filters do generally not benefit from an increased sample rate, some of the chameleon options offer a
-clipping option.
-As clipping the signal is an effect targeting the dynamics of the signal, enabling oversampling can have a positive
-impact on those cases.
-
-As allpass filters are mostly concerned about the phase of the signal, be aware that enabling oversampling will
-introduce additional phase shift in the high frequencies due to the filters used when up- and downsampling.
-
-Note that a change in oversampling can result in audio dropouts.
-It is not advised to automate this control.
-
-### Phase
-
-This will flip the phase of the plugin.
-There are three options:
-
-- No phase flip
-- Flip the phase at the input of the plugin
-- Flip the phase at the output of the plugin (post mix)
-
-### Diff
-
-Allows listening to the difference between the input and output.
-Note that **DIFF** is applied before **MIX**.
-
+<span class="txt-yellow">*(Located center of the Footer)*</span>\
+The Mix slider will allow you to blend continuously between the processed and unprocessed signal
+allowing for parallel-processing behavior.
+<span class="spacer"/>
 <div class="pb"></div>
 
-## Common Controls
+### Oversampling
+<span class="txt-yellow">*(Located right of the Footer)*</span>\
+The oversampling slider will allow you to set oversampling including 1x, 2x and 4x and will often
+help by optimizing and/or reduce distortion characteristics.
 
+The oversampling process includes filters aimed at removing upsampling artifacts as well as
+removing useless frequency content introduced by the oversampling process. For this purpose,
+chameleon uses FIR filters.
+
+Increasing oversampling will also introduce additional delay and increases processing requirements
+which is reported to the host to be automatically compensated for by most modern DAWs.
+
+While allpass filters generally do not benefit from an increased sampling rate, some of the plugins
+in the Chameleon Suite offer a clipping option due to drastic changes being able to introduce
+increased signal dynamics. Oversampling can have a positive impact to preset said anomalies. 
+
+As allpass filters are mostly only concerned about the phase relationship of the signal, be aware
+that enabling oversampling can and will introduce additional phase shift in the higher frequency
+range due to the filter used when up- and down-sampling.
+
+<div class="quote bg-yellow">
+Please note that a change in oversampling can result in audio-dropouts. It is not
+advices to automate this control.
+</div>
+<span class="spacer"/>
+
+### Phase
+<span class="txt-yellow">*(Located right of the Footer)*</span>\
+By clicking the Phase-button the plugin will cycle through 3 states:
+
+<div class="block bg-dark-1">
+- No-Phase, which leaves the signal as is.
+- Phe-Phase, which inverts the polarity at the input stage, before MIX.
+- Post-PhaseFlip the phase at the output of the plugin, after MIX.
+</div>
+
+### Diff
+<span class="txt-yellow">*(Located right of the Footer)*</span>\
+By clicking the Diff-button the plugin will output the delta/difference signal which is achieved
+by subtracting the output from the input.
+
+<div class="quote bg-yellow">
+Note that **DIFF** is applied before the **MIX** slider.
+</div>
+<div class="pb"></div>
+
+
+
+## Common Controls
 ![Common controls](assets/controls_common.png)
 
 ### In
