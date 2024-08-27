@@ -86,3 +86,4 @@ Theme files can be found in the following folder:
 - **Mac**: `/Users/Shared/Darkpalace Studio/sloth/themes`
 - **Linux**: `~/.config/Darkpalace Studio/sloth/themes`
 
+<div class="pb"></div>
