@@ -1,4 +1,5 @@
-# Configuration
+
+# Configuration {#sec:configuration}
 
 All Darkpalace Studio plugins are highly customizable. This works via `json` configuration files.
 

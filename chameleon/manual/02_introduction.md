@@ -1,44 +1,46 @@
-# Introduction
+<h1 class="txt-purple">Introduction</h1>
 
-Chameleon is a comprehensive allpass filter collection that contains all the allpass filters that you will ever need.
-It empowers you with unparalleled creative flexibility and precision in your audio projects.
+The Chameleon Suite is a comprehensive collection of audio-plugins based on the concept of allpass 
+filters that will unlock and empower you with creative flexibility and precision for your audio projects.
 
-- **Chameleon 1**: First order allpass filter with frequency control
-- **Chameleon 2**: Second order allpass filter with frequency and q controls
-- **Chameleon N**: Nth order allpass filter with frequency, q and order controls
-- **Chameleon X**: Artfully stacking X allpass filters for full creative freedom
+The suite offers the following plugins:
+<div class="block bg-dark-1">
+- <span class="txt-yellow">**Chameleon 1**</span>: First order allpass filter with frequency control
+- <span class="txt-yellow">**Chameleon 2**</span>: Second order allpass filter with frequency and q controls
+- <span class="txt-yellow">**Chameleon N**</span>: Nth 2nd order allpass filter with frequency, q and order controls
+- <span class="txt-yellow">**Chameleon X**</span>: Artfully stacking X allpass filters for full creative freedom
+</div>
+<span class="spacer"/>
 
 ## Allpass filters
 
-Allpass filters are a fundamental component in the world of signal processing.
-While allpass filters are not as popular or well-known as other types of filters, they play a crucial role in audio
-processing and are one of the basic building blocks which can be used to create almost all other filters.
+Allpass filters are one of the most fundamental building-blocks in the world of signal processing, 
+and while they are not as popular or well-known as other types of filters, they play a crucial 
+role when it comes to shaping sound and can be used to create almost all other filter types.
 
-In general an allpass filter is characterized by the fact that it allows all frequencies to pass through without a
-change in level.
-This means they can not be used to attenuate or boost frequencies as one would normally do with bell- or shelf-filters
-or high- and lowcuts.
+In general, an allpass filter is characterized by the fact that they pass through all frequencies 
+without a change in level. This means that by themselves they are unable to shape frequencies one 
+would normally do with a bell-, shelf-, notch- or any other type of filter.
 
-However, allpass filters do introduce a phase shift.
-As this phase shift is frequency dependent, you can think of it as a frequency-dependent delay.
-A normal delay delays the complete signal, independent of the frequency content.
-An allpass filter in contrast delays different frequencies by a different amount of time.
-
-This makes allpass filters valuable in various applications where phase manipulation or phase alignment is crucial.
+They do, however, introduce a phase shift which can be used for other creative purposes. As the 
+phase shift is frequency dependant, you can think of this as a frequency-dependant delay whereas 
+standard delays delay the the complete signal, an allpass filter delays different frequencies 
+by different amounts of time
+<span class="spacer"/>
 
 ## Chameleon Plugins
 
-Chameleon 1 and 2 are your bread and butter allpass-filters.
-They can be used to avoid (or introduce) phase cancellation and phase alignment.
-By mixing or subtracting the processed signal from the original they can create low- and high-cuts, notch- and
-bandpass-filters.
-See section @sec:examples for further details.
+<span class="txt-yellow">Chameleon 1</span> and <span class="txt-yellow">Chameleon2</span> are your 
+bread and butter allpass-filters. By mixing, adding and/or subtracting the processed signal from 
+the dry signal they can create low-, notch-, high- and bandpass-filters, See section @sec:examples 
+for further details.
 
-Chameleon N stacks multiple allpass filters at the same frequency, resulting in an Nth order allpass filter.
-This allows for wild processing as the phase rotation quickly sums up.
+<span class="txt-yellow">Chameleon N</span> stacks multiple 2nd order allpass filters at the same 
+frequency resulting in an Nth order allpass filter that allows for wild processing as the phase 
+rotation quickly sums up.
 
-Finally Chameleon X distributes multiple allpass filters around a central frequency.
-It allows to creatively apply allpass filters to cause frequency dependent delays, disperse sounds, cause pitch-shifting
-and do intricate sound design.
+Finally, <span class="txt-yellow">Chameleon X</span> distributes multiple 2nd order allpass filters 
+around a central frequency with additional controls for the placement of the filters to allow for
+frequency dependant delays, dispersed sounds, pitch-shifting and far more!
 
 <div class="pb"></div>

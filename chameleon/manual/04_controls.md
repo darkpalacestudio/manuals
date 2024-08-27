@@ -1,44 +1,56 @@
-# Controls
+<h1 class="txt-red">Controls</h1>
 
-General interactions with the UI are:
+All DarkPalace Studio plugins share common general interactions with the majority of UI elements, 
+these include:
 
-- A double click on a slider resets the slider to the default value.
-- Holding `SHIFT` or `CTRL` while dragging a slider allows for precise adjustments.
-- The mouse wheel can be used to adjust a slider in steps.
-- Hovering over a control for a short time shows a tooltip.
-- Changing the value of any slider makes a tooltip show the current value.
-- By engaging the `?` button, in-plugin-explanations are turned on.
+<div class="block bg-dark-1">
+- Double-Clicking on a widget to reset it to its default value.
+- Holding `SHIFT` or `CTRL` while dragging a widget to allow for precise adjustments.
+- Using the mouse-wheel to adjust a widget in incremental steps.
+- Hovering over a widget for a short time shows a tooltip.
+- Changing the value of any widget makes a tooltip show the current value.
+- Pressing the `?` button *(located bottom-left)* will turn on explanations.
 - The plugin can be scaled by dragging any of the sides or corners.
+</div>
+<span class="spacer"/>
 
 ## Header Controls
 
-![Header controls](assets/controls_header.png)
+<div class="image">
+![](assets/details_header.png)
+</div>
 
-All Darkpalace Studio plugins feature an integrated preset and theme manager.
-This manager can be launched from the menu at the top left of the plugin.
+All DarkPalace Studio plugins feature a preset and theme manager which can be accessed by clicking 
+the menu-button *(represented by the three horizontal lines)* located at the top-left of the plugin window. 
 
-The preset manager allows you to save and load and even share presets.
-The theme manager allows access to the available themes to customize the look and feel of the plugin.
-
-We highly recommend browsing through the presets and themes in the menu to explore creative options.
+The preset manager window allows you to save and load presets whereas the theme manager window
+allows you to access the available themes to customize the look and feel of the plugin. Feel free
+to explore the presets and themes to get a taste for creative opportunities!
+<div class="pb"></div>
 
 ### Menu
 
-The preset and theme manager can be accessed by the three lines in the top left of the plugin.
-This will open up the menu, where you can browse, load and save presets as well as load themes.
+<div class="image">
+![](assets/details_menu.png)
+</div>
 
-### Previous Preset
+The preset and theme manager can be accessed by clicking the menu-button *(represented by the three horizontal lines)*
+in the top left of the plugin. This will open up the manager window, where you can browse, 
+load and save presets as well as load themes.
 
-For stepping through presets in reverse order, you can use the *previous preset* button
+### Previous-Preset-Button
+For cycling through presets in reverse order, you can click the previous-button 
+*(represented by the left-pointing arrow)*.
+<span class="spacer"/>
 
-### Current Preset Name
+### Current-Preset-Button
+The name of the currently selected preset. *(represented by big area with some text)*.
+<span class="spacer"/>
 
-The name of the currently selected preset.
-Clicking this control also opens the preset browser.
-
-### Next Preset
-
-For stepping through presets in forward order, you can use the *next preset* button
+### Next-Preset-Button
+For cycling through presets in forward order, you can click the previous-button 
+*(represented by the right-pointing arrow)*.
+<span class="spacer"/>
 
 <div class="pb"></div>
 

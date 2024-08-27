@@ -1,37 +1,45 @@
 # Installation
 
-For Windows there is an installer available.
+<div class="quote bg-yellow">For Windows an installer is also available</div>
+<span class="spacer"/>
 
 ## Manual installation
+In order to install the <span class="txt-yellow">Chameleon Suite</span> a manual approach is required. After the downloading the ZIP archive for your operating from tentary, extract the desired plugin format into your respective plugin folder.
 
-- Download the zip file for your operating system.
-- Select the desired plugin format and extract it to the respective plugin folder.
-- If not set otherwise in your DAW, the default folders are:
-    - VST3
-        - Win: `C:\Program Files\Common Files\VST3\`
-        - Linux: `~/.vst3/`
-        - macOS: `/Library/Audio/Plug-ins/VST3`
-    - CLAP
-        - WIN: `C:\Program Files\Common Files\CLAP\`
-        - Linux: `~/.clap/`
-        - macOS: `/Library/Audio/Plug-ins/CLAP`
-    - AU
-        - macOS: `/Library/Audio/Plug-Ins/Components`
-- Extract the themes and preset files from the zip to the respective folder:
-    - **Win**: `C:\Users\Public\Documents\Darkpalace Studio\[pluginName]\`
-    - **Mac**: `/Users/Shared/Darkpalace Studio/[pluginName]/`
-    - **Linux**: `~/.config/Darkpalace Studio/[pluginName]/`
+If you don't have a custom plugin folder set in your DAW, refer to the to the default locations:
 
-See section @sec:configuration for installation of preset and configuration files.
+<div class="block bg-dark-1">
+- VST3
+    - **Win**: `C:\Program Files\Common Files\VST3\`
+    - **Linux**: `~/.vst3/`
+    - **macOS**: `/Library/Audio/Plug-ins/VST3`
+- CLAP
+    - **Win**: `C:\Program Files\Common Files\CLAP\`
+    - **Linux**: `~/.clap/`
+    - **macOS**: `/Library/Audio/Plug-ins/CLAP`
+- AU
+    - **macOS**: `/Library/Audio/Plug-Ins/Components`
+</div>
+<span class="spacer"/>
+    
+As for the themes and presets from the ZIP archive, please extract them to the following locations:
 
-## MacOS Plugins downloaded from the internet
+<div class="block bg-dark-1">
+- **Win**: `C:\Users\Public\Documents\Darkpalace Studio\[pluginName]\`
+- **Mac**: `/Users/Shared/Darkpalace Studio/[pluginName]/`
+- **Linux**: `~/.config/Darkpalace Studio/[pluginName]/`
+</div>
+<span class="spacer"/>
 
-On macOS an extra step is required to get the plugin to load correctly.
+If you would like to know more, please refer to section {@sec:configuration} for more information 
+on installation of preset and configuration files.
 
-More info can be found
-on [this website](https://disable-gatekeeper.github.io/),
-in [this blogpost](https://www.osirisguitar.com/how-to-make-unsigned-vsts-work-in-macos-catalina/),
+<div class="quote bg-yellow">MacOS plugins downloaded from the internet are usually 'blocked' and
+require an extra step in order to load correctly, please refer to:
+[this website](https://disable-gatekeeper.github.io/),
+[this blogpost](https://www.osirisguitar.com/how-to-make-unsigned-vsts-work-in-macos-catalina/),
 [this reddit thread](https://www.reddit.com/r/ableton/comments/g1dn3z/fixing_plugins_for_use_in_macos_catalina/)
-or [this website](https://syntheway.com/fix-au-vst-vst3-macos.htm).
+and/or [this website](https://syntheway.com/fix-au-vst-vst3-macos.htm).
+</div>
 
 <div class="pb"></div>
