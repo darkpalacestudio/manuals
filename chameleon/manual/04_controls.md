@@ -84,7 +84,7 @@ for a name and location.
 
 ### Theme-Manager-Button
 <span class="txt-yellow">*(Located bottom-left of the Display)*</span>\
-Name of the currently selected preset. This control can also be clicked to open the menu.
+Click to switch to the preset-manager mode, will display a list of available themes.
 <span class="spacer"/>
 
 ### Menu Options
@@ -101,7 +101,7 @@ to view more options.
 ![](assets/details_gain.png)
 </div>
 
-Shared across all DarkPalace Studio plugins, the Gain component allows for adjustment to the input
+Shared across all DarkPalace Studio plugins, the Gain components allow for adjustment to the input
 and/or output signal of the plugin with some DarkPalace plugins offering a change in functionality.
 
 ### Identifier
@@ -124,8 +124,6 @@ This is clean digital gain that does not color the sound in any way by itself.
 <div class="quote bg-yellow">
 The out gain is applied after clipping the signal.
 </div>
-<div class="pb"></div>
-
 
 ### Value-Slider
 <span class="txt-yellow">*(Located bottom of the Meter)*</span>\
@@ -183,7 +181,7 @@ reducing distortion characteristics.
 
 The oversampling process includes filters aimed at removing upsampling artifacts as well as
 removing useless frequency content introduced by the oversampling process. For this purpose,
-the <span class="txt-green">Chameleon Plugins</span> uses FIR filters.
+the <span class="txt-green">Chameleon Plugins</span> uses FIR filters for oversampling.
 
 Increasing oversampling will also introduce additional delay and increases processing requirements
 which is reported to the host to be automatically compensated for by most modern DAWs.
@@ -209,7 +207,7 @@ Click to cycle through 3 different phase states:
 
 <div class="block bg-dark-1">
 - <span class="txt-purple">No-Phase</span>, which leaves the signal as is.
-- <span class="txt-purple">Phe-Phase</span>, which inverts the polarity at the input stage, before MIX.
+- <span class="txt-purple">Pre-Phase</span>, which inverts the polarity at the input stage, before processing.
 - <span class="txt-purple">Post-Phase</span>, which flips the phase at the output of the plugin, after MIX.
 </div>
 <span class="spacer"/>
@@ -308,7 +306,7 @@ allpass filters are added based on the other
 
 Note that the plugin configuration offers the option to select between linear or exponential frequency control.
 See section @sec:configuration for detailed instructions.
-<div class="pb"></div>
+
 
 ### Q <span class="txt-green">(2, N, X)</span>
 <span class="txt-yellow">*(Located right of the Control-Area)*</span>\

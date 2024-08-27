@@ -18,12 +18,12 @@ and while they are not as popular or well-known as other types of filters, they 
 role when it comes to shaping sound and can be used to create almost all other filter types.
 
 In general, an allpass filter is characterized by the fact that they pass through all frequencies 
-without a change in level. This means that by themselves they are unable to shape frequencies one 
+without a change in level. This means that by themselves it is unable to shape frequencies one 
 would normally do with a bell-, shelf-, notch- or any other type of filter.
 
 They do, however, introduce a phase shift which can be used for other creative purposes. As the 
-phase shift is frequency dependant, you can think of this as a frequency-dependant delay whereas 
-standard delays delay the the complete signal, an allpass filter delays different frequencies 
+phase shift is frequency dependant, you can think of this as a frequency-dependant delay. Whereas 
+standard delays delay the complete signal, an allpass filter delays different frequencies 
 by different amounts of time
 <span class="spacer"/>
 
@@ -35,7 +35,7 @@ the dry signal they can create low-, notch-, high- and bandpass-filters, See sec
 for further details.
 
 <span class="txt-green">Chameleon N</span> stacks multiple 2nd order allpass filters at the same 
-frequency resulting in an Nth order allpass filter that allows for wild processing as the phase 
+frequency, resulting in a Nth order allpass filter that allows for wild processing as the phase 
 rotation quickly sums up.
 
 Finally, <span class="txt-green">Chameleon X</span> distributes multiple 2nd order allpass filters 

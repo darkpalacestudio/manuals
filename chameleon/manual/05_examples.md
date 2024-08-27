@@ -10,7 +10,7 @@ filter by mixing the original signal together with the output. To achieve this, 
 <p><p><span class="spacer"/>
 <div class="quote bg-yellow">
 A first order allpass filter causes a half phase rotation of 180 degrees exactly at the target 
-frequency which can then be used for creative filtering
+frequency which can then be used for creative filtering.
 </div>
 <span class="spacer"/>
 
@@ -26,7 +26,7 @@ filter by mixing the original signal together with the output. To achieve this, 
 <p><p><span class="spacer"/>
 <div class="quote bg-yellow">
 A first order allpass filter causes a half phase rotation of 180 degrees exactly at the target 
-frequency which can then be used for creative filtering
+frequency which can then be used for creative filtering.
 </div>
 <span class="spacer"/>
 <div class="pb"></div>
@@ -45,7 +45,7 @@ mixing the original signal together with the output. To achieve this, use the fo
 <p><p><span class="spacer"/>
 <div class="quote bg-yellow">
 A second order allpass filter causes a full phase rotation of 360 degrees exactly at the target 
-frequency which can then be used for creative filtering
+frequency which can then be used for creative filtering.
 </div>
 
 
@@ -62,7 +62,7 @@ mixing the original signal together with the output. To achieve this, use the fo
 <p><p><span class="spacer"/>
 <div class="quote bg-yellow">
 A second order allpass filter causes a full phase rotation of 360 degrees exactly at the target 
-frequency which can then be used for creative filtering
+frequency which can then be used for creative filtering.
 </div>
 <div class="pb"></div>
 

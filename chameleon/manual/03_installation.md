@@ -5,7 +5,8 @@
 <span class="spacer"/>
 
 ## Manual installation
-In order to install the <span class="txt-green">Chameleon Suite</span> a manual approach is required. After the downloading the ZIP archive for your operating from tentary, extract the desired plugin format into your respective plugin folder.
+In order to install the <span class="txt-green">Chameleon Suite</span>, a manual approach is required.
+After downloading the ZIP archive for your operating system from tentary, extract the desired plugin format into your respective plugin folder.
 
 If you don't have a custom plugin folder set in your DAW, refer to the to the default locations:
 
@@ -33,10 +34,10 @@ As for the themes and presets from the ZIP archive, please extract them to the f
 <span class="spacer"/>
 
 If you would like to know more, please refer to section {@sec:configuration} for more information 
-on installation of preset and configuration files.
+on installation of presets, themes and configuration files.
 
 <div class="quote bg-yellow">MacOS plugins downloaded from the internet are usually 'blocked' and
-require an extra step in order to load correctly, please refer to:
+require an extra step in order to load correctly, please refer to
 [this website](https://disable-gatekeeper.github.io/),
 [this blogpost](https://www.osirisguitar.com/how-to-make-unsigned-vsts-work-in-macos-catalina/),
 [this reddit thread](https://www.reddit.com/r/ableton/comments/g1dn3z/fixing_plugins_for_use_in_macos_catalina/)
