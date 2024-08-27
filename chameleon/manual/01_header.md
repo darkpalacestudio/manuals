@@ -3,7 +3,7 @@ xnos-number-offset: 0
 ---
 <div class="cover">
   <h1 class="title">Chameleon Suite Manual</h1>
-  <div class="image">![](assets/chameleon2.png)</div>
+  <div class="image">![](assets/ChameleonN.png)</div>
   <span class="version">Version 1.0.0</span>
 </div>
 
