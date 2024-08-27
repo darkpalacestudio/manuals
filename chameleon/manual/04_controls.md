@@ -125,6 +125,8 @@ This is clean digital gain that does not color the sound in any way by itself.
 The out gain is applied after clipping the signal.
 </div>
 
+<div class="pb"></div>
+
 ### Value-Slider
 <span class="txt-yellow">*(Located bottom of the Meter)*</span>\
 Click and drag to change the value of the slider. A label will show up with the current value.
