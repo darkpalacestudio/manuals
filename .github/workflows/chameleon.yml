@@ -19,15 +19,17 @@ jobs:
           sudo apt-get install pandoc weasyprint texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra fonts-roboto
           sudo pip install pandoc-secnos
 
+      # setting the metadata title changes the title displayed by pdf-viewers, but introduces a separate heading (which is undesired). To remove that, set the title variable to null
       - name: Build Fancy Version
         run: |
           cd ${{github.workspace}}/chameleon/manual
-          pandoc *.md -o chameleon_manual.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css ${{github.workspace}}/common/style_dark.css
+          pandoc *.md -o chameleon_manual.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css ${{github.workspace}}/common/style_dark.css --metadata title="Chameleon" -V "title:"
 
+      # setting the metadata title changes the title displayed by pdf-viewers, but introduces a separate heading (which is undesired). To remove that, set the title variable to null
       - name: Build Print Version
         run: |
           cd ${{github.workspace}}/chameleon/manual
-          pandoc *.md -o chameleon_manual_print.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css ${{github.workspace}}/common/style_print.css
+          pandoc *.md -o chameleon_manual_print.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css ${{github.workspace}}/common/style_print.css --metadata title="Chameleon" -V "title:"
 
       - uses: actions/upload-artifact@v4
         with:
