@@ -10,7 +10,7 @@ on:
 
 jobs:
   Build_Chameleon:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
 
@@ -22,6 +22,7 @@ jobs:
       - name: Build Fancy Version
         run: |
           cd ${{github.workspace}}/chameleon/manual
+          latex --version
           pandoc *.md -o chameleon_manual.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css ${{github.workspace}}/common/style_dark.css
 
       - name: Build Print Version
