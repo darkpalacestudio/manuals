@@ -84,7 +84,7 @@ for a name and location.
 
 ### Theme-Manager-Button
 <span class="txt-yellow">*(Located bottom-left of the Display)*</span>\
-Click to switch to the preset-manager mode, will display a list of available themes.
+Click to switch to the theme-manager mode, will display a list of available themes.
 <span class="spacer"/>
 
 ### Menu Options
