@@ -22,7 +22,7 @@ jobs:
       - name: Build Fancy Version
         run: |
           cd ${{github.workspace}}/chameleon/manual
-          latex --version
+          fc-list > fonts.txt
           pandoc *.md -o chameleon_manual.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css ${{github.workspace}}/common/style_dark.css
 
       - name: Build Print Version
@@ -35,5 +35,6 @@ jobs:
           name: chameleon_manual
           path: |
             ${{github.workspace}}/chameleon/manual/chameleon_manual.pdf
+            ${{github.workspace}}/chameleon/manual/fonts.txt
             ${{github.workspace}}/chameleon/manual/chameleon_manual_print.pdf
           overwrite: 'true'
