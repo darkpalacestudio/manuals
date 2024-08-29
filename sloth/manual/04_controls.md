@@ -1,174 +1,311 @@
-# Controls
 
-- A double click on a slider resets the slider to the default value.
-- Holding `SHIFT` or `CTRL` allows for precise adjustments.
-- The mouse wheel can be used to adjust a slider in steps.
-- Hovering over a control for a short time makes a tooltip show up.
-- Changing the value of any slider makes a tooltip show the current value.
-- By engaging the `?` button, in-plugin-explanations are turned on.
-- The plugin can be resized by dragging any of the sides or corners.
+# Controls {#sec:controls}
 
-## Slew Controls
+## Darkpalace Studio Plugins Overview
+<div class="image">
+![](assets/Overview.png)
+</div>
 
-![Slew Controls](assets/controls_slew.png)
+All Darkpalace Studio plugins share common UI elements as well as general interactions with the 
+majority of widgets. Shared components include:
 
-### Slew Rate
+<div class="block bg-dark-1">
+- <span class="txt-yellow">Header</span>
+- <span class="txt-purple">Display</span>
+- <span class="txt-red">Gain Meters</span>
+- <span class="txt-blue">Control Area</span>
+- <span class="txt-green">Footer</span>
+</div>
+<span class="spacer"/>
 
-Adjusts the maximum slew rate.
+Whereas shared interactions include:
 
-This is the core control for adjusting slew rate limiting.
-Higher values result in a shallower maximum slew rate.
-If the slope of the input signal is steeper than the selected slew rate, the output is slew-rate-limited to the selected
-slew rate.
+<div class="block bg-dark-1">
+- Double-Clicking on a widget to reset it to its default value.
+- Holding `SHIFT` or `CTRL` while dragging a widget to allow for precise adjustments.
+- Using the mouse-wheel to adjust a widget in incremental steps.
+- Hovering over a widget for a short time shows a tooltip.
+- Changing the value of any widget makes a tooltip show the current value.
+- Pressing the `?` button *(located bottom-left)* will turn on explanations.
+- The plugin can be scaled by dragging any of the sides or corners.
+</div>
+<div class="pb"></div>
 
-### Slew Curve
 
-Controls the curvature of slew-rate-limited slopes.
 
-This transforms the shape of slew-rate-limited slopes from "square root" over "linear" to "quadratic".
-Only slopes that are slew-rate-limited are affected.
-This usually brightens or darkens the sound and is a great option for shaping transients as well.
+<h2 class="txt-yellow">Header</h2>
+<div class="image">
+![](assets/details_header.png)
+</div>
 
-### Slew Time
+Shared across all Darkpalace Studio plugins, the header is a central component for managing 
+various aspects including loading and saving presets as well as loading themes.
 
-Modifies the time factor of the slew curve.
+### Menu-Button
+<span class="txt-yellow">*(Located left of the  Header)*</span>\
+Click to open the menu to browse presets and themes.
 
-This changes how fast the square root or quadratic behavior is applied.
-This only has an effect, when the slew curve setting is non-zero.
-Higher values result in a faster transition through the selected slew curve.
+### Previous-Preset-Button
+<span class="txt-yellow">*(Located center-right of the Header)*</span>\
+Click to cycle through presets in reverse order.
+<span class="spacer"/>
 
-## Header Controls
+### Current-Preset-Button
+<span class="txt-yellow">*(Located right of the Header)*</span>\
+Displays the name of the currently selected preset. Click to open up the menu.
+<span class="spacer"/>
 
-![Header controls](assets/controls_header.png)
+### Next-Preset-Button
+<span class="txt-yellow">*(Located right of the Header)*</span>\
+Click to cycle through presets in forward order.
+<span class="spacer"/>
 
-### Menu
 
-Opens the preset menu.
-The preset menu can be used to browse, load and save presets.
 
-### Previous Preset
+<h2 class="txt-purple">Display/Menu</h2>
+<div class="image">
+![](assets/details_menu.png)
+</div>
 
-Loops through the presets in reverse order.
+Shared across all Darkpalace Studio plugins, The display component contains the preset-manager
+and theme-manager windows that allow you to browse the various presets and themes available.
+Feel free to explore the presets and themes to get a taste for creative opportunities!
 
-### Current Preset Name
+### Preset-Manager-Button
+<span class="txt-yellow">*(Located top-left of the Display)*</span>\
+Click to switch to the preset-manager mode, will display a list of available presets.
 
-The name of the currently selected preset.
-Clicking this control also opens the preset browser.
+### Save-Preset-Button
+<span class="txt-yellow">*(Located top-left of the Display)*</span>\
+Click to save a preset, make sure the preset-manager is active by having PRESET in the top-left 
+of the display highlighted. Clicking this will open up File-Dialogue where you will be prompted 
+for a name and location.
+<span class="spacer"/>
 
-### Next Preset
+### Theme-Manager-Button
+<span class="txt-yellow">*(Located bottom-left of the Display)*</span>\
+Click to switch to the theme-manager mode, will display a list of available themes.
+<span class="spacer"/>
 
-Loops through the presets.
+### Menu Options
+<span class="txt-yellow">*(Located right side of the Display)*</span>\
+Will display the available options based on which mode is active on the left side of the Display.
+When there is a large amount of options, the scroll-bar can be used as well as the mouse-wheel
+to view more options.
+<span class="spacer"/>
 
-\newpage
 
-## Display Controls
 
-![Display Controls](assets/controls_display.png)
+<h2 class="txt-red">Gain Meter (Input/Output)</h2>
+<div class="image">
+![](assets/details_gain.png)
+</div>
 
-### In/Drive
+Shared across all Darkpalace Studio plugins, the Gain components allow for adjustment to the input
+and/or output signal of the plugin with some Darkpalace plugins offering a change in functionality.
 
-Boosts the input of the plugin.
-With increased input, slopes become steeper, thus slew rate limiting will be applied more aggressively.
+### Identifier
+<span class="txt-yellow">*(Located top of the Meter)*</span>\
+Displays the current position in the processing chain of the slider. 
+<span class="spacer"/>
 
-This slider behaves differently based on AGC:
+#### In
+The **IN** gain slider controls the volume of the signal being sent into the plugin with a range
+of -12dB to +12dB.
 
+<div class="quote bg-yellow">
+The in gain is applied at the beginning of the processing chain and can thus be used to drive the clipper.
+</div>
+
+#### Out
+The **OUT** gain slider controls the volume coming out of the plugin with a range od -12dB to +12dB.
+This is clean digital gain that does not color the sound in any way by itself.
+
+<div class="quote bg-yellow">
+The out gain is applied after clipping the signal.
+</div>
+
+<div class="pb"></div>
+
+### Value-Slider
+<span class="txt-yellow">*(Located bottom of the Meter)*</span>\
+Click and drag to change the value of the slider. A label will show up with the current value.
+<span class="spacer"/>
+
+### True-Peak Indicators
+<span class="txt-yellow">*(Located top of the Meter)*</span>\
+Displays the current true-peak value of the signal. If the signal is mono the inter-meters will show
+a singular line whereas a stereo signal will display separate left/right inter-meters.
+<span class="spacer"/>
+<div class="pb"></div>
+
+
+
+<h2 class="txt-green">Footer</h2>
+<div class="image">
+![](assets/details_footer.png)
+</div>
+
+Shared across all Darkpalace Studio plugins, the footer component contains a set of controls that
+enhance the workflow such as flipping the phase/polarity, enabling delta/diff mode and even a 
+global dry/wet mix.
+
+### ?-Button
+<span class="txt-yellow">*(Located Left of the Footer)*</span>\
+Click to activate 'Help' mode which will display explanations directly within the 
+plugin window when hovering over a control.
+<span class="spacer"/>
+
+### Bypass-Button
+<span class="txt-yellow">*(Located Left of the Footer)*</span>\
+Click to enable bypass mode which will directly route the input signal to the output signal and
+completely bypassing the plugin. Most of the UI will also become grey-scale indicating its state.
+<span class="spacer"/>
+
+### Version
+<span class="txt-yellow">*(Located Left-ish of the Footer)*</span>\
+Displays the current version of the plugin. If 'Help' mode is enabled via the '?'-button, the
+window will display the commit-hash of the plugin.
+<span class="spacer"/>
+
+### Mix-Slider
+<span class="txt-yellow">*(Located center of the Footer)*</span>\
+Click and drag to blend continuously between the processed and unprocessed signal allowing for 
+parallel-processing behavior.
+<span class="spacer"/>
+<div class="pb"></div>
+
+### Oversampling-Slider
+<span class="txt-yellow">*(Located right of the Footer)*</span>\
+Click and drag to change oversampling up to 1x, 2x and 4x which can often help by optimizing and/or 
+reducing distortion characteristics. Increasing oversampling will also introduce additional delay 
+and increases processing requirements which is reported to the host to be automatically 
+compensated for by most modern DAWs.
+
+<div class="quote bg-yellow">
+Please note that a change in oversampling can result in audio-dropouts. It is not
+advices to automate this control.
+</div>
+<span class="spacer"/>
+
+### Phase-Button
+<span class="txt-yellow">*(Located right of the Footer)*</span>\
+Click to cycle through 3 different phase states:
+
+<div class="block bg-dark-1">
+- <span class="txt-purple">No-Phase</span>, which leaves the signal as is.
+- <span class="txt-purple">Pre-Phase</span>, which inverts the polarity at the input stage, before processing.
+- <span class="txt-purple">Post-Phase</span>, which flips the phase at the output of the plugin, after MIX.
+</div>
+<span class="spacer"/>
+
+### Diff-Button
+<span class="txt-yellow">*(Located right of the Footer)*</span>\
+Click to enable 'Diff' mode which will output the Difference/Delta in signal between the input
+and output.
+
+<div class="quote bg-yellow">
+Note that **DIFF** is applied before the **MIX** slider.
+</div>
+<div class="pb"></div>
+
+
+
+<h2 class="txt-blue">Control Area</h2>
+<div class="image">
+![](assets/details_controls_main.png)
+</div>
+
+<div class="quote bg-yellow">
+The fall and rise controls are basically the same so the following information will
+apply to both of them.
+</div>
+
+### Slew Slope Angle
+Click and drag to adjust the Slew-Rate/angle applied to the incoming signals with higher values resulting in shallower Slew-Rate. If the slope of the input signal is stepper than the
+output signal will be Slew-rate-limited.
+<span class="spacer"/>
+
+### Slew-Curve
+Click and drag to adjust the curvature of the slope. Based on the position, the values will blend between:
+<div class="block bg-dark-1">
+- <span class="txt-yellow">Square-Root</span> at a value of 1.0
+- <span class="txt-yellow">Linear</span> at a value of 0.0
+- <span class="txt-yellow">Quadratic</span> at a value of -1.0
+</div>
+
+This can have an effect on brightening or darkening a sound and is a great option for shaping
+transients as well.
+<span class="spacer"/>
+
+### Slew-Time
+Click and drag to change how fast the behavior of the Slew-Curve is applied with higher values resulting in a faster transition through the selected Slew-curve. This will only have an effect
+when the Slew-curve setting is non-zero.
+
+
+
+<h2 class="txt-blue">Display Controls</h2>
+<div class="image">
+![](assets/details_controls_display.png)
+</div>
+
+### x2
+<span class="txt-yellow">*(Located top-left of the Display)*</span>\
+Click to increase the input gain by a factor of 2 causing slopes to become steeper and as a result
+makes the Slew-limiting more aggressive.
+
+<div class="quote bg-yellow">
+The increase in volume will be compensated for, independently of AGC.
+</div>
+<span class="spacer"/>
+
+### AGC
+<span class="txt-yellow">*(Located top-left of the Display)*</span>\
+Click to toggle **A**utomatic **G**ain **C**ompensation which will attempt to compensate for any
+change in input-gain.
+
+When enabled, the In-Gain-Meter will change its state to DRIVE allowing the signal to be forced
+louder into the Slew-algorithm resulting in more aggressive Slew-Rate-Limiting. This means the 
+In-Gain-Meter on the left of the display has additional functionality:
+
+<div class="block bg-dark-1">
 - When AGC is **on**, this slider controls the **DRIVE**, as the change in volume is automatically compensated
   for.
 - When AGC is **off**, this slider controls the **IN**, simply boosting the input.
+</div>
+<span class="spacer"/>
 
-The number displayed above the slider is the peak value of the input in dB.
+<div class="quote bg-yellow">
+AGC will not take output gain or any change in volume from the Slew-Rate-Limiting into account.
+This means the output can actually have a lower volume which can be compensated for with the 
+Out-Gain-Meter
+</div>
+<span class="spacer"/>
 
-### Out
+### DC-Button
+<span class="txt-yellow">*(Located top-right of the Display)*</span>\
+Click to apply a 10Hz first order high-pass-filter to the output to account for any DC-Offset 
+which might be introduced by Slew-Rate-Limiting.
 
-Boosts the output volume of the plugin. Some settings of slew rate limiting lead to a loss in volume. This can be
-compensated for with this slider.
+Generally the asymmetric Slew-Rate-Limiting (Meaning different values for Rise and Fall) result
+in a DC offset at the output state. This can be understood by the fact that asymmetric Slew-Rate-Limiting 
+will "reduce" e.g. any rising slopes, while leaving falling slopes untouched. Effectively this leads 
+to a shift of the complete waveform to negative values which can be solved by using a High-Pass-Filter.
 
-The number displayed above the slider is the peak value of the output in dB.
-
-### AGC
-
-Toggles **A**utomatic **G**ain **C**ompensation.
-AGC allows to ompensate for any change in input gain.
-AGC will not take output gain or any change in volume from the slew rate limiting into account.
-
-When AGC is **on**, increasing **DRIVE** leads to steeper slopes, resulting in stronger slew-rate-limiting.
-The enabled AGC will revert the initial increase in gain from the **DRIVE** slider.
-Thus the output can actually have a lower volume.
-This can be compensated for by the **OUT** slider.
-
-### x2
-
-Increases input gain by a factor of 2.
-The increase in volume will always be compensated, independently of AGC.
-With increased input, slopes become steeper, thus slew rate limiting will apply more aggressively.
-
-### DC
-
-Applies a 10Hz first order high-pass-filter to the output.
-This removes any dc offset introduced by slew rate limiting.
-
-Generally asymmetric slew-rate-limiting (meaning different slew rates for rise and fall) result in dc
-offset at the output.
-This can be understood by the fact that asymmetric slew rate limiting will "reduce" e.g. any
-rising slopes, while leaving falling slopes untouched.
-Effectively this leads to a shift of the complete waveform to negative values.
-A high-pass-filter can solve this issue.
+<div class="quote bg-yellow">
+Adding a high-pass-filter will also increase some phase rotation at low frequencies.
+</div>
+<span class="spacer"/>
 
 ### Link
+<span class="txt-yellow">*(Located bottom-center of the Display)*</span>\
+Click to link the Slew-Controls (Slew-Rate, Slew-Curve and Slew-Time) together for changing 
+the values in tandem. This provides easy access to symmetric Slew-Rate-Limiting where rising and 
+falling slopes are treated similarly.
 
-Links the slew controls (slew rate, slew curve, slew time) for rising and falling slopes.
-This provides easy access to "symmetric" slew rate limiting, where rising slopes are treated similarly to falling
-slopes.
+Please note that this will only affect changes made via the interface and not automation.
+If automation is used to change any of the parameters when linking is enabled, only the automated
+parameter will change whereas the other counterpart will remain unaffected.
 
-Note that this will only affect changes via the UI.
-If automation is used to change any of the linked parameters, only the automated one will change, while the linked one
-stays untouched.
-This is to avoid potentially conflicting input from different automation tracks.
-
-In case you want to automate two parameters, it is recommended to disable link and automate via two tracks (or one
-track bound to two parameters, which is supported by many modern DAWs).
-
-## Footer Controls
-
-![Footer controls](assets/controls_footer.png)
-
-### ?
-
-Enables explanations directly in the UI. When enabled, You can hover over a control to get a longer
-explanation of the functionality.
-
-### Bypass
-
-Routes the input directly to the output, bypassing the plugin completely.
-
-### Version
-
-Displays the version of the plugin.
-
-### Mix
-
-Blends continuously between the processed and unprocessed signal.
-This can be used to dial in slew rate limiting quite hard and then blend the processed signal with the original input.
-
-### Oversampling
-
-Selects oversampling. The options include x1 (no oversampling), x2, x4, x8 up to x16.
-Increasing this option will help to optimize distortion characteristics. However some highly used distortion plugins do
-not offer any oversampling and still sound great.
-
-Increasing oversampling will increase the overall plugin delay and increase processing requirements. This is reported to
-the host and automatically compensated for
-by most modern DAWs.
-
-Note that a change in oversampling can result in cracks and audio dropouts. It is not advised to automate this control.
-
-### Phase
-
-This will flip the phase of the output of the plugin after all other processing.
-
-### Diff
-
-Allows listening to the difference between the input and output.
-Note that **DIFF** is applied before **MIX**.
-
-\newpage
+This is to done avoid potentially conflicting input from different automation tracks.
+<div class="pb"></div>
