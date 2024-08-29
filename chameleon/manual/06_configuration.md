@@ -48,13 +48,8 @@ will use default settings.
 
 
 ### editor_config.json
-This file stores the last used 
+Stores the last used window-size as well as the currently selected theme
 
-<div class="block bg-dark-1">
-- Change the value of <span class="txt-purple">"exponential"</span> to <span class="txt-yellow">false</span>
-- Change the value for <span class="txt-purple">"frequency_skew"</span> to <span class="txt-yellow">1.0</span>
-</div>
-<p><p><span class="spacer"/>
 <div class="quote bg-yellow">
 If no json file is found or if the json is invalid (e.g. a typo or a missing entry), the plugin 
 will use default settings. 
