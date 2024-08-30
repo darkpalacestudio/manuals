@@ -6,6 +6,6 @@ When the input signal at an amplifier switches instantly, the output will not im
 value at a certain rate.
 
 Applying slew rate limiting can result in a variety of effects, including denser signals, subtle darkening of the
-tone, enhanced texture of sounds, creative transient shaping and even massively crushed effects.
+tone, enhanced texture of sounds, creative transient shaping, fuzz-sounds up to massively crushed effects.
 
 <div class="pb"></div>

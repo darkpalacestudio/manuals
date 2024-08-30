@@ -4,7 +4,7 @@
 - The audible effect of slew rate limiting varies drastically between symmetric slew rate limiting (same slew rate for
   rise and fall) and asymmetric slew rate limiting (different slew rates for rise and fall).
 
-- Try Applying hard slew rate settings and then dialing back the **MIX** slider until
+- Try applying hard slew rate settings and then dialing back the **MIX** slider until
   the desired blend between processed and unprocessed signal is achieved.
 
 - Sloth can be used as a transient shaper. By engaging the **DIFF** button you can listen to how

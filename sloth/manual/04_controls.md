@@ -177,7 +177,7 @@ parallel-processing behavior.
 
 ### Oversampling-Slider
 <span class="txt-yellow">*(Located right of the Footer)*</span>\
-Click and drag to change oversampling up to 1x, 2x and 4x which can often help by optimizing and/or 
+Click and drag to change oversampling to 1x, 2x, 4x, 8x up to x16 which can often help by optimizing and/or 
 reducing distortion characteristics. Increasing oversampling will also introduce additional delay 
 and increases processing requirements which is reported to the host to be automatically 
 compensated for by most modern DAWs.
@@ -222,8 +222,8 @@ apply to both of them.
 </div>
 
 ### Slew Slope Angle
-Click and drag to adjust the Slew-Rate/angle applied to the incoming signals with higher values resulting in shallower Slew-Rate. If the slope of the input signal is stepper than the
-output signal will be Slew-rate-limited.
+Click and drag to adjust the Slew-Rate/angle applied to the incoming signals with higher values resulting in shallower Slew-Rate. 
+If the slope of the input signal is steeper than the Slew-angle, the output signal will be Slew-rate-limited.
 <span class="spacer"/>
 
 ### Slew-Curve
@@ -239,8 +239,9 @@ transients as well.
 <span class="spacer"/>
 
 ### Slew-Time
-Click and drag to change how fast the behavior of the Slew-Curve is applied with higher values resulting in a faster transition through the selected Slew-curve. This will only have an effect
-when the Slew-curve setting is non-zero.
+Click and drag to change how fast the behavior of the Slew-Curve is applied.
+With higher values resulting in a faster transition through the selected Slew-curve. 
+This will only have an effect when the Slew-curve setting is non-zero.
 
 
 
@@ -287,8 +288,8 @@ Out-Gain-Meter
 Click to apply a 10Hz first order high-pass-filter to the output to account for any DC-Offset 
 which might be introduced by Slew-Rate-Limiting.
 
-Generally the asymmetric Slew-Rate-Limiting (Meaning different values for Rise and Fall) result
-in a DC offset at the output state. This can be understood by the fact that asymmetric Slew-Rate-Limiting 
+Generally the asymmetric Slew-Rate-Limiting (Meaning different values for Rise and Fall) results
+in a DC offset at the output state. This can be understood by the fact that asymmetric Slew-Rate-limiting 
 will "reduce" e.g. any rising slopes, while leaving falling slopes untouched. Effectively this leads 
 to a shift of the complete waveform to negative values which can be solved by using a High-Pass-Filter.
 
