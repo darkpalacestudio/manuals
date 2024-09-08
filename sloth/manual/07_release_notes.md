@@ -2,6 +2,12 @@
 
 # Release Notes
 
+## v1.1.2
+
+- Introduce Option to apply phase before or after processing
+  - Note: This requires manually setting the phase for existing plugin instances in case they had phase flipped.
+- Improve UI: Fix incorrect disabled color for some buttons in the footer
+
 ## v1.1.1
 
 - Apply adjustments to themes to match upcoming plugin release
