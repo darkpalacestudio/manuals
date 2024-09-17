@@ -4,11 +4,10 @@
 
 ## v1.1.2
 
-- Introduce Option to apply phase before or after processing
-  - Note: This requires manually setting the phase for existing plugin instances in case they had phase flipped.
-- Improve UI: Fix incorrect disabled color for some buttons in the footer
+- Introduce Option to apply phase before or after processing. This might require manually setting the phase for existing plugin instances in case they had phase flipped.
+- Improve UI: Fix incorrect color for the footer when disabled
 - Have macOS version codesigned
-- Improve plugin startup time by avoiding one unnecessary theme load
+- Improve plugin startup time by avoiding unnecessary theme load
 
 ## v1.1.1
 

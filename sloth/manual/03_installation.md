@@ -1,12 +1,15 @@
 
 # Installation {#sec:installation}
 
-<div class="quote bg-yellow">For Windows an installer is also available</div>
+
+## Automatic installation on Windows
+
+<div class="quote bg-yellow">For Windows an installer is available.</div>
 <span class="spacer"/>
 
 ## Manual installation
-In order to install <span class="txt-green">Sloth</span>, a manual approach is required.
-After downloading the ZIP archive for your operating system from tentary, extract the desired plugin format into your respective plugin folder.
+<span class="txt-green">Sloth</span> can be installed in a manual way.
+After downloading the ZIP (or dmg on macOS) archive for your operating system from tentary, extract the desired plugin format into your respective plugin folder.
 
 If you don't have a custom plugin folder set in your DAW, refer to the to the default locations:
 
