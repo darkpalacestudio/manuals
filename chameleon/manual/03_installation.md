@@ -36,12 +36,4 @@ As for the themes and presets from the ZIP archive, please extract them to the f
 If you would like to know more, please refer to section {@sec:configuration} for more information 
 on installation of presets, themes and configuration files.
 
-<div class="quote bg-yellow">MacOS plugins downloaded from the internet are usually 'blocked' and
-require an extra step in order to load correctly, please refer to
-[this website](https://disable-gatekeeper.github.io/),
-[this blogpost](https://www.osirisguitar.com/how-to-make-unsigned-vsts-work-in-macos-catalina/),
-[this reddit thread](https://www.reddit.com/r/ableton/comments/g1dn3z/fixing_plugins_for_use_in_macos_catalina/)
-and/or [this website](https://syntheway.com/fix-au-vst-vst3-macos.htm).
-</div>
-
 <div class="pb"></div>
