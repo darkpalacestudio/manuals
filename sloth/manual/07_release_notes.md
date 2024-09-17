@@ -36,6 +36,7 @@
 - Output gain affects only the wet signal
 - Small UI improvements: add a gradient on tooltips, slightly tweaked colors
 
+<div class="pb"></div>
 ## v1.0.2
 
 - Add `custom_ui_scaling_factor` in `sloth_ui.json` to allow for correcting inconsistently reported display scaling
