@@ -242,8 +242,6 @@ controls including:
 </div>
 <span class="spacer"/>
 
-
-
 ### DC-Button <span class="txt-green">(N, X)</span>
 <span class="txt-yellow">*(Located top-right of the Display)*</span>\
 Applies a 10Hz first order high-pass-filter to the output to account for any DC-Offset which 
@@ -289,6 +287,31 @@ filters. Those can cause a massive energy buildup, which can potentially damage 
 headphones and ears. Clipping the output to a maximum of 0dB offers some protection for such measures.
 </div>
 <span class="spacer"/>
+
+### Keytrack-Enable Button <span class="txt-green">(1, 2, N, X)</span>
+<span class="txt-yellow">*(Located bottom left of the Display)*</span>\
+When keytracking is enabled, midi input (on-notes and pitch-bend) control the frequency of the filter.
+This button enables the complete keytracking section. The other controls in this section have an effect only if keytracking is enabled.
+
+### Keytrack-Note offset <span class="txt-green">(1, 2, N, X)</span>
+<span class="txt-yellow">*(Located bottom left of the Display)*</span>\
+Offset incoming midi notes by this amount of semitones.
+
+<div class="quote bg-yellow">
+Note that this describes an offset in semitones. Via plugin parameter automation of your DAW you can also set a keytracking frequency offset. This is currently not available via the UI.
+</div>
+
+### Pitchbend range (up and down) <span class="txt-green">(1, 2, N, X)</span>
+<span class="txt-yellow">*(Located bottom left of the Display)*</span>\
+Set the up- and down-pitchbend range in semitones.
+
+There is no consensus on pitchbend range. Most Synthesizers and plugins allow to configure the pitchbend range in their settings.
+To accommodate for this fact, Darkpalacestudio plugins allow a custom pitchbend range to match the sounds your are working with.
+
+<div class="quote bg-yellow">
+Pitchbend can be individually customized for up and down ranges, allowing e.g. to go 12 semitones down, but 24 up.
+</div>
+
 
 ### Frequency
 <span class="txt-yellow">*(Located in the center of the Control-Area)*</span>\
