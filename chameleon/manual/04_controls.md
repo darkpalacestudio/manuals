@@ -235,6 +235,7 @@ Shared primarily across the <span class="txt-yellow">Chameleon Suite</span> plug
 controls including:
 <div class="block bg-dark-1">
 - <span class="txt-red">DC</span> Button
+- <span class="txt-green">Keytracking</span> Controls
 - <span class="txt-red">CLIP</span> Button
 - <span class="txt-yellow">Order</span> Count
 - <span class="txt-purple">Frequency</span> Slider
@@ -287,30 +288,34 @@ filters. Those can cause a massive energy buildup, which can potentially damage 
 headphones and ears. Clipping the output to a maximum of 0dB offers some protection for such measures.
 </div>
 <span class="spacer"/>
+<div class="pb"></div>
 
-### Keytrack-Enable Button <span class="txt-green">(1, 2, N, X)</span>
-<span class="txt-yellow">*(Located bottom left of the Display)*</span>\
-When keytracking is enabled, midi input (on-notes and pitch-bend) control the frequency of the filter.
-This button enables the complete keytracking section. The other controls in this section have an effect only if keytracking is enabled.
 
-### Keytrack-Note offset <span class="txt-green">(1, 2, N, X)</span>
+
+### Keytracking <span class="txt-green">(1, 2, N, X)</span>
 <span class="txt-yellow">*(Located bottom left of the Display)*</span>\
-Offset incoming midi notes by this amount of semitones.
+<div class="image">
+![](assets/details_keytracking.png)
+</div>
+Click to toggle Keytracking. When enabled, the frequency slider will snap to the frequency of
+the incoming midi data, including pitch-bend CC.
+<span class="spacer"/>
+
+#### Keytrack-Note offset <span class="txt-green">(1, 2, N, X)</span>
+<span class="txt-yellow">*(Located bottom left of the Display)*</span>\
+Click and drag to internally offset the incoming midi notes by semitones to a range of -24 to +24.
 
 <div class="quote bg-yellow">
-Note that this describes an offset in semitones. Via plugin parameter automation of your DAW you can also set a keytracking frequency offset. This is currently not available via the UI.
+Whilst this is purely the offset in semitones, via the plugin parameters available in your DAW
+you can also set an additional linear frequency offset which is currently not available via the UI.
 </div>
 
-### Pitchbend range (up and down) <span class="txt-green">(1, 2, N, X)</span>
+#### Pitchbend Range (up and down) <span class="txt-green">(1, 2, N, X)</span>
 <span class="txt-yellow">*(Located bottom left of the Display)*</span>\
-Set the up- and down-pitchbend range in semitones.
-
-There is no consensus on pitchbend range. Most Synthesizers and plugins allow to configure the pitchbend range in their settings.
-To accommodate for this fact, Darkpalacestudio plugins allow a custom pitchbend range to match the sounds your are working with.
-
-<div class="quote bg-yellow">
-Pitchbend can be individually customized for up and down ranges, allowing e.g. to go 12 semitones down, but 24 up.
-</div>
+Click and drag to change the pitchbend range for up and down. There is no general range for pitchbend 
+which is why we offer the option to set a custom range of -36 to 0 for down and +36 to 0 for up.
+<span class="spacer"/>
+<div class="pb"></div>
 
 
 ### Frequency
@@ -365,6 +370,27 @@ whereas in <span class="txt-green">Chameleon X</span> additional distribution co
 <div class="image">
 ![](assets/details_specific.png)
 </div>
+
+### Filter Type
+<span class="txt-yellow">*(Located top-left of the Display)*</span>\
+Click to change type of allpass filter. This allows you to swap between currently 2 different 
+implementations:
+<div class="block bg-dark-1">
+- <span class="txt-red">Generic</span>
+- <span class="txt-red">State-Variable</span>
+</div>
+<span class="spacer"/>
+
+#### Generic
+The generic filter type is suited for static placement of the controls due to them introducing
+so called 'zipper-noises' but having an increased ringing effect with lower Q values.
+
+#### State-Variable
+The state-variable filter type is suited for 'dynamic' placement of the controls and suited for
+when modulating the controls. They wont introduce 'zipper-noises' but also have a lesser ringing
+effect with lower Q values.
+<span class="spacer"/>
+<div class="pb"></div>
 
 ### Frequency Width
 <span class="txt-yellow">*(Located left of the Control-Area)*</span>\
