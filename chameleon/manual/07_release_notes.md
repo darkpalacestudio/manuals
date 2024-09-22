@@ -1,6 +1,6 @@
 # Release Notes
 
-## v1.0.1
+## v1.1.0
 
 - Have macOS version codesigned
 - Allow keytracking input for all chameleon plugins
