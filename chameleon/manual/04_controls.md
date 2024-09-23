@@ -371,6 +371,7 @@ whereas in <span class="txt-green">Chameleon X</span> additional distribution co
 ![](assets/details_specific.png)
 </div>
 
+
 ### Filter Type
 <span class="txt-yellow">*(Located top-left of the Display)*</span>\
 Click to change type of allpass filter. This allows you to swap between currently 2 different 
@@ -382,15 +383,17 @@ implementations:
 <span class="spacer"/>
 
 #### Generic
-The generic filter type is suited for static placement of the controls due to them introducing
-so called 'zipper-noises' but having an increased ringing effect with lower Q values.
+The generic filter type is suited for static placement of the controls.
+It allows for a wide range of q values and can be used to create strongly ringing, almost self-oscillating sounds.
+So called 'zipper-noises' might occur when controls are automated.
 
 #### State-Variable
-The state-variable filter type is suited for 'dynamic' placement of the controls and suited for
-when modulating the controls. They wont introduce 'zipper-noises' but also have a lesser ringing
-effect with lower Q values.
+The state-variable filter type is designed for allowing modulation of the controls. 
+It allows 'dynamic' placement of the controls.
+The state-variable filter wont introduce 'zipper-noises' but offers a more limited range of q values.
 <span class="spacer"/>
 <div class="pb"></div>
+
 
 ### Frequency Width
 <span class="txt-yellow">*(Located left of the Control-Area)*</span>\
