@@ -1,9 +1,6 @@
 
 # Installation {#sec:installation}
 
-
-## Automatic installation on Windows
-
 <div class="quote bg-yellow">For Windows and macOS installer is also available</div>
 <span class="spacer"/>
 
