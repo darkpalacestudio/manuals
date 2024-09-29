@@ -2,6 +2,9 @@
 
 # Release Notes
 
+## v1.1.3
+- Update to juce 8.0.2
+
 ## v1.1.2
 
 - Introduce Option to apply phase before or after processing. This might require manually setting the phase for existing plugin instances in case they had phase flipped.

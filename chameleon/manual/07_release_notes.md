@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.2
+- Update to juce 8.0.2
+
 ## v1.1.1
 - Fix CLAP plugins not responding to midi-input
 
