@@ -1,7 +1,10 @@
 # Release Notes
 
 ## v1.1.2
-- Update to juce 8.0.2
+- Update to juce 8.0.2+ (with opengl bugfix)
+- Rename plugins to start with an uppercase character
+- Remove internal upper q limit for generic filter in chameleon X
+- Improve plugin startup time by removing unused shaders
 
 ## v1.1.1
 - Fix CLAP plugins not responding to midi-input
