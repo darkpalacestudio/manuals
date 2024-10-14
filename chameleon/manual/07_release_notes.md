@@ -5,6 +5,7 @@
 - Rename plugins to start with an uppercase character
 - Remove internal upper q limit for generic filter in chameleon X
 - Improve plugin startup time by removing unused shaders
+- Improve graphics performance by consistently using opengl 4.1
 
 ## v1.1.1
 - Fix CLAP plugins not responding to midi-input
