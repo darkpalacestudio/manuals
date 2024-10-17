@@ -3,7 +3,10 @@
 # Release Notes
 
 ## v1.1.3
-- Update to juce 8.0.2
+- Update to juce 8.0.2+ (with opengl bugfix)
+- Rename plugins to start with an uppercase character
+- Improve plugin startup time by removing unused shaders
+- Improve graphics performance by consistently using opengl 4.1
 
 ## v1.1.2
 
