@@ -36,13 +36,13 @@ jobs:
       # setting the metadata title changes the title displayed by pdf-viewers, but introduces a separate heading (which is undesired). To remove that, set the title variable to null
       - name: Build Fancy Version
         run: |
-          cd ${{github.workspace}}/chameleon/manual/build
+          cd ${{ env.BUILD_FOLDER }}/
           pandoc *.md -o chameleon_manual.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css style_dark.css --metadata title="Chameleon" -V "title:"
 
       # setting the metadata title changes the title displayed by pdf-viewers, but introduces a separate heading (which is undesired). To remove that, set the title variable to null
       - name: Build Print Version
         run: |
-          cd ${{github.workspace}}/chameleon/manual/build
+          cd ${{ env.BUILD_FOLDER }}/
           pandoc *.md -o chameleon_manual_print.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css style_print.css --metadata title="Chameleon" -V "title:"
 
       - uses: actions/upload-artifact@v4
