@@ -31,7 +31,6 @@ jobs:
           cp -r assets ${{ env.BUILD_FOLDER }}/
           cp *.md ${{ env.BUILD_FOLDER }}/
           cp ${{github.workspace}}/common/*.md ${{ env.BUILD_FOLDER }}/
-          cp ${{github.workspace}}/common/controls/*.md ${{ env.BUILD_FOLDER }}/
           cp ${{github.workspace}}/common/style_dark.css ${{ env.BUILD_FOLDER }}/
           cp ${{github.workspace}}/common/style_print.css ${{ env.BUILD_FOLDER }}/
           cp -r ${{github.workspace}}/common/assets ${{ env.BUILD_FOLDER }}/
