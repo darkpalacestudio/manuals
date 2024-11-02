@@ -17,14 +17,38 @@ jobs:
           sudo apt-get install pandoc weasyprint texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra fonts-roboto
           sudo pip install pandoc-secnos
 
+      - name: Setup Environment Variables
+        shell: bash
+        run: |
+          echo "BUILD_FOLDER=${{github.workspace}}/build" >> $GITHUB_ENV
+          
+      - name: Copy to tmp folder
+        run: |
+          cd ${{github.workspace}}/sloth/manual
+          mkdir ${{ env.BUILD_FOLDER }}/
+          cp -r assets ${{ env.BUILD_FOLDER }}/
+          cp *.md ${{ env.BUILD_FOLDER }}/
+          cp ${{github.workspace}}/common/controls/*.md ${{ env.BUILD_FOLDER }}/
+          cp ${{github.workspace}}/common/style_dark.css ${{ env.BUILD_FOLDER }}/
+          cp ${{github.workspace}}/common/style_print.css ${{ env.BUILD_FOLDER }}/
+          tree ${{ env.BUILD_FOLDER }}/
+
       # setting the metadata title changes the title displayed by pdf-viewers, but introduces a separate heading (which is undesired). To remove that, set the title variable to null
       - name: Build Fancy Version
         run: |
           cd ${{github.workspace}}/sloth/manual
           pandoc *.md -o sloth_manual.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css ${{github.workspace}}/common/style_dark.css --metadata title="Sloth" -V "title:"
 
+      # setting the metadata title changes the title displayed by pdf-viewers, but introduces a separate heading (which is undesired). To remove that, set the title variable to null
+      - name: Build Print Version
+        run: |
+          cd ${{ env.BUILD_FOLDER }}/
+          pandoc *.md -o sloth_manual_print.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css style_print.css --metadata title="Sloth" -V "title:"
+
       - uses: actions/upload-artifact@v4
         with:
           name: sloth_manual
-          path: ${{github.workspace}}/sloth/manual/sloth_manual.pdf
+          path: |
+            ${{ env.BUILD_FOLDER }}/sloth_manual.pdf
+            ${{ env.BUILD_FOLDER }}/sloth_manual_print.pdf
           overwrite: 'true'
