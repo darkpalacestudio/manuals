@@ -85,8 +85,6 @@ from anywhere around 90hz for kick or around 200Hz for snare drums.
 </div>
 <span class="spacer"/>
 
-
-
 ## DC cutoff considerations
 The DC cutoff in Chameleon N and Chameleon X is implemented via a first order high-pass-filter.
 This filter introduces a phase shift.
@@ -98,6 +96,15 @@ Please consider if your processing actually need DC oversampling.
 If it does, check carefully for any phasing issues introduced by the filter.
 Often the phase issues can be mitigated by flipping the phase via the **PHASE** button.
 <span class="spacer"/>
+
+## Oversampling considerations
+
+While allpass filters generally do not benefit from an increased sampling rate, some of the plugins in the <span class="txt-green">Chameleon Suite</span> offer a clipping option due to drastic changes being able to introduce increased signal dynamics.
+Oversampling can have a positive impact to preset said anomalies.
+
+As allpass filters are mostly only concerned about the phase relationship of the signal, be aware
+that enabling oversampling can and will introduce additional phase shift in the higher frequency
+range due to the filter used when up- and down-sampling.
 
 [//]: <> (TODO more usage examples)
 
