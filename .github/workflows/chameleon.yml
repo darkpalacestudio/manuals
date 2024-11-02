@@ -18,15 +18,20 @@ jobs:
         run: |
           sudo apt-get install pandoc weasyprint texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra fonts-roboto
           sudo pip install pandoc-secnos
-
+      
+      - name: Setup Environment Variables
+        shell: bash
+        run: |
+          echo "BUILD_FOLDER=${{github.workspace}}/build" >> $GITHUB_ENV
+        
       - name: Copy to tmp folder
         run: |
           cd ${{github.workspace}}/chameleon/manual
-          mkdir ${{github.workspace}}/chameleon/manual/build
-          cp -r assets ${{github.workspace}}/chameleon/manual/build/
-          cp *.md ${{github.workspace}}/chameleon/manual/build/
-          cp ${{github.workspace}}/common/style_dark.css ${{github.workspace}}/chameleon/manual/build/
-          cp ${{github.workspace}}/common/style_print.css ${{github.workspace}}/chameleon/manual/build/
+          mkdir ${{ env.RELEASE_FOLDER }}/
+          cp -r assets ${{ env.RELEASE_FOLDER }}/
+          cp *.md ${{ env.RELEASE_FOLDER }}/
+          cp ${{github.workspace}}/common/style_dark.css ${{ env.RELEASE_FOLDER }}/
+          cp ${{github.workspace}}/common/style_print.css ${{ env.RELEASE_FOLDER }}/
 
       # setting the metadata title changes the title displayed by pdf-viewers, but introduces a separate heading (which is undesired). To remove that, set the title variable to null
       - name: Build Fancy Version
@@ -37,13 +42,13 @@ jobs:
       # setting the metadata title changes the title displayed by pdf-viewers, but introduces a separate heading (which is undesired). To remove that, set the title variable to null
       - name: Build Print Version
         run: |
-          cd ${{github.workspace}}/chameleon/manual
+          cd ${{github.workspace}}/chameleon/manual/build
           pandoc *.md -o chameleon_manual_print.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css style_print.css --metadata title="Chameleon" -V "title:"
 
       - uses: actions/upload-artifact@v4
         with:
           name: chameleon_manual
           path: |
-            ${{github.workspace}}/chameleon/manual/build/chameleon_manual.pdf
-            ${{github.workspace}}/chameleon/manual/build/chameleon_manual_print.pdf
+            ${{ env.RELEASE_FOLDER }}/chameleon_manual.pdf
+            ${{ env.RELEASE_FOLDER }}/chameleon_manual_print.pdf
           overwrite: 'true'
