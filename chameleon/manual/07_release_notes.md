@@ -1,5 +1,12 @@
 # Release Notes
 
+## v1.2.0
+- Add MS Processing options in footer
+- Add individual-channel-bypass in footer
+- Introduce versioning for themes and presets
+- Switch to high precision filter
+- Improve UI behaviour
+
 ## v1.1.2
 - Update to juce 8.0.2+ (with opengl bugfix)
 - Rename plugins to start with an uppercase character
