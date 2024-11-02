@@ -23,6 +23,7 @@ jobs:
         run: |
           cd ${{github.workspace}}/chameleon/manual
           mkdir ${{github.workspace}}/chameleon/manual/build
+          cp -r assets ${{github.workspace}}/chameleon/manual/build/
           cp *.md ${{github.workspace}}/chameleon/manual/build/
           cp ${{github.workspace}}/common/style_dark.css ${{github.workspace}}/chameleon/manual/build/
           cp ${{github.workspace}}/common/style_print.css ${{github.workspace}}/chameleon/manual/build/
