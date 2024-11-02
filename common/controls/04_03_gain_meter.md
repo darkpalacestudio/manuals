@@ -38,5 +38,7 @@ Click and drag to change the value of the slider. A label will show up with the 
 <span class="txt-yellow">*(Located top of the Meter)*</span>\
 Displays the current true-peak value of the signal. If the signal is mono the inter-meters will show
 a singular line whereas a stereo signal will display separate left/right inter-meters.
+
+When switched to M|S mode, the peak indicators will display the peak values for the mid- and side channel respectively.
 <span class="spacer"/>
 <div class="pb"></div>
