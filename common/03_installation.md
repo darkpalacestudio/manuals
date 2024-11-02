@@ -1,12 +1,12 @@
 
 # Installation {#sec:installation}
 
-<div class="quote bg-yellow">For Windows and macOS an installer is also available</div>
+<div class="quote bg-yellow">For Windows and macOS an installer is available</div>
 <span class="spacer"/>
 
 ## Manual installation
-In order to install the <span class="txt-green">Chameleon Suite</span>, a manual approach is required.
-After downloading the ZIP archive for your operating system from tentary, extract the desired plugin format into your respective plugin folder.
+Darkpalace Studio plugins can be installed in a manual way.
+After downloading the ZIP (or dmg on macOS) archive for your operating system from tentary, extract the desired plugin format into your respective plugin folder.
 
 If you don't have a custom plugin folder set in your DAW, refer to the to the default locations:
 
