@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [ master ]
-    paths: [ 'sloth/**', '.github/**' ]
+    paths: [ 'sloth/**', '.github/**', 'common/**' ]
 
 jobs:
   Build_Sloth:
