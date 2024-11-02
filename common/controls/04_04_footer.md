@@ -19,8 +19,7 @@ Click to toggle between Left-Right-processing and Mid-Side-processing.
 Conversion to the respective processing more is performed before any processing. 
 Likewise, conversion back to the original channel configuration is performed as the last step of processing.
 
-This control affects the single channel bypass options.
-
+This control also affects the single channel bypass options.
 The text of the button shows the currently active processing mode.
 
 ### Version
@@ -42,17 +41,15 @@ Darkpalace Studio plugins use FIR filters for oversampling.
 Increasing oversampling will also introduce additional delay and increases processing requirements.
 The delay is reported to the host to be automatically compensated for by most modern DAWs.
 
-### Mix-Slider
-<span class="txt-yellow">*(Located center of the Footer)*</span>\
-Click and drag to blend continuously between the processed and unprocessed signal allowing for parallel-processing behavior.
-<span class="spacer"/>
-<div class="pb"></div>
-
-
 <div class="quote bg-yellow">
 Please note that a change in oversampling can result in short audio-dropouts. It is not
 advices to automate this control.
 </div>
+<span class="spacer"/>
+
+### Mix-Slider
+<span class="txt-yellow">*(Located center of the Footer)*</span>\
+Click and drag to bl    end continuously between the processed and unprocessed signal allowing for parallel-processing behavior.
 <span class="spacer"/>
 
 ### Phase-Button
