@@ -1,7 +1,6 @@
 # Introduction {#sec:introduction}
 
-The <span class="txt-green">Chameleon Suite</span> is a comprehensive collection of audio-plugins based on the concept of allpass 
-filters that will unlock and empower you with creative flexibility and precision for your audio projects.
+The <span class="txt-green">Chameleon Suite</span> is a comprehensive collection of audio-plugins based on the concept of allpass filters that will unlock and empower you with creative flexibility and precision for your audio projects.
 
 The suite offers the following plugins:
 <div class="block bg-dark-1">
@@ -17,22 +16,20 @@ Allpass filters are one of the most fundamental building-blocks in the world of 
 and while they are not as popular or well-known as other types of filters, they play a crucial 
 role when it comes to shaping sound and can be used to create almost all other filter types.
 
-In general, an allpass filter is characterized by the fact that they pass through all frequencies 
-without a change in level. This means that by themselves it is unable to shape frequencies one 
-would normally do with a bell-, shelf-, notch- or any other type of filter.
+In general, an allpass filter is characterized by the fact that they pass through all frequencies  without a change in level.
+This means that by themselves it is unable to shape frequencies one would normally do with a bell-, shelf-, notch- or any other type of filter.
 
-They do, however, introduce a phase shift which can be used for other creative purposes. As the 
-phase shift is frequency dependant, you can think of this as a frequency-dependant delay. Whereas 
-standard delays delay the complete signal, an allpass filter delays different frequencies 
-by different amounts of time
+They do, however, introduce a phase shift which can be used for creative purposes.
+As the phase shift is frequency dependant, you can think of this as a frequency-dependant delay. Whereas standard delays delay the complete signal by a fixed amount of time, an allpass filter delays different frequencies by different amounts of time.
 <span class="spacer"/>
 
 ## Chameleon Plugins
 
 <span class="txt-green">Chameleon 1</span> and <span class="txt-green">Chameleon2</span> are your 
-bread and butter allpass-filters. By mixing, adding and/or subtracting the processed signal from 
-the dry signal they can create low-, notch-, high- and bandpass-filters, See section @sec:examples 
-for further details.
+bread and butter allpass-filters.
+They can be used to alter phase correlations in a precise and controlled way.
+Furthermore, by adding to and/or subtracting the processed signal from the dry signal, they can create low-, notch-, high- and bandpass-filters.
+See section @sec:examples for further details.
 
 <span class="txt-green">Chameleon N</span> stacks multiple 2nd order allpass filters at the same 
 frequency, resulting in a Nth order allpass filter that allows for wild processing as the phase 

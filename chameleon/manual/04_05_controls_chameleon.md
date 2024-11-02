@@ -1,4 +1,4 @@
-<h2 class="txt-blue">Common Controls</h2>
+<h2 class="txt-blue">Common Chameleon Controls</h2>
 <div class="image">
 ![](assets/details_common.png)
 </div>
@@ -20,12 +20,11 @@ controls including:
 Applies a 10Hz first order high-pass-filter to the output to account for any DC-Offset which 
 might be introduced by the plugin.
 
-Generally the frequency response of allpass filters is flat. However, automating the parameters 
-of multiple allpass filters can often introduce some significant changes causing dc offset that 
-can potentially damage your speakers and headphones.
+Generally the frequency response of allpass filters is flat.
+However, automating the parameters of multiple allpass filters can often introduce some significant changes, causing dc offset that can potentially damage your speakers and headphones. 
 
 <div class="quote bg-yellow">
-Adding a high-pass-filter will also increase some phase rotation at low frequencies.
+Adding a high-pass-filter will also introduce some phase rotation at low frequencies.
 </div>
 <span class="spacer"/>
 <div class="pb"></div>
@@ -44,20 +43,20 @@ Click to cycle through 3 stages of clipping:
 No clipping is applied in this mode.
 
 #### Output Clip
-Clips the output at 0db
+Clips the output at 0db.
 <span class="spacer"/>
 
 #### Per-Filter Clip
 Clips after each allpass filter and at the output.
 Each allpass filter stage alters the sound in a tiny bit, resulting in tiny differences in the waveform.
-
 This is a great option for sound design work as it offers some unique sounds.
 <span class="spacer"/>
 
 <div class="quote bg-yellow">
-Modulating any of the parameters can introduce strong resonant peaks, and potentially self-oscillating 
-filters. Those can cause a massive energy buildup, which can potentially damage your speakers, 
-headphones and ears. Clipping the output to a maximum of 0dB offers some protection for such measures.
+Modulating any of the parameters can introduce strong resonant peaks, and potentially self-oscillating filters.
+Those can cause a massive audio energy buildup, which can potentially damage your speakers, 
+headphones and ears.
+Clipping the output to a maximum of 0dB offers some protection for such measures.
 </div>
 <span class="spacer"/>
 <div class="pb"></div>
@@ -69,13 +68,13 @@ headphones and ears. Clipping the output to a maximum of 0dB offers some protect
 <div class="image">
 ![](assets/details_keytracking.png)
 </div>
-Click to toggle Keytracking. When enabled, the frequency slider will snap to the frequency of
-the incoming midi data, including pitch-bend CC.
+Click to toggle Keytracking.
+When enabled, the frequency slider will snap to the frequency of the incoming midi data, including pitch-bend CC.
 <span class="spacer"/>
 
 #### Keytrack-Note offset <span class="txt-green">(1, 2, N, X)</span>
 <span class="txt-yellow">*(Located bottom left of the Display)*</span>\
-Click and drag to internally offset the incoming midi notes by semitones to a range of -24 to +24.
+Click and drag to internally offset the incoming midi notes by the amount of semitones to a range of -24 to +24.
 
 <div class="quote bg-yellow">
 Whilst this is purely the offset in semitones, via the plugin parameters available in your DAW
@@ -86,7 +85,10 @@ you can also set an additional linear frequency offset which is currently not av
 <span class="txt-yellow">*(Located bottom left of the Display)*</span>\
 Click and drag to change the pitchbend range for up and down. There is no general range for pitchbend 
 which is why we offer the option to set a custom range of -36 to 0 for down and +36 to 0 for up.
-<span class="spacer"/>
+
+<div class="quote bg-yellow">
+Note that it is explicitly possible to have different pitchbend ranges for up and down pitchbend. This allows for some interesting effects, when the pitchbend range matches the sound generator pitchbend in one, but not the other direction.
+</div>
 <div class="pb"></div>
 
 
@@ -96,14 +98,11 @@ Click and drag to change the center frequency of the allpass filter(s).
 
 <div class="block bg-dark-1">
 - <span class="txt-green">Chameleon 1</span> (first-order allpass filter) this corresponds to the 
-frequency that has the steepest change in phase
-  rotation.
+frequency that has the steepest change in phase rotation.
 - <span class="txt-green">Chameleon 2 and N</span> (second-order allpass filters) this corresponds 
-to the frequency that has the maximum amount of
-  phase rotation.
+to the frequency that has the maximum amount of phase rotation.
 - <span class="txt-green">Chameleon X</span> this is the frequency of the central frequency. More 
-allpass filters are added based on the other
-  parameters of the plugin
+allpass filters are added based on the other parameters of the plugin
 </div>
 
 Note that the plugin configuration offers the option to select between linear or exponential frequency control.
@@ -112,14 +111,13 @@ See section @sec:configuration for detailed instructions.
 
 ### Q <span class="txt-green">(2, N, X)</span>
 <span class="txt-yellow">*(Located right of the Control-Area)*</span>\
-Click and drag to adjust the Q value of the filter. Changing this will adjust the bandwidth where 
-a narrow bandwidth affects only a small range of frequencies, and a large bandwidth affects a large 
-range of frequencies.
+Click and drag to adjust the Q value of the filter.
+Changing this will adjust the bandwidth where a narrow bandwidth affects only a small range of frequencies, and a large bandwidth affects a large range of frequencies.
 
-In an allpass filter the Q value determines the range over which the phase rotation happens. 
-This allows to confine the space rotation to a very small area or to spread it out over the 
-full spectrum. As the absolute change of phase rotation is fixed, the q control effectively 
-adjusts the steepness of the phase change.
+In an allpass filter, the Q value determines the range over which the phase rotation happens. 
+This allows to confine the space rotation to a very small frequency area or to spread it out over the 
+full spectrum.
+As the absolute change of phase rotation is fixed, the q control effectively adjusts the steepness of the phase change.
 <span class="spacer"/>
 
 ### Order <span class="txt-green">(N, X)</span>
@@ -128,21 +126,18 @@ adjusts the steepness of the phase change.
 Click and drag to change the amount of filters being stacked.
 
 Both <span class="txt-green">Chameleon N</span> and <span class="txt-green">Chameleon X</span> 
-come with the addition of the **Order** Control that allows you to stack multiple allpass filters upon 
-each-other. Stacking multiple allpass filters increases the phase rotation and overall delay usually 
-resulting in dispersed sounds.
+come with the addition of the **Order** Control that allows you to stack multiple allpass filters upon each-other.
+Stacking multiple allpass filters increases the phase rotation and overall delay usually resulting in dispersed sounds.
 
 In <span class="txt-green">Chameleon N</span> all the filters are stacked onto a central frequency 
 whereas in <span class="txt-green">Chameleon X</span> additional distribution controls are available.
 <div class="pb"></div>
 
 
-
 <h2 class="txt-blue">Chameleon X Specific Controls</h2>
 <div class="image">
 ![](assets/details_specific.png)
 </div>
-
 
 ### Filter Type
 <span class="txt-yellow">*(Located top-left of the Display)*</span>\
@@ -157,12 +152,12 @@ implementations:
 #### Generic
 The generic filter type is suited for static placement of the controls.
 It allows for a wide range of q values and can be used to create strongly ringing, almost self-oscillating sounds.
-So called 'zipper-noises' might occur when controls are automated.
+So called 'zipper-noises' might occur when controls are automated at high automation speeds.
 
 #### State-Variable
 The state-variable filter type is designed for allowing modulation of the controls. 
 It allows 'dynamic' placement of the controls.
-The state-variable filter wont introduce 'zipper-noises' but offers a more limited range of q values.
+The state-variable filter wont introduce any 'zipper-noises' but offers a more limited range of q values.
 <span class="spacer"/>
 <div class="pb"></div>
 
@@ -213,7 +208,7 @@ Click to enable foldback of filters that go outside the audible range.
 (2kHz below the highest allowed frequency).
 </div>
 
-When disengaged, filters will stack at the limits of the allowed frequency range.
+When disengaged, filters will stack at the limits of the allowed frequency range, introducing a buildup of phase rotation around those frequencies.
 <span class="spacer"/>
 
 ### Q Skew

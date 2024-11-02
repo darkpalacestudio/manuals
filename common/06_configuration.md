@@ -26,8 +26,8 @@ validation.
 
 
 ### \[PluginName]_config.json
-The name of this file is usually *plugin dependant*. e.g. you are browsing the files for ChameleonX,
-this would mean the file would be called <span class="txt-yellow">chameleonx_config.json</span>.
+The name of this file is usually *plugin dependant*. e.g. you are browsing the files for Sloth,
+this would mean the file would be called <span class="txt-yellow">sloth_config.json</span>.
 
 On top of that, this file contains plugin-specific settings which can be changed to alter the
 functionality of the plugin. e.g. you would like to change the frequency scaling in a plugin from
