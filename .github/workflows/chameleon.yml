@@ -27,11 +27,11 @@ jobs:
       - name: Copy to tmp folder
         run: |
           cd ${{github.workspace}}/chameleon/manual
-          mkdir ${{ env.RELEASE_FOLDER }}/
-          cp -r assets ${{ env.RELEASE_FOLDER }}/
-          cp *.md ${{ env.RELEASE_FOLDER }}/
-          cp ${{github.workspace}}/common/style_dark.css ${{ env.RELEASE_FOLDER }}/
-          cp ${{github.workspace}}/common/style_print.css ${{ env.RELEASE_FOLDER }}/
+          mkdir ${{ env.BUILD_FOLDER }}/
+          cp -r assets ${{ env.BUILD_FOLDER }}/
+          cp *.md ${{ env.BUILD_FOLDER }}/
+          cp ${{github.workspace}}/common/style_dark.css ${{ env.BUILD_FOLDER }}/
+          cp ${{github.workspace}}/common/style_print.css ${{ env.BUILD_FOLDER }}/
 
       # setting the metadata title changes the title displayed by pdf-viewers, but introduces a separate heading (which is undesired). To remove that, set the title variable to null
       - name: Build Fancy Version
@@ -49,6 +49,6 @@ jobs:
         with:
           name: chameleon_manual
           path: |
-            ${{ env.RELEASE_FOLDER }}/chameleon_manual.pdf
-            ${{ env.RELEASE_FOLDER }}/chameleon_manual_print.pdf
+            ${{ env.BUILD_FOLDER }}/chameleon_manual.pdf
+            ${{ env.BUILD_FOLDER }}/chameleon_manual_print.pdf
           overwrite: 'true'
