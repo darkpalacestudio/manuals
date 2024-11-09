@@ -22,6 +22,7 @@ This means that by themselves it is unable to shape frequencies one would normal
 They do, however, introduce a phase shift which can be used for creative purposes.
 As the phase shift is frequency dependant, you can think of this as a frequency-dependant delay. Whereas standard delays delay the complete signal by a fixed amount of time, an allpass filter delays different frequencies by different amounts of time.
 <span class="spacer"/>
+<div class="pb"></div>
 
 ## Chameleon Plugins
 

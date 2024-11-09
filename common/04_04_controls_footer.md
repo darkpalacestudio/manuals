@@ -27,6 +27,7 @@ The text of the button shows the currently active processing mode.
 Displays the current version of the plugin. If 'Help' mode is enabled via the '?'-button, the
 explanation will display the exact commit-hash of the plugin.
 <span class="spacer"/>
+<div class="pb"></div>
 
 ### Oversampling-Slider
 <span class="txt-yellow">*(Located left-ish in the Footer)*</span>\
@@ -89,3 +90,4 @@ The channel options to be bypassed change, based on the state of Process Mode.
 Thus it is possible to bypass none, one or both of L/R or M/S channels, giving plenty of options, e.g. just processing the Mid channel.
 
 The button state indicate the bypassed channel, e.g. a bright `L` indicates that the Left channel is bypassed.
+<div class="pb"></div>
