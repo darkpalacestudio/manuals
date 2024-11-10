@@ -6,6 +6,7 @@
 - Introduce versioning for themes and presets
 - Switch to high precision filter
 - Improve UI behaviour
+- Improve gain slider peak display shader
 
 ## v1.1.2
 - Update to juce 8.0.2+ (with opengl bugfix)
