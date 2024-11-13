@@ -8,7 +8,7 @@ various aspects including loading and saving presets as well as loading themes.
 
 ### Menu-Button
 <span class="txt-yellow">*(Located left of the  Header)*</span>\
-Click to open the menu to browse presets and themes.
+Click the hamburger menu to open the menu to browse presets and themes.
 
 ### Previous-Preset-Button
 <span class="txt-yellow">*(Located center-right of the Header)*</span>\

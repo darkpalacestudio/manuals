@@ -83,8 +83,6 @@ e.g. If your display-scaling is set to 125% in windows, change the value of <spa
 to <span class="txt-yellow">1.25</span>.
 <div class="pb"></div>
 
-
-
 ## Presets
 Presets are `xml` files that can easily be shared and edited.
 They are stored in the following folder:
@@ -113,4 +111,11 @@ Theme files can be found in the following folder:
 - **Mac**: `/Users/Shared/Darkpalace Studio/sloth/themes`
 - **Linux**: `~/.config/Darkpalace Studio/sloth/themes`
 </div>
+
+## Preset and Theme versions
+presets and themes have specific versions.
+While we strive to make compatibility with new versions of the plugin the top priority, this can not always be ensured.
+If a preset or theme is crossed out, it means that it has an old version and needs to be updated.
+Please refer to the last section of this manual (Release Notes) to check changes that need to be adapted to.
+
 <div class="pb"></div>

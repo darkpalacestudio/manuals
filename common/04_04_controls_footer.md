@@ -3,7 +3,7 @@
 ![](assets/details_footer.png)
 </div>
 
-Shared across all Darkpalace Studio plugins, the footer component contains a set of controls that
+The footer component contains a set of controls that
 enhance the workflow such as flipping the phase/polarity, switching between Left-Right and Mid-Side processing,
 enabling delta/diff mode and even a global dry/wet mix.
 
@@ -24,7 +24,7 @@ The text of the button shows the currently active processing mode.
 
 ### Version
 <span class="txt-yellow">*(Located left in the Footer)*</span>\
-Displays the current version of the plugin. If 'Help' mode is enabled via the '?'-button, the
+Displays the current version of the plugin. If 'Help' mode is enabled via the **?**-button, the
 explanation will display the exact commit-hash of the plugin.
 <span class="spacer"/>
 <div class="pb"></div>
@@ -50,7 +50,7 @@ advices to automate this control.
 
 ### Mix-Slider
 <span class="txt-yellow">*(Located center of the Footer)*</span>\
-Click and drag to bl    end continuously between the processed and unprocessed signal allowing for parallel-processing behavior.
+Click and drag to blend continuously between the processed and unprocessed signal allowing for parallel-processing behavior.
 <span class="spacer"/>
 
 ### Phase-Button
@@ -64,12 +64,14 @@ Click to cycle through 3 different phase states:
 </div>
 <span class="spacer"/>
 
+The different phase options allow to create interesting results when mixing the processed signal with the dry signal or using the **DIFF** option.
+
 ### Diff-Button
 <span class="txt-yellow">*(Located right in the Footer)*</span>\
 Click to enable 'Diff' mode which will output the Difference/Delta in signal between the input and output.
 
 <div class="quote bg-yellow">
-Note that **DIFF** is applied before the **MIX** slider.
+Note that **DIFF** is applied before the **MIX** slider. This allows to blend the delta-signal with the dry signal.
 </div>
 <div class="pb"></div>
 
@@ -89,5 +91,5 @@ This allows to bypass individual channels.
 The channel options to be bypassed change, based on the state of Process Mode. 
 Thus it is possible to bypass none, one or both of L/R or M/S channels, giving plenty of options, e.g. just processing the Mid channel.
 
-The button state indicate the bypassed channel, e.g. a bright `L` indicates that the Left channel is bypassed.
+The button state indicate the bypassed channel, e.g. a bright **L** indicates that the Left channel is bypassed.
 <div class="pb"></div>

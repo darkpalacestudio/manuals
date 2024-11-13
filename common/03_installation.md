@@ -6,7 +6,7 @@
 
 ## Manual installation
 Darkpalace Studio plugins can be installed in a manual way.
-After downloading the ZIP (or dmg on macOS) archive for your operating system from tentary, extract the desired plugin format into your respective plugin folder.
+After downloading the zip or dmg archive for your operating system from tentary, extract the desired plugin format into your respective plugin folder.
 
 If you don't have a custom plugin folder set in your DAW, refer to the to the default locations:
 
@@ -33,7 +33,6 @@ As for the themes and presets from the ZIP archive, please extract them to the f
 </div>
 <span class="spacer"/>
 
-If you would like to know more, please refer to section {@sec:configuration} for more information 
-on installation of presets, themes and configuration files.
+If you want to learn about presets, themes and configuration files, please refer to section {@sec:configuration} (Configuration).
 
 <div class="pb"></div>
