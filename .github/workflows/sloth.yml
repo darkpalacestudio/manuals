@@ -21,10 +21,10 @@ jobs:
         shell: bash
         run: |
           echo "BUILD_FOLDER=${{github.workspace}}/build/sloth" >> $GITHUB_ENV
-          
-      - name: Copy to tmp folder
+
+      - name: run build script
         run: scripts/build_sloth.sh
-          
+
       - uses: actions/upload-artifact@v4
         with:
           name: sloth_manual
