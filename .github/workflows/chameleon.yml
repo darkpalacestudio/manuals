@@ -5,8 +5,6 @@ on:
   push:
     branches: [ master ]
     paths: [ 'chameleon/**', '.github/**', 'common/**' ]
-    tags:
-      - "v*.*.*"
 
 jobs:
   Build_Chameleon:
@@ -16,17 +14,17 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          sudo apt-get install pandoc weasyprint texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra fonts-roboto tree
+          sudo apt-get update
+          sudo apt-get install pandoc weasyprint texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra fonts-roboto
           sudo pip install pandoc-secnos
-      
+
       - name: Setup Environment Variables
         shell: bash
         run: |
           echo "BUILD_FOLDER=${{github.workspace}}/build/chameleon" >> $GITHUB_ENV
-        
+
       - name: run build script
         run: scripts/build_chameleon.sh
-
 
       - uses: actions/upload-artifact@v4
         with:

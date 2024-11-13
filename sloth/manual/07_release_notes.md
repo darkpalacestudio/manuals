@@ -3,6 +3,7 @@
 # Release Notes
 
 ## v1.2.0
+- Update to juce 8.0.3
 - Add MS Processing options in footer
 - Add individual-channel-bypass in footer
 - Introduce versioning for themes and presets
