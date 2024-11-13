@@ -14,6 +14,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          sudo apt get update
           sudo apt-get install pandoc weasyprint texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra fonts-roboto
           sudo pip install pandoc-secnos
 
