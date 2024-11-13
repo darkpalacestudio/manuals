@@ -1,6 +1,6 @@
 <h2 class="txt-purple">Menu</h2>
 <div class="image">
-![](assets/details_menu.png)
+![](assets/details_display.png)
 </div>
 
 The display component contains the preset-manager

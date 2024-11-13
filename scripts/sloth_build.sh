@@ -15,7 +15,7 @@ cp *.md $BUILD_DIR
 cp $WORKSPACE_DIR/common/*.md $BUILD_DIR/
 cp $WORKSPACE_DIR/common/style_dark.css $BUILD_DIR/
 cp $WORKSPACE_DIR/common/style_print.css $BUILD_DIR/
-cp $WORKSPACE_DIR/common/assets/ $BUILD_DIR/
+cp -r $WORKSPACE_DIR/common/assets/ $BUILD_DIR/
 ls -l $BUILD_DIR/
 
 # Building the manuals
