@@ -52,45 +52,47 @@ This is to done avoid potentially conflicting input from different automation tr
 
 
 ### Spread EQ
+<span class="txt-yellow">*(Located in the bottom of the control area)*</span>\
+
+TODO picture of spread eq controls
+
 
 The spread EQ applies a series of bell shaped eqs to the left and right channels of a track.
 Peaks are applied in alternating order and opposing gain on left and right.
 As an example (4 bells from 100Hz to 200Hz, 3dB Gain):
-- First peak (100Hz): left +3dB, right -3dB
-- Second peak (133Hz): left -3dB, right +3dB
-- Third peak (166Hz): left +3dB, right -3dB
-- Fourth peak (200Hz): left -3dB, right +3dB
+<div class="block bg-dark-1">
+- <span class="txt-purple">First peak (100Hz)</span>: left +3dB, right -3dB
+- <span class="txt-purple">Second peak (133Hz)</span>: left -3dB, right +3dB
+- <span class="txt-purple">Third peak (166Hz)</span>: left +3dB, right -3dB
+- <span class="txt-purple">Fourth peak (200Hz)</span>: left -3dB, right +3dB
+</div>
 
+
+TODO picture of L/R peaks in frequency plot
 
 The volume and phase differences introduced by the spread EQ on the two channels cause a wider stereo image while keeping reasonable good mono compatibility.
 
 
 #### Number of Modes
-<span class="txt-yellow">*(Leftmost widget in the spread eq section)*</span>\
 
 Click and drag to change the number of bell filters applied.
 
 At a value of zero, no eq is applied, effectively bypassing the spread EQ.
 
 #### Peak Distribution Slider
-<span class="txt-yellow">*(Second widget in the spread eq section)*</span>\
 
 Click and drag to change the frequency distribution for the bell EQs from linear to logarithmic.
 
 Perception of frequencies happens logarithmically: An octave above 100Hz is 200Hz. With narrow Q this can be used to create a harmonic series of peaks.
 
 #### Frequency Range Slider
-<span class="txt-yellow">*(Third widget in the spread eq section)*</span>\
 
 Click and drag to adjust the lower and upper frequency bound for the Spread EQ. Those values correspond to the lowest and highest frequencies of the bell eqs.
 
 #### Q-Slider
-<span class="txt-yellow">*(Fourth widget in the spread eq section)*</span>\
 
 Click and drag to adjust the Q value of the bell peaks.
 
 #### Gain
-
-<span class="txt-yellow">*(Rightmost widget in the spread eq section)*</span>\
 
 Click and drag to adjust thegain value of the bell peaks.
