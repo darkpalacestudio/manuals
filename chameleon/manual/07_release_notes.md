@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.2.1
+- Update to juce 8.0.6
+
 ## v1.2.0
 - Update to juce 8.0.3
 - Add MS Processing options in footer
