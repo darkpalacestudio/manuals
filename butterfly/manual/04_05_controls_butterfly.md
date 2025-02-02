@@ -29,10 +29,15 @@ Left-click and drag to adjust the frequency of the respective filter. Right-clic
 ### Upwards Compressor
 Left-click and drag the lower part of the widget to adjust the threshold of the upwards compressor.
 Left-click and drag the upper part of the widget to adjust the ratio of the upwards compressor.
+Right-click the compressor widget to toggle between **F**ast and **S**low timing constants.
 
 While a downwards compressor reduces the volume of the signal if it is above the threshold, an upwards compressor increases the volume of the signal if it is below the treshold.
-
 This can be used to directly increase the volume of softer parts.
+
+The upwards compressor uses auto timing. This means the attack and release values are determined by the incoming signal level. 
+
+<div class="block bg-dark-1">Use the input and output gain sliders to adjust the working point of the compressor and thus the timing behavior.</div>
+
 
 ### Delay
 Left-click and drag to delay the mid- or side-channel signal. This can be used to create depth in a mix or to introduce creative sound options.
