@@ -22,8 +22,17 @@ Click to cycle through 3 different phase states:
 - <span class="txt-purple">Post-Phase</span>, which flips the phase at the output of the mid- or side-channel processing.
 </div>
 
-### Lowcut- and Highcut-Sliders
-Left-click and drag to adjust the frequency of the respective filter. Right-click to change the slope. Available slopes are **off**, **6dB/oct** and **12dB/oct**.
+### Low- and High-EQ-Sliders
+Right-click to change the type of EQ.
+<div class="block bg-dark-1">
+- <span class="txt-purple">Off</span>, no EQ is applied.
+- <span class="txt-purple">6dB/oct</span>, which applies a low- or highcut filter.
+- <span class="txt-purple">12dB/oct</span>, which applies a steeper low- or highcut filter.
+- <span class="txt-purple">Shelf</span>, which applies a broad low- or high-shelf-eq to the signal.
+</div>
+
+Left-click and drag left to right to adjust the frequency of the respective filter. 
+Left-click and drag up and down in **Shelf** mode to adjust the gain (-6dB cut to +6dB boost) of the shelf EQ.
 
 
 ### Upwards Compressor
