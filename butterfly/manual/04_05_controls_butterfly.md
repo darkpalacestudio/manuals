@@ -23,17 +23,31 @@ Click to cycle through 3 different phase states:
 </div>
 <div class="pb"></div>
 
-### Lowcut- and Highcut-Sliders
-Left-click and drag to adjust the frequency of the respective filter. Right-click to change the slope. Available slopes are **off**, **6dB/oct** and **12dB/oct**.
+### Low- and High-EQ-Sliders
+Right-click to change the type of EQ.
+<div class="block bg-dark-1">
+- <span class="txt-purple">Off</span>, no EQ is applied.
+- <span class="txt-purple">6dB/oct</span>, which applies a low- or highcut filter.
+- <span class="txt-purple">12dB/oct</span>, which applies a steeper low- or highcut filter.
+- <span class="txt-purple">Shelf</span>, which applies a broad low- or high-shelf-eq to the signal.
+</div>
+
+Left-click and drag left to right to adjust the frequency of the respective filter. 
+Left-click and drag up and down in **Shelf** mode to adjust the gain (-6dB cut to +6dB boost) of the shelf EQ.
 
 
 ### Upwards Compressor
 Left-click and drag the lower part of the widget to adjust the threshold of the upwards compressor.
 Left-click and drag the upper part of the widget to adjust the ratio of the upwards compressor.
+Right-click the compressor widget to toggle between **F**ast and **S**low timing constants.
 
 While a downwards compressor reduces the volume of the signal if it is above the threshold, an upwards compressor increases the volume of the signal if it is below the treshold.
-
 This can be used to directly increase the volume of softer parts.
+
+The upwards compressor uses auto timing. This means the attack and release values are determined by the incoming signal level. 
+
+<div class="block bg-dark-1">Use the input and output gain sliders to adjust the working point of the compressor and thus the timing behavior.</div>
+
 
 ### Delay
 Left-click and drag to delay the mid- or side-channel signal. This can be used to create depth in a mix or to introduce creative sound options.
