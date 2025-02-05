@@ -21,6 +21,7 @@ Click to cycle through 3 different phase states:
 - <span class="txt-purple">Pre-Phase</span>, which inverts the polarity at the input of the mid- or side-channel processing.
 - <span class="txt-purple">Post-Phase</span>, which flips the phase at the output of the mid- or side-channel processing.
 </div>
+<div class="pb"></div>
 
 ### Lowcut- and Highcut-Sliders
 Left-click and drag to adjust the frequency of the respective filter. Right-click to change the slope. Available slopes are **off**, **6dB/oct** and **12dB/oct**.
