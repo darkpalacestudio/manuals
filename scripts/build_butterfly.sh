@@ -20,6 +20,6 @@ tree $BUILD_FOLDER/
 
 cd $BUILD_FOLDER/
 # build fancy version
-pandoc *.md -o butterfly_manual.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css style_dark.css --metadata title="Sloth" -V "title:"
+pandoc *.md -o butterfly_manual.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css style_dark.css --metadata title="Butterfly" -V "title:"
 # build print version
-pandoc *.md -o butterfly_manual_print.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css style_print.css --metadata title="Sloth" -V "title:"
+pandoc *.md -o butterfly_manual_print.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css style_print.css --metadata title="Butterfly" -V "title:"
