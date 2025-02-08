@@ -3,6 +3,7 @@
 ## v1.2.1
 - Update to juce 8.0.6
 - Add LV2 plugin format on windows and linux
+- Remove red flash on clap plugin startup
 
 ## v1.2.0
 - Update to juce 8.0.3
