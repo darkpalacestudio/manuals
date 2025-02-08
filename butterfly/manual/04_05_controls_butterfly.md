@@ -27,13 +27,13 @@ Click to cycle through 3 different phase states:
 Right-click to change the type of EQ.
 <div class="block bg-dark-1">
 - <span class="txt-purple">Off</span>, no EQ is applied.
-- <span class="txt-purple">6dB/oct</span>, which applies a low- or highcut filter.
-- <span class="txt-purple">12dB/oct</span>, which applies a steeper low- or highcut filter.
-- <span class="txt-purple">Shelf</span>, which applies a broad low- or high-shelf-eq to the signal.
+- <span class="txt-purple">1st Order Filter</span>, which applies a 6dB/oct low- or highcut filter.
+- <span class="txt-purple">2nd Order Filter</span>, which applies a 12dB/oct low- or highcut filter.
+- <span class="txt-purple">Shelf</span>, which applies a gentle low- or high-shelf-eq to the signal.
 </div>
 
 Left-click and drag left to right to adjust the frequency of the respective filter. 
-Left-click and drag up and down in **Shelf** mode to adjust the gain (-6dB cut to +6dB boost) of the shelf EQ.
+Left-click and drag up/down in **Shelf** mode to adjust the gain (-6dB cut to +6dB boost) of the shelf EQ.
 
 
 ### Upwards Compressor
@@ -41,16 +41,14 @@ Left-click and drag the lower part of the widget to adjust the threshold of the 
 Left-click and drag the upper part of the widget to adjust the ratio of the upwards compressor.
 Right-click the compressor widget to toggle between **F**ast and **S**low timing constants.
 
-While a downwards compressor reduces the volume of the signal if it is above the threshold, an upwards compressor increases the volume of the signal if it is below the treshold.
-This can be used to directly increase the volume of softer parts.
+While a downwards compressor **reduces** the volume of the signal if it is **above** the threshold, an upwards compressor **increases** the volume of the signal if it is **below** the treshold.
+This can be used to easily increase the volume of softer parts.
 
-The upwards compressor uses auto timing. This means the attack and release values are determined by the incoming signal level. 
-
-<div class="block bg-dark-1">Use the input and output gain sliders to adjust the working point of the compressor and thus the timing behavior.</div>
+The upwards compressor uses auto timing. This means the attack and release values are determined by the incoming signal level. Use the input and output gain sliders to adjust the working point of the compressor and thus the timing behavior.
 
 
 ### Delay
-Left-click and drag to delay the mid- or side-channel signal. This can be used to create depth in a mix or to introduce creative sound options.
+Left-click and drag to delay the mid- or side-channel signal. This can be used to create depth in a mix (when applied to the side channel) or to introduce comb filtering (when applied to one of the L/R channels).
 
 ### Link
 <span class="txt-yellow">*(Located bottom-center of the Display)*</span>\
@@ -69,10 +67,14 @@ This is to done avoid potentially conflicting input from different automation tr
 ### Spread EQ
 <span class="txt-yellow">*(Located in the bottom of the control area)*</span>\
 
-TODO picture of spread eq controls
+<div class="image">
+![](assets/spread_eq_controls.png)
+</div>
 
 
-The spread EQ applies a series of bell shaped eqs to the left and right channels of a track.
+The spread EQ applies a series of bell shaped EQs to the left and right channels of a track. Note that the spread EQ is always applied to the left and right channel, regardless of the selected processing mode.
+
+
 Peaks are applied in alternating order and opposing gain on left and right.
 As an example (4 bells from 100Hz to 200Hz, 3dB Gain):
 <div class="block bg-dark-1">
@@ -82,9 +84,6 @@ As an example (4 bells from 100Hz to 200Hz, 3dB Gain):
 - <span class="txt-purple">Fourth peak (200Hz)</span>: left -3dB, right +3dB
 </div>
 
-
-TODO picture of L/R peaks in frequency plot
-
 The volume and phase differences introduced by the spread EQ on the two channels cause a wider stereo image while keeping reasonable good mono compatibility.
 
 
@@ -93,6 +92,8 @@ The volume and phase differences introduced by the spread EQ on the two channels
 Click and drag to change the number of bell filters applied.
 
 At a value of zero, no eq is applied, effectively bypassing the spread EQ.
+
+An odd number of modes will increase the volume on one side. If you want to keep even volume, select an even number of modes.
 
 #### Peak Distribution Slider
 
