@@ -8,32 +8,37 @@ enhance the workflow such as flipping the phase/polarity, switching between Left
 enabling delta/diff mode and even a global dry/wet mix.
 
 ### ?-Button
-<span class="txt-yellow">*(Located left in the Footer)*</span>\
-Click to activate 'Help' mode which will display explanations directly within the 
-plugin window when hovering over a control.
+<span class="location">*(Located left in the Footer)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click:</span> Toggle 'Help' mode.
+</div>
+When enable, 'Help' mode will display explanations directly within the plugin window when hovering over a widget.
 <span class="spacer"/>
 
 ### Process Mode Button
-<span class="txt-yellow">*(Located left in the Footer)*</span>\
-Click to toggle between Left-Right-processing and Mid-Side-processing. 
-Conversion to the respective processing more is performed before any processing. 
-Likewise, conversion back to the original channel configuration is performed as the last step of processing.
-
-This control also affects the single channel bypass options.
-The text of the button shows the currently active processing mode.
+<span class="location">*(Located left in the Footer)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click:</span> Toggle Processing Mode.
+</div>
+The plugin can operate in both Left/Right and Mid/Side processing modes. conversion to the
+respective mode is done before any processing is applied. Likewise, conversion back to the original 
+channel configuration is performed at the end of the processing chain. Aditionally, the mode will 
+also effect the single-channel bypass options.
 
 ### Version
-<span class="txt-yellow">*(Located left in the Footer)*</span>\
+<span class="location">*(Located left in the Footer)*</span>\
 Displays the current version of the plugin. If 'Help' mode is enabled via the **?**-button, the
 explanation will display the exact commit-hash of the plugin.
 <span class="spacer"/>
 <div class="pb"></div>
 
 ### Oversampling-Slider
-<span class="txt-yellow">*(Located left-ish in the Footer)*</span>\
-Click and drag to change oversampling.
-A display value of 1x, indicates no oversampling.
-Any higher value can help with reducing distortion characteristics.
+<span class="location">*(Located left-ish in the Footer)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click and Drag Left/Right:</span> Change Oversampling value.
+</div>
+The max oversampling value varies depending on the plugin. However, a value of 1x will always
+indicate no oversampling.
 
 The oversampling process includes filters aimed at removing upsampling artifacts as well as
 removing useless frequency content introduced by the oversampling process. For this purpose,
@@ -49,47 +54,61 @@ advices to automate this control.
 <span class="spacer"/>
 
 ### Mix-Slider
-<span class="txt-yellow">*(Located center of the Footer)*</span>\
-Click and drag to blend continuously between the processed and unprocessed signal allowing for parallel-processing behavior.
+<span class="location">*(Located center of the Footer)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click and Drag Left/Right:</span> Change Mix value.
+</div>
+The Mix slider allows for blending between a dry and fully processed signal, allowing for 
+parallel processing behaviour.
 <span class="spacer"/>
 
 ### Phase-Button
-<span class="txt-yellow">*(Located right of the Mix slider)*</span>\
-Click to cycle through 3 different phase states:
-
-<div class="block bg-dark-1">
-- <span class="txt-purple">No-Phase</span>, which leaves the signal as is.
-- <span class="txt-purple">Pre-Phase</span>, which inverts the polarity at the input stage, before processing.
-- <span class="txt-purple">Post-Phase</span>, which flips the phase at the output of the plugin, after mix.
+<span class="location">*(Located right of the Mix slider)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click: </span> Cycle thruogh Phase modes.
 </div>
-<span class="spacer"/>
+All of our plugin support 3 different phase modes for processing:
+<div class="block bg-dark-1">
+- <span class="txt-purple">No-Phase:</span> Leave signal as is, no change.
+- <span class="txt-purple">Pre-Phase:</span> Inverts the polarity at the input stage, before processing.
+- <span class="txt-purple">Post-Phase:</span> Inverst the polarity at the output statge, after the mix.
+</div>
 
 The different phase options allow to create interesting results when mixing the processed signal with the dry signal or using the **DIFF** option.
-
-### Diff-Button
-<span class="txt-yellow">*(Located right in the Footer)*</span>\
-Click to enable 'Diff' mode which will output the Difference/Delta in signal between the input and output.
-
-<div class="quote bg-yellow">
-Note that **DIFF** is applied before the **MIX** slider. This allows to blend the delta-signal with the dry signal.
-</div>
 <div class="pb"></div>
 
+### Diff-Button
+<span class="location">*(Located right in the Footer)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click: </span> Toggle Difference/Delta mode.
+</div>
+When enabled the plugin will instead otuput the delta signal.
+
+<div class="quote bg-yellow">
+Note that **DIFF** is applied *before* the **MIX** slider. This allows to blend the delta-signal with the dry signal for 
+additional parallel processing options.
+</div>
+
 ### Bypass-Button
-<span class="txt-yellow">*(located right in the Footer)*</span>\
-Click to enable bypass mode which will directly route the input signal to the output signal and
-bypassing the plugin.
+<span class="location">*(located right in the Footer)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click: </span> Toggle Bypass.
+</div>
+When Bypass mode is enabled, the input signal is directly routed to the output, bypassing the entire
+signal processing chain. Additionally, the plugin will also turn grey-scale indicating its state.
 
+<div class="quote bg-yellow">
 Note that internal oversampling and process mode conversion will still be performed, even if bypass is enabled. 
-
-The UI will become grey-scale indicating bypass state.
+</div>
 <span class="spacer"/>
 
-### Individual Channel Bypass
-<span class="txt-yellow">*(located right in the Footer)*</span>\
-This allows to bypass individual channels. 
+#### Individual Channel Bypass
+<span class="location">*(located right in the Footer)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click: </span> Toggle Bypass per Channel.
+</div>
 The channel options to be bypassed change, based on the state of Process Mode. 
-Thus it is possible to bypass none, one or both of L/R or M/S channels, giving plenty of options, e.g. just processing the Mid channel.
-
-The button state indicate the bypassed channel, e.g. a bright **L** indicates that the Left channel is bypassed.
+Thus it is possible to bypass none, one or both of L/R or M/S channels, giving plenty of options, 
+e.g. just processing the Mid channel. Additionally, the bypassed channel will be highlighted indicating
+its state.
 <div class="pb"></div>

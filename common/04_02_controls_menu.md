@@ -3,29 +3,41 @@
 ![](assets/details_display.png)
 </div>
 
-The display component contains the preset-manager
-and theme-manager windows that allow you to browse the various presets and themes available.
-Feel free to explore the presets and themes to get a taste for creative opportunities!
+The Display Widget allows you to browse the various presets and themes that are available. When
+a preset or theme is incompatible with the current version the item will be displayed with a 
+strikethrough.
 
-### Preset-Manager-Button
-<span class="txt-yellow">*(Located top-left of the Display)*</span>\
-Click to switch to the preset-manager mode, will display a list of available presets.
-
-### Save-Preset-Button
-<span class="txt-yellow">*(Located top-left of the Display)*</span>\
-Click to save a preset, make sure the preset-manager is active by having PRESET in the top-left 
-of the display highlighted. Clicking this will open up File-Dialogue where you will be prompted 
-for a name and location.
+### Preset Button
+<span class="location">*(Located top-left of the Display)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click:</span> Switch to the Preset-Manager.
+</div>
 <span class="spacer"/>
 
-### Theme-Manager-Button
-<span class="txt-yellow">*(Located bottom-left of the Display)*</span>\
-Click to switch to the theme-manager mode, will display a list of available themes.
+### Save-Preset Button
+<span class="location">*(Located top-left of the Display)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click:</span> Save the current information to a preset.
+</div>
+The Save Preset button will only appear when the Preset-Manager is active, indicated by PRESET being
+highlighted. Saving is handled through your systems File-Dialogue window where you will be prompted
+for a name and location.
+<div class="pb"></div>
+
+### Theme Button
+<span class="location">*(Located bottom-left of the Display)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click:</span> Switch to the Theme-Manager.
+</div>
 <span class="spacer"/>
 
 ### Menu Options
-<span class="txt-yellow">*(Located right side of the Display)*</span>\
-Will display the available options based on which mode is active on the left side of the Display.
-When there is a large amount of options, the scroll-bar can be used as well as the mouse-wheel
-to view more options.
-<span class="spacer"/>
+<span class="location">*(Located right side of the Display)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click:</span> Select Preset.
+- <span class="item">Mouse-Wheel:</span> Move Window Up/Down.
+</div>
+Displays the available options basedo nw hich mode is active on the left sideo of the Display.
+When there is a alrge amount of options, the scroll-bar on the right side can be used as well as 
+the Mouse-Wheel to go up/down within the window.
+<div class="pb"></div>

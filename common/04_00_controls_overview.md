@@ -20,13 +20,14 @@ majority of widgets. Shared components include:
 
 Whereas shared interactions include:
 
-<div class="block bg-dark-1">
-- Double-Clicking on a widget to reset it to its default value.
-- Holding `SHIFT` or `CTRL` while dragging a widget to allow for precise adjustments.
-- Using the mouse-wheel to adjust a widget in incremental steps.
-- Hovering over a widget for a short time shows a tooltip.
-- Changing the value of any widget makes a tooltip show the current value.
-- Pressing the `?` button *(located bottom-left)* will turn on explanations.
-- The plugin can be scaled by dragging any of the sides or corners.
+<div class="block bg-dark-2">
+- <span class="txt-orange">Double-Clicking:</span> Reset to default values.
+- <span class="txt-orange">Holding SHIFT or CTRL:</span> Precision mode, smaller incremental values
+- <span class="txt-orange">Mouse-Wheel:</span> Incremental Steps.
+- <span class="txt-orange">Hovering over a Widget:</span> Shows a tooltip.
+- <span class="txt-orange">Adjusting a Widget:</span> Shows tooltip with the current value.
+- <span class="txt-orange">Enabling ?:</span> Shows explanations when hovering over widgets.
+- <span class="txt-orange">Resizing:</span> Done by grabbing any of the sides or corners.
 </div>
+
 <div class="pb"></div>
