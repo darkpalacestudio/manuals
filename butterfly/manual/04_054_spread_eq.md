@@ -23,12 +23,10 @@ The volume and phase differences introduced by the spread EQ on the two channels
 <div class="block controls bg-dark-2">
 - <span class="item">Left-Click and Drag Up/Down:</span> Adjust Filter Count.
 </div>
-The Filter count is an indication of how many "dual" bell-curves are applied within the frequency range.
-For each instance, 2 bell-curve filters will be created with opposite gain values where one is placed on 
-the left channel and the other is placed right channel.
+The Filter count determines how many "dual" bell-curves are applied within the frequency range.
+For each instance, 2 bell-curve filters will be created with opposite gain values where one is placed on the left channel and the other is placed right channel.
 
-A value of 0 will disable the Spread-EQ and any odd-values will result in the volume of one of the channels
-being louder than the other, in order to prevent this it's advised to keep the count equal.
+A value of 0 will disable the Spread-EQ and any odd-values will result in the volume of one of the channels being louder than the other, in order to prevent this it's advised to keep the count equal.
 <div class="pb"></div>
 
 #### Peak Distribution Slider
@@ -36,9 +34,9 @@ being louder than the other, in order to prevent this it's advised to keep the c
 <div class="block controls bg-dark-2">
 - <span class="item">Left-Click and Drag Left/Right:</span> Adjust filter distribution.
 </div>
-The filter distribution curve is an indication to placing them between a linear and exponential
-scale within the frequency spectrum. As the natural perception of frequencies happens exponentially,
-setting the value to 100% exponential (curved) can result in boosting the harmomic series with a narrow Q value.
+The filter distribution curve is an indication to placing them between a linear and logarithmic
+scale within the frequency spectrum. As the natural perception of frequencies happens logarithmically,
+setting the value to 100% logarithmic can result in boosting the harmomic series with a narrow Q value.
 <span class="spacer"/>
 
 #### Frequency Range Slider

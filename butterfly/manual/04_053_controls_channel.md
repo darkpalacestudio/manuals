@@ -4,10 +4,10 @@
 </div>
 
 #### Low- and High-EQ-Sliders
-<span class="location">*(Located on the left half of the Channel Controls)*</span>\
+<span class="location">*(Located on the outer half of the Channel Controls)*</span>\
 <div class="block controls bg-dark-2">
 - <span class="item">Left-Click and Drag Left/Right:</span> Adjust frequency of the respective filter.
-- <span class="item">Right-Click:</span> Cycle through different filter states.<br/>
+- <span class="item">Right-Click:</span> Cycle through different EQ types.<br/>
 <br/>
 - Additionally, when a filter is set to Shelf Mode,
 - <span class="item">Left-Click and Drag Up/Down:</span> Change volume.
@@ -23,7 +23,7 @@ Both the Low- and High- EQs have 4 different states through which they can be cy
 <div class="pb"></div>
 
 #### Upwards Compressor
-<span class="location">*(Located on the right half of the Channel Controls)*</span>\
+<span class="location">*(Located on the outer of the Channel Controls)*</span>\
 <div class="block controls bg-dark-2">
 - <span class="txt-orange">Left-Click and Drag:</span> Adjust the ratio from 1:1 to 10:1
 - <span class="txt-orange">Left-Click and Drag:</span> Adjust the threshold from -40dB to +6dB.
@@ -45,6 +45,6 @@ The timings of the compressor are automatically calculated based on the incommin
 <span class="spacer"/>
 
 #### Delay
-<span class="location">*(Located on the right-most side of the Channel Controls)*</span>\
+<span class="location">*(Located on the outmost side of the Channel Controls)*</span>\
 Left-click and drag to delay the mid- or side-channel signal. This can be used to create depth in a mix (when applied to the side channel) or to introduce comb filtering (when applied to one of the L/R channels).
 <div class="pb"></div>

@@ -37,7 +37,7 @@ for a name and location.
 - <span class="item">Left-Click:</span> Select Preset.
 - <span class="item">Mouse-Wheel:</span> Move Window Up/Down.
 </div>
-Displays the available options based on which mode is active on the left sideo of the Display.
-When there is a alrge amount of options, the scroll-bar on the right side can be used as well as 
+Displays the available options based on which mode is active on the left side of the Display.
+When there is a large amount of options, the scroll-bar on the right side can be used as well as 
 the Mouse-Wheel to go up/down within the window.
 <div class="pb"></div>
