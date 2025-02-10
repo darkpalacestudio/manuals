@@ -5,6 +5,7 @@
   --dark-1: #ffffff;
   --dark-2: #ffffff;
   --dark-3: #ffffff;
+  --dark-4: #ffffff;
 
   --light-1: #000000;
 
@@ -38,14 +39,15 @@ body {
 @page {
   margin-left: 2.5cm;
   margin-right: 2.5cm;
+  margin-top: 1.25cm;
 
   size: letter;
-  background-color: var(--dark-2);
+  background-color: var(--dark-3);
 }
 
 @page:left {
   @bottom-left-corner {
-    background-color: var(--dark-3);
+    background-color: var(--dark-4);
     content: counter(page) "\00a0\00a0\00a0";
 
     border-top-right-radius: .5cm;
@@ -63,7 +65,7 @@ body {
 
 @page:right {
   @bottom-right-corner {
-    background-color: var(--dark-3);
+    background-color: var(--dark-4);
     content: "\00a0\00a0\00a0" counter(page);
 
     border-top-left-radius: .5cm;
@@ -103,8 +105,8 @@ body {
 /* ------------------------ Front Page ------------------------ */
 
 @page:first {
-  @bottom-left-corner { background-color: var(--dark-2); content: ''; }
-  @bottom-right-corner { background-color: var(--dark-2); content: ''; }
+  @bottom-left-corner { background-color: var(--dark-3); content: ''; }
+  @bottom-right-corner { background-color: var(--dark-3); content: ''; }
 }
 
 .cover { padding: 0; margin: 0; display: flex; flex-direction: column; justify-content: space-evenly; height: 920px; }
@@ -116,7 +118,7 @@ body {
 
 
 /* ------------------------ Global ------------------------ */
-h1, h2, h3, h4, h5, h6 { margin-bottom: 8px; padding-bottom: 0px}
+h1, h2, h3, h4, h5, h6 { margin-bottom: 0px; padding-bottom: 0px; }
 
 h1 { counter-increment: h1section; counter-reset: h2section; }
 h1::before { position: absolute; left: -1.5cm; content: counter(h1section)".0"; }
@@ -139,11 +141,14 @@ ul, ol { list-style-position: outside; padding-left: 24px; }
 li { margin-bottom: 4px; }
 
 /* ------------------------ Util ------------------------ */
+.location { top: -2px; font-size: 10pt; color: var(--clr-yellow); }
+
+.block { margin-top: 20px; margin-bottom: 20px; }
 .block::before {  
   position: absolute;
 
   left: -50%;
-  top: -7px;
+  top: -8px;
 
   width: 200%;
   height: 100%;
@@ -152,9 +157,15 @@ li { margin-bottom: 4px; }
   content: '';
 }
 
+.block.controls { margin-top: 0px; top: -12px; padding-bottom: 0; margin-bottom: -12px; }
+.block.controls::before { top: -2px; padding-bottom: 6px; }
+.block.controls ul { padding-left: 0.8em; }
+.block.controls .item { color: var(--clr-orange); }
+
 .txt-dark-1 { color: var(--dark-1); }
 .txt-dark-2 { color: var(--dark-2); }
 .txt-dark-3 { color: var(--dark-3); }
+.txt-dark-4 { color: var(--dark-4); }
 
 .txt-light { color: var(--light-1); }
 
@@ -169,6 +180,7 @@ li { margin-bottom: 4px; }
 .block.bg-dark-1::before { background-color: var(--dark-1); }
 .block.bg-dark-2::before { background-color: var(--dark-2); }
 .block.bg-dark-3::before { background-color: var(--dark-3); }
+.block.bg-dark-4::before { background-color: var(--dark-4); }
 
 .block.bg-light::before { background-color: var(--light-1); }
 
