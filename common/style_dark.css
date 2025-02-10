@@ -5,6 +5,7 @@
   --dark-1: #17191D;
   --dark-2: #22252A;
   --dark-3: #2F3237;
+  --dark-4: #1E2025;
 
   --light-1: #D5D9DD;
 
@@ -169,6 +170,7 @@ li { margin-bottom: 4px; }
 .block.bg-dark-1::before { background-color: var(--dark-1); }
 .block.bg-dark-2::before { background-color: var(--dark-2); }
 .block.bg-dark-3::before { background-color: var(--dark-3); }
+.block.bg-dark-4::before { background-color: var(--dark-4); }
 
 .block.bg-light::before { background-color: var(--light-1); }
 

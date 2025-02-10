@@ -2,48 +2,51 @@
 <div class="image">
 ![](assets/details_controls_channels.png)
 </div>
-<br/>
-<div class="quote bg-yellow">
-The Channel controls are essentially the same so the following information will apply to both of them despite them focussing on separate channels.
-</div>
-<br/>
 
 #### Low- and High-EQ-Sliders
-Right-click to change the type of EQ.
+<span class="txt-yellow">*(Located on the left half of the Channel Controls)*</span>\
+***Left-Click and Drag Left/Right*** to change the frequency of the respective filter.<br/>
+***Right-Click*** to cycle through different filter states.<br/>
+
+Additionally, when a filter is set to ***Shelf*** mode, the gain can by adjusted<br/> 
+by ***Dragging Up/Down***.
+
+Both the Low- and High- EQs have 4 different statres through which they can be toggled:
 <div class="block bg-dark-1">
-- <span class="txt-purple">Off</span>, no EQ is applied.
-- <span class="txt-purple">1st Order Filter</span>, which applies a 6dB/oct low- or highcut filter.
-- <span class="txt-purple">2nd Order Filter</span>, which applies a 12dB/oct low- or highcut filter.
-- <span class="txt-purple">Shelf</span>, which applies a gentle low- or high-shelf-eq to the signal.
+- <span class="txt-purple">Off</span>: No EQ is applied.
+- <span class="txt-purple">1st Order Filter</span>: Applies a 6dB/oct Low- or High- Pass filter.
+- <span class="txt-purple">2nd Order Filter</span>: Applies a 12dB/oct Low- or High- Pass filter.
+- <span class="txt-purple">Shelf</span>: Applies a 12dB/oct Low- or High - Shelf-EQ to the signal.
 </div>
-
-Left-click and drag left to right to adjust the frequency of the respective filter. 
-Left-click and drag up/down in **Shelf** mode to adjust the gain (-6dB cut to +6dB boost) of the shelf EQ.
-
+<div class="pb"></div>
 
 #### Upwards Compressor
-Left-click and drag the lower part of the widget to adjust the threshold of the upwards compressor.
-Left-click and drag the upper part of the widget to adjust the ratio of the upwards compressor.
-Right-click the compressor widget to toggle between **F**ast and **S**low timing constants.
+<span class="txt-yellow">*(Located on the right half of the Channel Controls)*</span>\
+<div class="block bg-dark-4">
+- <span class="txt-orange">Left-Click and Drag:</span> Adjust the ratio from 1:1 to 10:1
+- <span class="txt-orange">Left-Click and Drag:</span> Adjust the threshold from -40dB to +6dB.
+- <span class="txt-orange">Right-Click:</span> Switch between ***S***low and ***F***ast timings.
+</div>
+<br/>
+While a standard compressor *reduces* the volume and dynamic range when the signal goes *above* the threshold, an upwards compressor *increases* the volume while lowering the dynamic range when the signal goes *below* the threshold, allowing for
+an easy way to adjust the volume of quieter material.
 
-While a downwards compressor **reduces** the volume of the signal if it is **above** the threshold, an upwards compressor **increases** the volume of the signal if it is **below** the treshold.
-This can be used to easily increase the volume of softer parts.
+The timings of the compressor are automatically calculated based on the incomming signal and vary depending on which mode is active, see the table below for the timings.\
+<br/>
+<div class="block bg-dark-1">
+- <span class="txt-purple">S (Slow)</span>
+- - Attack: 40ms to 400ms
+- - Release: 100ms to 1000ms
+<br/>
+- <span class="txt-purple">F (Fast)</span>
+- - Attack: 4ms to 40ms
+- - Release: 10ms to 100ms
+</div>
+<div class="pb"></div>
 
-The upwards compressor uses auto timing. This means the attack and release values are determined by the incoming signal level. Use the input and output gain sliders to adjust the working point of the compressor and thus the timing behavior.
 
 
 #### Delay
+<span class="txt-yellow">*(Located on the right-most side of the Channel Controls)*</span>\
 Left-click and drag to delay the mid- or side-channel signal. This can be used to create depth in a mix (when applied to the side channel) or to introduce comb filtering (when applied to one of the L/R channels).
-
-#### Link
-<span class="txt-yellow">*(Located bottom-center of the Display)*</span>\
-
-Click to link the Mid-Side-Controls (Gain, Phase, Filters, Compressor and Delay) together for changing the values in tandem. 
-This provides easy access to modify both mid and side channels.
-
-Please note that this will only affect changes made via the interface and not automation.
-If automation is used to change any of the parameters when linking is enabled, only the automated
-parameter will change whereas the other counterpart will remain unaffected.
-
-This is to done avoid potentially conflicting input from different automation tracks.
 <div class="pb"></div>
