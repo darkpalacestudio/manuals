@@ -39,6 +39,7 @@ body {
 @page {
   margin-left: 2.5cm;
   margin-right: 2.5cm;
+  margin-top: 1.25cm;
 
   size: letter;
   background-color: var(--dark-3);
@@ -151,14 +152,13 @@ li { margin-bottom: 4px; }
 
   width: 200%;
   height: 100%;
-  /* padding-top: 4px; */
-  padding-bottom: 12px;
+  padding-bottom: 16px;
 
   content: '';
 }
 
 .block.controls { margin-top: 0px; top: -12px; padding-bottom: 0; margin-bottom: -12px; }
-.block.controls::before { top: -4px; padding-bottom: 8px; }
+.block.controls::before { top: -2px; padding-bottom: 6px; }
 .block.controls ul { padding-left: 0.8em; }
 .block.controls .item { color: var(--clr-orange); }
 
