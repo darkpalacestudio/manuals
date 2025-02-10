@@ -38,12 +38,12 @@ plugin:
 - Change the value of <span class="txt-purple">"exponential"</span> to <span class="txt-yellow">false</span>
 - Change the value for <span class="txt-purple">"frequency_skew"</span> to <span class="txt-yellow">1.0</span>
 </div>
-<p><p><span class="spacer"/>
+</br>
 <div class="quote bg-yellow">
 If no json file is found or if the json is invalid (e.g. a typo or a missing entry), the plugin 
 will use default settings. 
 </div>
-<p><p><span class="spacer"/>
+<span class="spacer"/>
 
 
 
@@ -95,6 +95,7 @@ They are stored in the following folder:
 
 Another option is to click the **Save Preset** button in the menu.
 This will open the system dialog that will directly show you the folder where presets are stored.
+<div class="pb"></div>
 
 ## Themes
 ### How to switch themes
@@ -111,6 +112,7 @@ Theme files can be found in the following folder:
 - **Mac**: `/Users/Shared/Darkpalace Studio/sloth/themes`
 - **Linux**: `~/.config/Darkpalace Studio/sloth/themes`
 </div>
+<div class="pb"></div>
 
 ## Preset and Theme versions
 presets and themes have specific versions.
