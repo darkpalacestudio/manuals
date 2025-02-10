@@ -1,0 +1,66 @@
+<h3 class="txt-blue">Spread EQ</h2>
+<div class="image">
+![](assets/details_controls_spread_eq.png)
+</div>
+</div>
+The spread EQ applies a series of bell shaped EQs to the left and right channels of a track. Note that the spread EQ is always applied to the left and right channel, regardless of the selected processing mode.
+
+
+Peaks are applied in alternating order and opposing gain on left and right.
+As an example (4 bells from 100Hz to 200Hz, 3dB Gain):
+<div class="block bg-dark-1">
+- <span class="txt-purple">First peak (100Hz)</span>: left +3dB, right -3dB
+- <span class="txt-purple">Second peak (133Hz)</span>: left -3dB, right +3dB
+- <span class="txt-purple">Third peak (166Hz)</span>: left +3dB, right -3dB
+- <span class="txt-purple">Fourth peak (200Hz)</span>: left -3dB, right +3dB
+</div>
+
+The volume and phase differences introduced by the spread EQ on the two channels cause a wider stereo image while keeping reasonable good mono compatibility.
+<br/>
+
+#### Filter Count
+<span class="location">*(Located left of the Spread EQ Widget)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click and Drag Up/Down:</span> Adjust Filter Count.
+</div>
+The Filter count is an indication of how many "dual" bell-curves are applied within the frequency range.
+For each instance, 2 bell-curve filters will be created with opposite gain values where one is placed on 
+the left channel and the other is placed right channel.
+
+A value of 0 will disable the Spread-EQ and any odd-values will result in the volume of one of the channels
+being louder than the other, in order to prevent this it's advised to keep the count equal.
+<div class="pb"></div>
+
+#### Peak Distribution Slider
+<span class="location">*(Located left-ish of the Spread EQ Widget)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click and Drag Left/Right:</span> Adjust filter distribution.
+</div>
+The filter distribution curve is an indication to placing them between a linear and exponential
+scale within the frequency spectrum. As the natural perception of frequencies happens exponentially,
+setting the value to 100% exponential (curved) can result in boosting the harmomic series with a narrow Q value.
+<span class="spacer"/>
+
+#### Frequency Range Slider
+<span class="location">*(Located central of the Spread EQ Widget)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click and Drag Left/Right:</span> Adjust filter placement range.
+</div>
+The Frequency Range slider is a widget separated into 3 components that can each be dragged to
+change the value:
+<div class="block bg-dark-1">
+- <span class="txt-purple">Left Handle:</span>: Adjust the lower-range for the filter placement.
+- <span class="txt-purple">Middle Rail:</span>: Move the whole range left/right for the filter placement..
+- <span class="txt-purple">Right Handle:</span>: Adjust the upper-range for the filter placement.
+</div>
+<span class="spacer"/>
+
+#### Q-Slider
+<span class="location">*(Located right-ish of the Spread EQ Widget)*</span>\
+Click and drag to adjust the Q value of the bell peaks.
+<span class="spacer"/>
+
+#### Gain
+<span class="location">*(Located right of the Spread EQ Widget)*</span>\
+Click and drag to adjust thegain value of the bell peaks.
+<div class="pb"></div>
