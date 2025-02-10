@@ -16,7 +16,6 @@ majority of widgets. Shared components include:
 - <span class="txt-blue">Control Area</span>
 - <span class="txt-green">Footer</span>
 </div>
-<span class="spacer"/>
 
 Whereas shared interactions include:
 

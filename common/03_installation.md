@@ -22,7 +22,6 @@ If you don't have a custom plugin folder set in your DAW, refer to the to the de
 - AU
     - **macOS**: `/Library/Audio/Plug-Ins/Components`
 </div>
-<span class="spacer"/>
     
 As for the themes and presets from the ZIP archive, please extract them to the following locations:
 
@@ -31,7 +30,6 @@ As for the themes and presets from the ZIP archive, please extract them to the f
 - **Mac**: `/Users/Shared/Darkpalace Studio/[pluginName]/`
 - **Linux**: `~/.config/Darkpalace Studio/[pluginName]/`
 </div>
-<span class="spacer"/>
 
 If you want to learn about presets, themes and configuration files, please refer to section {@sec:configuration} (Configuration).
 
