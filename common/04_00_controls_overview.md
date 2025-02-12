@@ -37,10 +37,12 @@ In order to keep a consistent playing-field, our plugins share common interactio
 ### Visual Feedback
 A lot of the widgets within our plugins are designed to provide visual feedback to indicate a change 
 is occuring. Additionally this is aided by the toolip and explanation system.
+<span class="spacer"/>
 
 #### Explanations
 When help mode is enabled *(Located left of the footer indicated by a '?')*, hovering over any widget
 will show a window containing an explanation of its functionality.
+<span class="spacer"/>
 
 #### Tooltip
 <div class="image">
@@ -48,7 +50,6 @@ will show a window containing an explanation of its functionality.
 </div>
 When hovering over any of the widgets, a tooltip will show up containing the name of the widget. 
 Additionally, the tooltip will also display if a widget has a left and/or right mouse interaction
-associated with it indicated by a Left and Right Icon together with the interaction
+associated with it indicated by a Left and Right Mouse-Button Icon as well as the name of the action.
 target.
-
 <div class="pb"></div>
