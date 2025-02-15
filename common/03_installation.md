@@ -6,7 +6,7 @@
 
 ## Manual installation
 Darkpalace Studio plugins can be installed in a manual way.
-After downloading the zip or dmg archive for your operating system from tentary, extract the desired plugin format into your respective plugin folder.
+After downloading the `zip` or `dmg` archive for your operating system from tentary, extract the desired plugin format into your respective plugin folder.
 
 If you don't have a custom plugin folder set in your DAW, refer to the to the default locations:
 
