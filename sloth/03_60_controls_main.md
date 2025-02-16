@@ -1,4 +1,4 @@
-<h2 class="txt-blue">Control Area</h2>
+<h2 class="txt-blue">Main Controls</h2>
 <div class="image">
 ![](assets/sloth_main_controls.png)
 </div>

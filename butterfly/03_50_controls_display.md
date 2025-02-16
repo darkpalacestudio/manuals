@@ -1,4 +1,4 @@
-<h3 class="txt-blue">Display Controls</h2>
+<h2 class="txt-blue">Display Controls</h2>
 <div class="image">
 ![](assets/butterfly_display_controls.png)
 </div>
