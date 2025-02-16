@@ -1,6 +1,6 @@
 <h2 class="txt-green">Footer</h2>
 <div class="image">
-![](assets/details_footer.png)
+![](assets/common_footer.png)
 </div>
 
 The footer component contains a set of controls that

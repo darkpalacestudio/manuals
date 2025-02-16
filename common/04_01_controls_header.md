@@ -1,6 +1,6 @@
 <h2 class="txt-yellow">Header</h2>
 <div class="image">
-![](assets/details_header.png)
+![](assets/common_header.png)
 </div>
 
 Shared across all Darkpalace Studio plugins, the header is a central component for managing 

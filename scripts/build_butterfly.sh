@@ -7,7 +7,7 @@ echo "$WORKSPACE_DIR"
 
 # copy files
 
-cd $WORKSPACE_DIR/butterfly/manual
+cd $WORKSPACE_DIR/butterfly/
 mkdir -p $BUILD_FOLDER
 cp -r assets $BUILD_FOLDER/
 cp *.md $BUILD_FOLDER/

@@ -1,7 +1,7 @@
 
 # Configuration {#sec:configuration}
 <div class="image">
-![](assets/details_folder_structure.png)
+![](assets/common_folder_structure.png)
 </div>
 
 ## Configuration files
@@ -61,7 +61,7 @@ will use default settings.
 
 ### Fix for broken UI Scaling on Windows
 <div class="image">
-![](assets/details_json_config.png)
+![](assets/common_config.png)
 </div>
 Windows is known to not always be consistent, this including letting applications know of the ui-scaling
 factor it uses. Because of this the GUI of Darkpalace Studio plugins can often look out of proportions.

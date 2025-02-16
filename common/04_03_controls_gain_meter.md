@@ -1,6 +1,6 @@
 <h2 class="txt-red">Gain Meter (Input/Output)</h2>
 <div class="image">
-![](assets/details_gain.png)
+![](assets/common_gain.png)
 </div>
 
 The Gain components allow for adjustment to the input

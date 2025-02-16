@@ -3,7 +3,7 @@
 
 ## Overview
 <div class="image">
-![](assets/Overview.png)
+![](assets/overview.png)
 </div>
 
 ### Shared Regions
@@ -46,7 +46,7 @@ will show a window containing an explanation of its functionality.
 
 #### Tooltip
 <div class="image">
-![](assets/details_tooltip.png)
+![](assets/common_tooltip.png)
 </div>
 When hovering over any of the widgets, a tooltip will show up containing the name of the widget. 
 Additionally, the tooltip will also display if a widget has a special interaction

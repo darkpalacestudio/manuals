@@ -1,6 +1,6 @@
 <h2 class="txt-purple">Menu</h2>
 <div class="image">
-![](assets/details_display.png)
+![](assets/common_display.png)
 </div>
 
 The Display Widget allows you to browse the various presets and themes that are available. When
