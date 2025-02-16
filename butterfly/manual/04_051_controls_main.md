@@ -4,6 +4,7 @@
 </div>
 <br/>
 <div class="quote bg-yellow">
-The Channel and Gain controls are essentially the same so the following information will apply to both of them despite them focussing on separate channels.
+Based on the selected **Processing Mode**, the Channel and Gain controls are working on the Mid/Side or the Left/Right channel.
+Their controls are effectively the same for both channels.
 </div>
 <div class="pb"></div>

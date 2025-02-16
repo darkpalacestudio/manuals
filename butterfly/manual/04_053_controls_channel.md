@@ -9,8 +9,7 @@
 - <span class="item">Left-Click and Drag Left/Right:</span> Adjust frequency of the respective filter.
 - <span class="item">Right-Click:</span> Cycle through different EQ types.<br/>
 <br/>
-- Additionally, when a filter is set to Shelf Mode,
-- <span class="item">Left-Click and Drag Up/Down:</span> Change volume.
+- <span class="item">Left-Click and Drag Up/Down:</span> Change volume (when in **Shelf Mode**).
 </div>
 
 Both the Low- and High- EQs have 4 different states through which they can be cycled:
@@ -25,9 +24,9 @@ Both the Low- and High- EQs have 4 different states through which they can be cy
 #### Upwards Compressor
 <span class="location">*(Located on the outer of the Channel Controls)*</span>\
 <div class="block controls bg-dark-2">
-- <span class="txt-orange">Left-Click and Drag:</span> Adjust the ratio from 1:1 to 10:1
-- <span class="txt-orange">Left-Click and Drag:</span> Adjust the threshold from -40dB to +6dB.
-- <span class="txt-orange">Right-Click:</span> Switch between ***S***low and ***F***ast timings.
+- <span class="txt-orange">Left-Click and Drag (top):</span> Adjust the ratio from 1:1 to 10:1
+- <span class="txt-orange">Left-Click and Drag (bottom):</span> Adjust the threshold from -40dB to +6dB.
+- <span class="txt-orange">Right-Click:</span> Switch between **S**low and **F**ast timings.
 </div>
 While a standard compressor *reduces* the volume and dynamic range when the signal goes *above* the threshold, an upwards compressor *increases* the volume while lowering the dynamic range when the signal goes *below* the threshold, allowing for
 an easy way to adjust the volume of quieter material.
