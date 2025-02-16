@@ -26,7 +26,9 @@ The volume and phase differences introduced by the spread EQ on the two channels
 The Filter count determines how many "dual" bell-curves are applied within the frequency range.
 For each instance, 2 bell-curve filters will be created with opposite gain values where one is placed on the left channel and the other is placed right channel.
 
-A value of 0 will disable the Spread-EQ and any odd-values will result in the volume of one of the channels being louder than the other, in order to prevent this it's advised to keep the count equal.
+A value of 0 will disable the Spread-EQ.
+Any odd-values will result in the volume of one of the channels being louder than the other. 
+Even counts will keep the volume roughly equal.
 <div class="pb"></div>
 
 #### Peak Distribution Slider
@@ -34,9 +36,9 @@ A value of 0 will disable the Spread-EQ and any odd-values will result in the vo
 <div class="block controls bg-dark-2">
 - <span class="item">Left-Click and Drag Left/Right:</span> Adjust filter distribution.
 </div>
-The filter distribution curve is an indication to placing them between a linear and logarithmic
-scale within the frequency spectrum. As the natural perception of frequencies happens logarithmically,
-setting the value to 100% logarithmic can result in boosting the harmomic series with a narrow Q value.
+The filter distribution slider allows to place individual bands on a linear and logarithmic
+scale (or any mix thereof) within the frequency range.
+As the natural perception of frequencies happens logarithmically, setting the value to 100% logarithmic can result in boosting the harmomic series with a narrow Q value.
 <span class="spacer"/>
 
 #### Frequency Range Slider
@@ -56,9 +58,11 @@ change the value:
 #### Q-Slider
 <span class="location">*(Located right-ish of the Spread EQ Widget)*</span>\
 Click and drag to adjust the Q value of the bell peaks.
+Large values apply broad preaks, while small values allow for sharp, resonant peaks.
+
 <span class="spacer"/>
 
 #### Gain
 <span class="location">*(Located right of the Spread EQ Widget)*</span>\
-Click and drag to adjust thegain value of the bell peaks.
+Click and drag to adjust the gain of the bell peaks.
 <div class="pb"></div>
