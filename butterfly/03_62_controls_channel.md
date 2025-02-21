@@ -17,7 +17,8 @@ Both the Low- and High- EQs have 4 different states through which they can be cy
 - <span class="txt-purple">Off</span>: No EQ is applied.
 - <span class="txt-purple">1st Order Filter</span>: Applies a 6dB/oct Low- or High- Pass filter.
 - <span class="txt-purple">2nd Order Filter</span>: Applies a 12dB/oct Low- or High- Pass filter.
-- <span class="txt-purple">Shelf</span>: Applies a 12dB/oct Low- or High - Shelf-EQ to the signal.
+- <span class="txt-purple">4th Order Filter</span>: Applies a 24dB/oct Low- or High- Pass filter.
+- <span class="txt-purple">Shelf</span>: Applies a 6dB/oct Low- or High - Shelf-EQ to the signal.
 </div>
 <div class="pb"></div>
 
