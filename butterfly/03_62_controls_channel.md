@@ -38,6 +38,10 @@ The timings of the compressor are automatically calculated based on the incommin
 - - Attack: 40ms to 400ms
 - - Release: 100ms to 1000ms
 <br/>
+- <span class="txt-purple">M (Med)</span>
+- - Attack: 20ms to 200ms
+- - Release: 50ms to 500ms
+<br/>
 - <span class="txt-purple">F (Fast)</span>
 - - Attack: 4ms to 40ms
 - - Release: 10ms to 100ms
