@@ -25,7 +25,7 @@ Both the Low- and High- EQs have 4 different states through which they can be cy
 #### Upwards Compressor
 <span class="location">*(Located on the outer of the Channel Controls)*</span>\
 <div class="block controls bg-dark-2">
-- <span class="txt-orange">Left-Click and Drag (top):</span> Adjust the ratio from 1:1 to 10:1
+- <span class="txt-orange">Left-Click and Drag (top):</span> Adjust the ratio from 1:1 to 8:1
 - <span class="txt-orange">Left-Click and Drag (bottom):</span> Adjust the threshold from -40dB to +6dB.
 - <span class="txt-orange">Right-Click:</span> Switch between **S**low and **F**ast timings.
 </div>

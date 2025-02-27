@@ -29,9 +29,9 @@ The analyer has 3 different display modes:
 
 The analyer has different timings, allowing to change how fast it rises and falls:
 <div class="block bg-dark-1">
-- <span class="txt-purple">Slow</span>: Rise time: 750ms, Fall time: 3.0s.
-- <span class="txt-purple">Med</span>: Rise time: 100ms, Fall time: 400ms .
-- <span class="txt-purple">Fast</span>: Rise time: 37.5ms, Fall time: 150ms.
+- <span class="txt-purple">Slow</span>: Rise time: 850ms, Fall time: 3.4s.
+- <span class="txt-purple">Med</span>: Rise time: 150ms, Fall time: 600ms .
+- <span class="txt-purple">Fast</span>: Rise time: 62.5ms, Fall time: 250ms.
 </div>
 <span class="spacer"/>
 
