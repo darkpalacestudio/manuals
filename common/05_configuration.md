@@ -115,9 +115,10 @@ Theme files can be found in the following folder:
 <div class="pb"></div>
 
 ## Preset and Theme versions
-presets and themes have specific versions.
+Presets and themes have specific versions.
 While we strive to make compatibility with new versions of the plugin the top priority, this can not always be ensured.
-If a preset or theme is crossed out, it means that it has an old version and needs to be updated.
+
+If a preset or theme is crossed out in the list, it means that it has an old version and needs to be updated.
 Please refer to the last section of this manual (Release Notes) to check changes that need to be adapted to.
 
 <div class="pb"></div>
