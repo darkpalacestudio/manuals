@@ -3,9 +3,12 @@
 # Release Notes
 
 ## v1.2.1
-- Update to juce 8.0.6
+- Implement sample-accurate parameter smoothing
+- Improve tooltips and explanations display
 - Add LV2 plugin format on windows and linux
+- Update to juce 8.0.6
 - Remove red flash on clap plugin startup
+
 
 ## v1.2.0
 - Update to juce 8.0.3
