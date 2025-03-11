@@ -1,8 +1,13 @@
 # Release Notes
 
 ## v1.2.1
+- Implement sample-accurate parameter smoothing
+- Improve tooltips and explanations display
+  - theme jsons contain new key `tooltipBorder`
+  - remove `explanationBackground` and `explanationText`
+- Add LV2 plugin for windows and linux
+- Build Linux plugin on ubuntu 22 to support more devices
 - Update to juce 8.0.6
-- Add LV2 plugin format on windows and linux
 - Remove red flash on clap plugin startup
 
 ## v1.2.0

@@ -6,6 +6,7 @@
 - Implement sample-accurate parameter smoothing
 - Improve tooltips and explanations display
   - theme jsons contain new key `tooltipBorder`
+  - remove `explanationBackground` and `explanationText`
 - Add LV2 plugin for windows and linux
 - Build Linux plugin on ubuntu 22 to support more devices
 - Update to juce 8.0.6
