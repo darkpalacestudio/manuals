@@ -2,6 +2,7 @@
 
 ## v1.2.1
 - Implement sample-accurate parameter smoothing
+- Limit Parameter ranges in Chameleon X to minimize resonant filters
 - Improve tooltips and explanations display
   - theme jsons contain new key `tooltipBorder`
   - remove `explanationBackground` and `explanationText`
