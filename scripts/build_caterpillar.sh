@@ -1,13 +1,13 @@
 #! /bin/bash
 
 WORKSPACE_DIR=`pwd`
-BUILD_FOLDER="$WORKSPACE_DIR/build/butterfly"
+BUILD_FOLDER="$WORKSPACE_DIR/build/caterpillar"
 
 echo "$WORKSPACE_DIR"
 
 # copy files
 
-cd $WORKSPACE_DIR/butterfly/
+cd $WORKSPACE_DIR/caterpillar/
 mkdir -p $BUILD_FOLDER
 cp -r assets $BUILD_FOLDER/
 cp *.md $BUILD_FOLDER/
@@ -20,6 +20,6 @@ tree $BUILD_FOLDER/
 
 cd $BUILD_FOLDER/
 # build fancy version
-pandoc *.md -o butterfly_manual.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css style_dark.css --metadata title="Butterfly" -V "title:"
+pandoc *.md -o caterpillar_manual.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css style_dark.css --metadata title="caterpillar" -V "title:"
 # build print version
-pandoc *.md -o butterfly_manual_print.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css style_print.css --metadata title="Butterfly" -V "title:"
+pandoc *.md -o caterpillar_manual_print.pdf --filter pandoc-secnos --pdf-engine=weasyprint --css style_print.css --metadata title="caterpillar" -V "title:"
