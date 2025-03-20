@@ -1,0 +1,35 @@
+name: caterpillar manual
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+    paths: [ 'caterpillar/**', '.github/**', 'common/**' ]
+
+jobs:
+  Build_Caterpillar:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install pandoc weasyprint texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra fonts-roboto
+          sudo pip install pandoc-secnos
+
+      - name: Setup Environment Variables
+        shell: bash
+        run: |
+          echo "BUILD_FOLDER=${{github.workspace}}/build/caterpillar" >> $GITHUB_ENV
+
+      - name: run build script
+        run: scripts/build_caterpillar.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: caterpillar_manual
+          path: |
+            ${{ env.BUILD_FOLDER }}/caterpillar_manual.pdf
+            ${{ env.BUILD_FOLDER }}/caterpillar_manual_print.pdf
+          overwrite: 'true'
