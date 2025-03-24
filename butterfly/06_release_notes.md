@@ -2,6 +2,9 @@
 
 # Release Notes
 
+## v1.0.3
+- Internal bugfixes
+
 ## v1.0.2
 - Improve tooltips and explanations display
 - Increase number of Spread Filter Modes to 24
