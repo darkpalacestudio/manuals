@@ -1,6 +1,6 @@
 # Release Notes
 
-## v1.2.1
+## v1.3.0
 - Implement sample-accurate parameter smoothing
 - Limit Parameter ranges in Chameleon X to minimize resonant filters
 - Improve tooltips and explanations display
@@ -8,7 +8,7 @@
   - remove `explanationBackground` and `explanationText`
 - Add LV2 plugin for windows and linux
 - Build Linux plugin on ubuntu 22 to support more devices
-- Update to juce 8.0.6
+- Update to juce 8.0.7
 - Remove red flash on clap plugin startup
 
 ## v1.2.0
