@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.3.1
+- Xen Scale support via parameter "KeytrackingNotesPerOctave"
+
 ## v1.3.0
 - Implement sample-accurate parameter smoothing
 - Limit Parameter ranges in Chameleon X to minimize resonant filters
