@@ -1,7 +1,8 @@
 # Release Notes
 
 ## v1.3.1
-- Xen Scale support via parameter "KeytrackingNotesPerOctave"
+- support Xen Scales and microtuning via parameter "KeytrackingNotesPerOctave". See the section "Keytracking additional parameters".
+- Fix Crash of Chameleon2 on some systems
 
 ## v1.3.0
 - Implement sample-accurate parameter smoothing

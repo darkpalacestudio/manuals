@@ -106,6 +106,37 @@ As allpass filters are mostly only concerned about the phase relationship of the
 that enabling oversampling can and will introduce additional phase shift in the higher frequency
 range due to the filter used when up- and down-sampling.
 
+
+## Keytracking additional parameters
+Keytracking is available across all Chameleon Plugins. 
+While the commonly used parameters for keytracking are available right from the UI, there are some additional parameters that can be used for advanced features. 
+Those are available via Plugin Parameters and the DAW.
+
+Those parameters are:
+
+### FrequencyOffset
+Via the UI it is possible to shift the incoming midi note by a certain amount of notes by the `noteOffset` parameter.
+This represents a logarithmic change in the resulting frequency.
+Often a linear change in the frequency is required (e.g. for changing the pitch standard). This is exactly what the `frequencyOffset` parameter allows to do.
+
+### NotesPerOctave
+The `notesPerOctave` parameter allows to use [xen scales](https://en.xen.wiki/w/Main_Page) and microtunings.
+By default midi does not support any of those, so this parameter gives access to those tunings.
+
+Normally a midi note is translated into a frequency by the following equation
+```
+frequency = frequencyOfA * pow(2.0, (midiNoteNumber - 69) / 12.0);
+```
+
+This equation is replaced by 
+```
+frequency = frequencyOfA * pow(2.0, (midiNoteNumber - 69) / notesPerOctave);
+```
+
+The `notesPerOctave` parameter also affects frequency changes by pitchbend.
+
+
+
 [//]: <> (TODO more usage examples)
 
 <div class="pb"></div>
