@@ -1,7 +1,10 @@
 # Release Notes
 
+## v1.3.2
+- Add support for MacOS 13 and MacOS 14
+
 ## v1.3.1
-- support Xen Scales and microtuning via parameter "KeytrackingNotesPerOctave". See the section "Keytracking additional parameters".
+- Support Xen Scales and microtuning via parameter "KeytrackingNotesPerOctave". See the section "Keytracking additional parameters".
 - Fix Crash of Chameleon2 on some systems
 
 ## v1.3.0
