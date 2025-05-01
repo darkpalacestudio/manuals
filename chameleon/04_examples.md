@@ -123,7 +123,7 @@ Often a linear change in the frequency is required (e.g. for changing the pitch 
 The `notesPerOctave` parameter allows to use [xen scales](https://en.xen.wiki/w/Main_Page) and microtunings.
 By default midi does not support any of those, so this parameter gives access to those tunings.
 
-Normally a midi note is translated into a frequency by the following equation
+Normally a midi note is translated into a frequency by the following equation:
 ```
 frequency = frequencyOfA * pow(2.0, (midiNoteNumber - 69) / 12.0);
 ```

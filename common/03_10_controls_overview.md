@@ -20,7 +20,7 @@ all of our plugins can be separated into shared regions:
 <span class="spacer"/>
 
 ### Shared Interactions
-In order to keep a consistent playing-field, our plugins share common interactio methods such as:
+In order to keep a consistent playing-field, our plugins share common interaction methods such as:
 
 <div class="block bg-dark-2">
 - <span class="txt-orange">Double-Click:</span> Reset to default values.
@@ -36,7 +36,7 @@ In order to keep a consistent playing-field, our plugins share common interactio
 
 ### Visual Feedback
 A lot of the widgets within our plugins are designed to provide visual feedback to indicate a change 
-is occuring. Additionally this is aided by the toolip and explanation system.
+is occurring. Additionally this is aided by the Tooltip and Explanation system.
 <span class="spacer"/>
 
 #### Explanations
@@ -48,8 +48,8 @@ will show a window containing an explanation of its functionality.
 <div class="image">
 ![](assets/common_tooltip.png)
 </div>
-When hovering over any of the widgets, a tooltip will show up containing the name of the widget. 
-Additionally, the tooltip will also display if a widget has a special interaction
-associated with it, e.g. a dedicated right mouse button interaction.
-This is indicated by a Left and Right Mouse-Button Icon as well as the name of the action.
+When you hover your mouse over any of the widgets, a tooltip will appear displaying the widget's name. 
+Additionally, if a widget has a special interaction, such as a dedicated right-click function, 
+the tooltip will also indicate this. It will do so by showing both left and right mouse button 
+icons along with the name of the associated action.
 <div class="pb"></div>
