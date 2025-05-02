@@ -2,6 +2,9 @@
 
 # Release Notes
 
+## v1.0.4 (NEXT)
+- Fix UI bug which caused explanation (?) text to flicker when a controller is touched
+
 ## v1.0.3
 - Internal bugfixes
 

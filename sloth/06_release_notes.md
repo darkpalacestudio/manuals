@@ -2,6 +2,9 @@
 
 # Release Notes
 
+## v1.2.2 (NEXT)
+- Fix UI bug which caused explanation (?) text to flicker when a controller is touched
+
 ## v1.2.1
 - Implement sample-accurate parameter smoothing
 - Improve tooltips and explanations display

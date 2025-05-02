@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.3.3 (NEXT)
+- Fix UI bug which caused explanation (?) text to flicker when a controller is touched
+
 ## v1.3.2
 - Add support for MacOS 13 and MacOS 14
 
