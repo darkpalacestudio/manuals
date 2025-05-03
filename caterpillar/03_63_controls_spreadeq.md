@@ -3,8 +3,7 @@
 ![](assets/butterfly_spread_eq_controls.png)
 </div>
 </div>
-The spread EQ applies a series of bell shaped EQs to the left and right channels of a track. Note that the spread EQ is always applied to the left and right channel, regardless of the selected processing mode.
-
+The spread EQ applies a series of bell filters to the left and right channels of a track. 
 
 Peaks are applied in alternating order and opposing gain on left and right.
 As an example (4 bells from 100Hz to 200Hz, 3dB Gain):
@@ -20,7 +19,7 @@ The volume and phase differences introduced by the spread EQ on the two channels
 
 #### Gain
 <span class="location">*(Located right of the Spread EQ Widget)*</span>\
-Click and drag to adjust the gain of the bell peaks.
+Click and drag to adjust the gain of the bell filters.
 
 #### Filter Count
 <span class="location">*(Located left of the Spread EQ Widget)*</span>\
@@ -64,6 +63,9 @@ As the natural perception of frequencies happens logarithmically, setting the va
 
 #### Q-Slider
 <span class="location">*(Located right-ish of the Spread EQ Widget)*</span>\
+<div class="block controls bg-dark-2">
+- <span class="item">Left-Click and Drag Left/Right:</span> Adjust Q.
+</div>
 Click and drag to adjust the Q value of the bell peaks.
 Large values apply broad preaks, while small values allow for sharp, resonant peaks.
 

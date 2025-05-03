@@ -13,12 +13,12 @@ The correlation meter is a common indicator for showing how mono-compatible the 
 
 <span class="spacer"/>
 
-### Analyer View
+### Analyzer View
 <span class="location">*(Located at the top left edge of the analyzer)*</span>\
 <div class="block controls bg-dark-2">
 - <span class="item">Left-Click</span> Cycle through analyzer modes.
 </div>
-The analyer has 3 different display modes:
+The analyzer has 3 different display modes:
 <div class="block bg-dark-1">
 - <span class="txt-purple">Off</span>: Disables the spectrum analyzer.
 - <span class="txt-purple">Pre</span>: Displays the incoming signal.
@@ -27,13 +27,13 @@ The analyer has 3 different display modes:
 
 <div class="pb"></div>
 
-### Analyer Timing
+### Analyzer Timing
 <span class="location">*(Located at the top right of the plugin)*</span>\
 <div class="block controls bg-dark-2">
 - <span class="item">Left-Click</span> Cycle through analyzer timings.
 </div>
 
-The analyer has different timings, allowing to change how fast it rises and falls:
+The analyzer has different timings, allowing to change how fast it rises and falls:
 <div class="block bg-dark-1">
 - <span class="txt-purple">Slow</span>: Rise time: 850ms, Fall time: 3.4s.
 - <span class="txt-purple">Med</span>: Rise time: 150ms, Fall time: 600ms .
