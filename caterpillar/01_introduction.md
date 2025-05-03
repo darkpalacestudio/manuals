@@ -5,8 +5,8 @@
 
 By boosting and cutting specific frequencies differently in each channel, <span class="txt-green">Caterpillar</span> can
 
-- enhances the perceived stereo width
-- makie the soundstage feel broader and more immersive
+- enhance the perceived stereo width
+- make the soundstage feel broader and more immersive
 - be used to create formant like filters
 - create unique resonances in the bass domain or the high frequency spectrum
 - apply transitions by applying modulation effects or automation. 
