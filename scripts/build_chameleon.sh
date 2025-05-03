@@ -9,12 +9,12 @@ echo "$WORKSPACE_DIR"
 
 cd "$WORKSPACE_DIR/chameleon/"
 mkdir -p "$BUILD_FOLDER"
-cp -r assets "$BUILD_FOLDER/"
-cp *.md "$BUILD_FOLDER/"
-cp "$WORKSPACE_DIR/common/"*.md "$BUILD_FOLDER/"
+cp -r "$WORKSPACE_DIR/common/assets" "$BUILD_FOLDER/"
 cp "$WORKSPACE_DIR/common/style_dark.css" "$BUILD_FOLDER/"
 cp "$WORKSPACE_DIR/common/style_print.css" "$BUILD_FOLDER/"
-cp -r "$WORKSPACE_DIR/common/assets" "$BUILD_FOLDER/"
+cp "$WORKSPACE_DIR/common/"*.md "$BUILD_FOLDER/"
+cp -r assets "$BUILD_FOLDER/"
+cp *.md "$BUILD_FOLDER/"
 tree "$BUILD_FOLDER/"
 
 
