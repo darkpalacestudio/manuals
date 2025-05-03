@@ -34,6 +34,8 @@ A value of 0 will disable the Spread-EQ.
 Any odd-values will result in the volume of one of the channels being louder than the other. 
 Even counts will keep the volume roughly equal.
 
+<div class="pb"></div>
+
 #### Frequency Range Slider
 <span class="location">*(Located central of the Spread EQ Widget)*</span>\
 <div class="block controls bg-dark-2">

@@ -24,7 +24,8 @@ The analyer has 3 different display modes:
 - <span class="txt-purple">Pre</span>: Displays the incoming signal.
 - <span class="txt-purple">Post</span>: Displays the outgoing signal.
 </div>
-<span class="spacer"/>
+
+<div class="pb"></div>
 
 ### Analyer Timing
 <span class="location">*(Located at the top right of the plugin)*</span>\
