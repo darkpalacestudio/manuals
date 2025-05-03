@@ -1,6 +1,6 @@
 <h3 class="txt-blue">Spread EQ</h2>
 <div class="image">
-![](assets/butterfly_spread_eq_controls.png)
+![](assets/caterpillar_spread_eq_controls.png)
 </div>
 </div>
 The spread EQ applies a series of bell shaped EQs to the left and right channels of a track. Note that the spread EQ is always applied to the left and right channel, regardless of the selected processing mode.
