@@ -1,6 +1,6 @@
 <h2 class="txt-blue">Display Controls</h2>
 <div class="image">
-![](assets/butterfly_display_controls.png)
+![](assets/caterpillar_display_controls.png)
 </div>
 
 ### Corelation Meter

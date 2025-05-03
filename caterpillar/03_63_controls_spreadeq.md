@@ -1,6 +1,6 @@
 <h3 class="txt-blue">Spread EQ</h2>
 <div class="image">
-![](assets/butterfly_spread_eq_controls.png)
+![](assets/caterpillar_spread_eq_controls.png)
 </div>
 </div>
 The spread EQ applies a series of bell filters to the left and right channels of a track. 
