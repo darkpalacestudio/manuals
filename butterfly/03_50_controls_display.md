@@ -6,6 +6,11 @@
 ### Corelation Meter
 <span class="location">*(Located above the analyzer)*</span>\
 The correlation meter is a common indicator for showing how mono-compatible the signal is.
+
+- A value of 1 indicates that the left and right chanel are completely in phase. 
+- A value of 0 indicates that the left and right channes are not correlated at all.
+- A value of -1 indicates that the left and right channels are completely out of phase.
+
 <span class="spacer"/>
 
 ### Analyer View
