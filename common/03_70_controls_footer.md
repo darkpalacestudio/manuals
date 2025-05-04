@@ -11,7 +11,7 @@ enhance the workflow such as flipping the phase/polarity, switching between Left
 <div class="block controls bg-dark-2">
 - <span class="item">Left-Click:</span> Toggle 'Help' mode.
 </div>
-When enable, 'Help' mode will display explanations directly within the plugin window when hovering over a widget.
+When enabled, 'Help' mode will display explanations directly within the plugin window when hovering over a widget.
 <span class="spacer"/>
 
 ### Process Mode Button
@@ -48,7 +48,7 @@ The delay is reported to the host to be automatically compensated for by most mo
 
 <div class="quote bg-yellow">
 Please note that a change in oversampling can result in short audio-dropouts. It is not
-advices to automate this control.
+adviced to automate this control.
 </div>
 <span class="spacer"/>
 
@@ -63,16 +63,16 @@ The Mix slider allows for blending between an unprocessed (dry) and fully proces
 ### Phase-Button
 <span class="location">*(Located right of the Mix slider)*</span>\
 <div class="block controls bg-dark-2">
-- <span class="item">Left-Click: </span> Cycle thruogh Phase modes.
+- <span class="item">Left-Click: </span> Cycle through Phase modes.
 </div>
-All Darkpalace Studio plugin support 3 different phase modes for processing:
+All Darkpalace Studio plugins support 3 different phase modes for processing:
 <div class="block bg-dark-1">
 - <span class="txt-purple">No-Phase:</span> Leave signal as is, no change.
 - <span class="txt-purple">Pre-Phase:</span> Inverts the polarity at the input stage, before processing.
-- <span class="txt-purple">Post-Phase:</span> Inverst the polarity at the output statge, after the mix.
+- <span class="txt-purple">Post-Phase:</span> Invert the polarity at the output statge, after the mix.
 </div>
 
-The different phase options allow to create interesting results when mixing the processed signal with the dry signal or using the **DIFF** option.
+The different phase options allow creating interesting results when mixing the processed signal with the dry signal or using the **DIFF** option.
 <div class="pb"></div>
 
 ### Diff-Button
@@ -80,7 +80,7 @@ The different phase options allow to create interesting results when mixing the 
 <div class="block controls bg-dark-2">
 - <span class="item">Left-Click: </span> Toggle Difference/Delta mode.
 </div>
-When enabled the plugin will not output the processed signal, but instead the difference between the unprocessed and processed signal, effectively providing the difference (or delta) of the processing.
+When enabled, the plugin will not output the processed signal, but instead the difference between the unprocessed and processed signal, effectively providing the difference (or delta) of the processing.
 
 <div class="quote bg-yellow">
 Note that **DIFF** is applied *before* the **MIX** slider. This allows to blend the delta-signal with the dry signal for additional parallel processing options.
@@ -92,24 +92,24 @@ Note that **DIFF** is applied *before* the **MIX** slider. This allows to blend 
 - <span class="item">Left-Click: </span> Toggle Bypass.
 </div>
 When Bypass mode is enabled, the input signal is directly routed to the output, bypassing the entire
-signal processing chain. Additionally, the plugin will also turn grey-scale indicating its state.
+signal processing chain. Additionally, the plugin will also turn grayscale indicating its state.
 
 <div class="quote bg-yellow">
 Note that internal oversampling and process mode conversion will still be performed, even if bypass is enabled.
 </div>
 
-Most DAWs offer the option to bypass a plugin. However this will also bypass oversampling, potentially resulting in clicks.
-The internal bypass avoids this issues.
+Most DAWs offer the option to bypass a plugin. However, this will also bypass oversampling, potentially resulting in clicks.
+The internal bypass avoids these issues.
 <span class="spacer"/>
 
 #### Individual Channel Bypass
 <span class="location">*(located right in the Footer)*</span>\
 <div class="block controls bg-dark-2">
-- <span class="item">Left-Click: </span> Toggle Bypass an individual Channel.
+- <span class="item">Left-Click: </span> Toggle Bypass on an individual Channel.
 </div>
 
 This allows to bypass an individual channel, based on the Processing Mode. 
 Thus it is possible to bypass none, one or both of L/R or M/S channels, giving plenty of options, 
 e.g. just processing the Mid channel. 
-Additionally, the bypassed channel will be highlighted indicating its state.
+Additionally, the bypassed channel will be highlighted, indicating its state.
 <div class="pb"></div>
