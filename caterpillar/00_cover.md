@@ -7,8 +7,4 @@ xnos-number-offset: 0
   <span class="version">Version 1.0.1</span>
 </div>
 
-Contact:
-- info@darkpalace.studio
-- https://darkpalace.studio/
-
 <div class="pb"></div>
