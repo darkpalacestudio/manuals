@@ -102,7 +102,7 @@ inside of the UI. It is currently not possible to assign presets to a group from
 but can easily be assigned manually.
 
 In order to do so, locate the preset and open it using an external text-editor. After that
-you can add a preset to a group as follows:
+you can add a preset to a group like so:
 ```
 {
     ...
