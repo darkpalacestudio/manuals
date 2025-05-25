@@ -84,17 +84,33 @@ to <span class="txt-yellow">1.25</span>.
 <div class="pb"></div>
 
 ## Presets
-Presets are `xml` files that can easily be shared and edited.
-They are stored in the following folder:
-
+Presets are `json` files that can easily be shared and editor and are stored in the following
+folder:
 <div class="block bg-dark-1">
 - **Win**: `C:\Users\Public\Documents\Darkpalace Studio\[plugin_name]\presets`
 - **Mac**: `/Users/Shared/Darkpalace Studio/[plugin_name]/presets`
 - **Linux**: `~/.config/Darkpalace Studio/[plugin_name]/presets`
 </div>
 
-Another option is to click the **Save Preset** button in the menu.
-This will open the system dialog that will directly show you the folder where presets are stored.
+They can be saved from within the plugin by opening up the menu (Either click the menu-icon or
+the preset name window) and clicking the **Save Preset** button, this will open the file-system-dialog
+that will directly show you the folder where the presets are stored.
+
+### Groups
+Additionally, presets can also be grouped together so that they show up in separate "folders" 
+inside of the UI. It is currently not possible to assign presets to a group from within the plugin
+but can easily be assigned manually.
+
+In order to do so, locate the preset and open it using an external text-editor. After that
+you can add a preset to a group as follows:
+```
+{
+    ...
+    ...
+    "version": "1.0.1",
+    "group": "Critters"
+}
+```
 <div class="pb"></div>
 
 ## Themes
