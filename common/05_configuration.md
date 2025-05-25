@@ -124,9 +124,9 @@ If no themes are listed, make sure the theme files are installed in the correct 
 Theme files can be found in the following folder:
 
 <div class="block bg-dark-1">
-- **Win**: `C:\Users\Public\Documents\Darkpalace Studio\sloth\themes`
-- **Mac**: `/Users/Shared/Darkpalace Studio/sloth/themes`
-- **Linux**: `~/.config/Darkpalace Studio/sloth/themes`
+- **Win**: `C:\Users\Public\Documents\Darkpalace Studio\[plugin name]\themes`
+- **Mac**: `/Users/Shared/Darkpalace Studio/[plugin name]/themes`
+- **Linux**: `~/.config/Darkpalace Studio/[plugin name]/themes`
 </div>
 <div class="pb"></div>
 

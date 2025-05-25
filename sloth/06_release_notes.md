@@ -4,6 +4,9 @@
 
 ## v1.2.2 (NEXT)
 - Fix UI bug which caused explanation (?) text to flicker when a controller is touched
+- Windows installer now installs into `C:\Program Files\Common Files\VST3\darkpalacestudio` by default. Same for LV2 and clap plugins.
+
+Note: Because of the changed installation directory, you are required to delete the old plugin before installing the new one.
 
 ## v1.2.1
 - Implement sample-accurate parameter smoothing
