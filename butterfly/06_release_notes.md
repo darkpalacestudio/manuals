@@ -2,8 +2,10 @@
 
 # Release Notes
 
-## v1.0.4 (NEXT)
+## v1.1.0 (NEXT)
 - Fix UI bug which caused explanation (?) text to flicker when a controller is touched
+- Make Q adjustable for 12db and 24dB Filters
+- Allow to switch patterns (Up/Down, Down/Up, Only Up, Only Down) for the Spread EQ
 
 ## v1.0.3
 - Internal bugfixes
