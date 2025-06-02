@@ -21,6 +21,9 @@ If you don't have a custom plugin folder set in your DAW, refer to the to the de
     - **Win**: `C:\Program Files\Common Files\CLAP\`
     - **Linux**: `~/.clap/`
     - **macOS**: `/Library/Audio/Plug-ins/CLAP`
+- LV2
+    - **Win**: `C:\Program Files\Common Files\LV2\`
+    - **Linux**: `~/.lv2/`
 - AU
     - **macOS**: `/Library/Audio/Plug-Ins/Components`
 </div>

@@ -2,6 +2,9 @@
 
 # Release Notes
 
+## v1.0.2 (NEXT)
+- Make Windows Installer ask for the installation path 
+
 ## v1.0.1
 
 - Introduce Preset groups and support for presets in filesystem subfolders
