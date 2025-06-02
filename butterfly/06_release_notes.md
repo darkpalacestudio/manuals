@@ -2,10 +2,15 @@
 
 # Release Notes
 
-## v1.1.0 (NEXT)
+## v1.1.0
+- Introduce Preset groups and support for presets in filesystem subfolders
+- Fix bug where the upper frequency range of the spread EQ was limited at 10k instead of 15k
 - Fix UI bug which caused explanation (?) text to flicker when a controller is touched
 - Make Q adjustable for 12db and 24dB Filters
 - Allow to switch patterns (Up/Down, Down/Up, Only Up, Only Down) for the Spread EQ
+- Make Windows Installer ask for the installation path 
+- Provide pkg installer for MacOS
+
 
 ## v1.0.3
 - Internal bugfixes
