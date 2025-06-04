@@ -2,7 +2,10 @@
 
 ## v1.3.3 (NEXT)
 - Fix UI bug which caused explanation (?) text to flicker when a controller is touched
+- Make Order Slider in Chameleon N and Chameleon X drag vertically instead of horizontal (to match Butterfly/Tiny Caterpillar Order Slider) 
 - Windows installer now installs into `C:\Program Files\Common Files\VST3\darkpalacestudio` by default. Same for LV2 and clap plugins.
+- Provide pkg installer for MacOS
+
 
 Note: Because of the changed installation directory, you are required to delete the old plugin before installing the new one.
 
