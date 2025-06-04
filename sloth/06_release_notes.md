@@ -5,8 +5,11 @@
 ## v1.2.2 (NEXT)
 - Fix UI bug which caused explanation (?) text to flicker when a controller is touched
 - Windows installer now installs into `C:\Program Files\Common Files\VST3\darkpalacestudio` by default. Same for LV2 and clap plugins.
+- Provide pkg installer for MacOS
+- Update to juce 8.0.8
 
-Note: Because of the changed installation directory, you are required to delete the old plugin before installing the new one.
+Note: Because of the changed installation directory on windows, you are required to delete the old plugin before installing the new one.
+
 
 ## v1.2.1
 - Implement sample-accurate parameter smoothing
