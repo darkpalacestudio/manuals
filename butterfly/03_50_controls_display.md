@@ -25,6 +25,7 @@ The analyzer has 3 different display modes:
 - <span class="txt-purple">Post</span>: Displays the outgoing signal.
 </div>
 <span class="spacer"/>
+<div class="pb"></div>
 
 ### Analyzer Timing
 <span class="location">*(Located at the top right of the plugin)*</span>\

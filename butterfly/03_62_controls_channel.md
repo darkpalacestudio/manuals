@@ -10,6 +10,7 @@
 - <span class="item">Right-Click:</span> Cycle through different EQ types.<br/>
 <br/>
 - <span class="item">Left-Click and Drag Up/Down:</span> Change volume (when in **Shelf Mode**).
+- <span class="item">Left-Click and Drag Up/Down:</span> Change Q-Factor (With 12dB or 24dB filters).
 </div>
 
 Both the Low- and High- EQs have 4 different states through which they can be cycled:
