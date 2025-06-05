@@ -11,7 +11,6 @@
 - Allow to switch patterns (Up/Down, Down/Up, Only Up, Only Down) for the Spread EQ
 - Make Windows Installer ask for the installation path 
 - Provide pkg installer for MacOS
-- Introduce Preset groups and support for presets in filesystem subfolders
 
 
 ## v1.0.3
