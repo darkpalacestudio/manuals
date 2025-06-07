@@ -51,18 +51,18 @@ change the value:
 </div>
 <span class="spacer"/>
 
-#### Filter Stacking
+#### Filter Pattern
 <span class="location">*(Located central of the Spread EQ Widget)*</span>\
 <div class="block controls bg-dark-2">
-- <span class="item">Left-Click:</span> Switch stacking pattern.
+- <span class="item">Left-Click:</span> Switch filter pattern.
 </div>
-The Filter Stacking button changes how the SpreadEQ positions the filters. By default it follows
-and up/down order but can be changed for both the LEFT and RIGHT channel respectively between:
+The Filter Pattern button changes how the SpreadEQ positions the filters. By default it follows
+an up/down order but can be changed for both the LEFT and RIGHT channel respectively between:
 <div class="block bg-dark-1">
-- <span class="txt-purple">UP/DOWN:</span>: Makes every odd filter go UP and even go DOWN.
-- <span class="txt-purple">UP/UP:</span>: Makes every filter go UP.
-- <span class="txt-purple">DOWN/UP:</span>: Makes every odd filter go UP and even go DOWN.
-- <span class="txt-purple">DOWN/DOWN:</span>: Makes every filter go DOWN.
+- <span class="txt-purple">Up/Down:</span>: Makes every odd filter go Up and even go Down.
+- <span class="txt-purple">Down/Up:</span>: Makes every even filter go UP and odd go Down.
+- <span class="txt-purple">Down/Down:</span>: Makes all filters go Down.
+- <span class="txt-purple">Up/Up:</span>: Makes all filters go Up.
 </div>
 <span class="spacer"/>
 
