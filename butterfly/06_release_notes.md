@@ -12,7 +12,6 @@
 - Make Windows Installer ask for the installation path 
 - Provide pkg installer for MacOS
 
-
 ## v1.0.3
 - Internal bugfixes
 
